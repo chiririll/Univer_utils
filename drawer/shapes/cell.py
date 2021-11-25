@@ -14,6 +14,7 @@ class Cell(Shape):
     k_pos = (10, -20)
     count_pos = (10, 5)
     font_size = 14
+    cell_spacing = 110
 
     link = (15, 45)
 
@@ -60,11 +61,12 @@ class Cell(Shape):
             ground = Ground(self.drawer)
             ground.draw(x + self.link[0], y + self.link[1])
 
-        for i, link_node in enumerate(self.node.links):
-            link_cell = Cell(self.drawer, link_node, (x, y + 110*(i+1)))
+        if self.node.link:
+            link_cell = Cell(self.drawer, self.node.link, (x, y + self.cell_spacing))
             link_cell.draw()
 
             if not self.node.ground:
                 arrow = Arrow(self.drawer)
-                shift = 5*i + 20 if i > 0 else 0
-                arrow.draw(x + self.link[0], y + self.link[1], x + self.link[0], link_cell.pos[1], shift)
+                arrow.draw(x + self.link[0], y + self.link[1], x + self.link[0], link_cell.pos[1], 0)
+
+

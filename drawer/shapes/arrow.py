@@ -19,13 +19,14 @@ class Arrow(Shape):
 
         self.drawer.ellipse((x1-self.radius, y1-self.radius, x1+self.radius, y1+self.radius), self.color)
 
-        self.drawer.line((x1, y1, x1, y1 + len_start), self.color, self.width)
-        self.drawer.line((x1, y1 + len_start, x1 + shift, y1 + len_shift), self.color, self.width)
+        # self.drawer.line((x1, y1, x1, y1 + len_start), self.color, self.width)
+        # self.drawer.line((x1, y1 + len_start, x1 + shift, y1 + len_shift), self.color, self.width)
 
-        self.drawer.line((x1 + shift, y1 + len_shift, x2 + shift, y2 - len_shift), self.color, self.width)
+        # self.drawer.line((x1 + shift, y1 + len_shift, x2 + shift, y2 - len_shift), self.color, self.width)
 
-        self.drawer.line((x2 + shift, y2 - len_shift, x2, y2 - len_start), self.color, self.width)
-        self.drawer.line((x2, y2 - len_start, x2, y2), self.color, self.width)
+        # self.drawer.line((x2 + shift, y2 - len_shift, x2, y2 - len_start), self.color, self.width)
+        # self.drawer.line((x2, y2 - len_start, x2, y2), self.color, self.width)
+        self.drawer.line((x1, y1, x2, y2), self.color, self.width)
 
         # TODO: rotate ending
         self.drawer.line((x2-5, y2 - 5, x2, y2), self.color, self.width)

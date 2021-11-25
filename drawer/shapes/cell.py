@@ -14,7 +14,7 @@ class Cell(Shape):
     k_pos = (10, -20)
     count_pos = (10, 5)
     font_size = 14
-    cell_spacing = 110
+    cell_spacing = 100
 
     link = (15, 45)
 

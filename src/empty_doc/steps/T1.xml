@@ -1,0 +1,980 @@
+<w:p w:rsidR="00963822" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>T</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">1. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>[Начальная установка.] Ввести значение</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t xml:space="preserve"> n</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> = 9.</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve"></w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Внутренние таблицы</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve"> (</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[0], </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[1] = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[1], </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[2] = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[2], …, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>n</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">] = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>n</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t>]) = (</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[0], </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[1] = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[1], </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[2] = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[2], …, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t xml:space="preserve">[9] = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008F597A">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C840F1">
+        <w:t>[9]):</w:t>
+    </w:r>
+</w:p>
+%image_0%
+<w:p w:rsidR="00963822" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Для</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"></w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">k = </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">1, 2, …, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>n</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>) = (</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">1, 2, …, </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">9) </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"></w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>k</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>k</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>:</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"></w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>1</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>1</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>2</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>2</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>3</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>3</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>4</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>4</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>5</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>5</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>6</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>6</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>7</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>7</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRPr="00EB0ED9" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>8</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>8</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00963822" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COUNT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>9</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EB0ED9">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>9</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="00963822" w:rsidRPr="00912541" w:rsidRDefault="00963822" w:rsidP="00963822">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>N</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00912541">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A22A9E">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>n</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00912541">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00912541">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>9</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00912541">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>.</w:t>
+    </w:r>
+    <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+    <w:bookmarkEnd w:id="0"/>
+</w:p>

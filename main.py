@@ -1,56 +1,40 @@
-import os
-
 import drawer
+import utils
 from node import Node
-
-
-def parse_rels(s: str):
-    rels = []
-    for t in s.replace(' ', '').split(','):
-        parts = t.split('<')
-        rels.append((int(parts[0]), int(parts[1])))
-    return rels
-
-
-def mkdir(path: str):
-    if not os.path.isdir(path):
-        os.makedirs(path)
-
-
-def clear_folder(path: str):
-    for f in os.listdir(path):
-        f = os.path.join(path, f)
-        if os.path.isdir(f):
-            clear_folder(f)
-        else:
-            os.remove(f)
+from word_parser import Document
 
 
 def main(rels: str):
-    rels = parse_rels(rels)
-
     # Cleaning folder
-    clear_folder("output")
+    utils.clear_folder("output")
     # Creating folder
-    mkdir("output/_start")
+    utils.mkdir("output/_start")
+    # Copying doc file
+    utils.copy_file("src/empty_doc/Empty.doc", "output/Output.doc")
+
+    document = Document("output/Output.doc")
+    rels = utils.parse_rels(rels)
 
     nodes = []
     for i in range(10):
         nodes.append(Node(k=i))
 
-    drawer.draw(nodes, "output/_start/0.png")
+    img0 = drawer.draw(nodes, "output/_start/0.png")
 
     for node in nodes:
         node.count = 0
         node.ground = True
 
-    drawer.draw(nodes, "output/_start/1.png")
+    img1 = drawer.draw(nodes, "output/_start/1.png")
+
+    document.add_step('T1', image_0=img0, image_1=img1)
 
     for rel_id, rel in enumerate(rels):
         print(f"Relation #{rel_id} ({rel[0]}, {rel[1]})")
+        document.add_step('T2', j=str(rel[0]), k=str(rel[1]))
         # Creating folder
         path = f"output/rel_{rel_id}"
-        mkdir(path)
+        utils.mkdir(path)
 
         parent = nodes[rel[0]]
         tmp = False
@@ -59,29 +43,46 @@ def main(rels: str):
             tmp = True
 
         nodes[rel[1]].count += 1
+        img0 = drawer.draw(nodes, f"{path}/0.png")
+
         parent.link = Node(ptr=True, id=rel[1], tmp=tmp)
-        drawer.draw(nodes, f"{path}/0.png")
+        img1 = drawer.draw(nodes, f"{path}/1.png")
 
         parent.link.count = rel[1]
-        drawer.draw(nodes, f"{path}/1.png")
+        img2 = drawer.draw(nodes, f"{path}/2.png")
 
         if tmp:
             parent.link.ptr = False
+            # TODO: Draw arrows
+
             # Swapping nodes
             t = nodes[rel[0]].link
             nodes[rel[0]].link = parent.link
             nodes[rel[0]].link.link = t
             parent.link = None
+            img3 = drawer.draw(nodes, f"{path}/3.png")
             parent.ground = True
-            drawer.draw(nodes, f"{path}/2.png")
+            img4 = drawer.draw(nodes, f"{path}/4.png")
         else:
             parent.link.ground = True
-            drawer.draw(nodes, f"{path}/2.png")
+            img3 = drawer.draw(nodes, f"{path}/3.png")
 
             parent.ground = False
-            drawer.draw(nodes, f"{path}/3.png")
+            img4 = drawer.draw(nodes, f"{path}/4.png")
 
             parent.link.ptr = False
+
+        document.add_step(
+            'T3',
+            j=str(rel[0]), k=str(rel[1]),
+            image_0=img0,
+            image_1=img1,
+            image_2=img2,
+            image_3=img3,
+            image_4=img4,
+        )
+
+    document.save()
 
 
 if __name__ == "__main__":

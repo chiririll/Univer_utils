@@ -132,7 +132,6 @@
         <w:t>] + 1) = %count_k% + 1 = %count_k_inc%.</w:t>
     </w:r>
 </w:p>
-%image_0%
 <w:p w:rsidR="00724D47" w:rsidRDefault="00724D47" w:rsidP="00724D47">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>
@@ -166,7 +165,6 @@
         <w:t>,</w:t>
     </w:r>
 </w:p>
-%image_1%
 <w:p w:rsidR="00724D47" w:rsidRPr="00297CEC" w:rsidRDefault="00724D47" w:rsidP="00724D47">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>
@@ -223,7 +221,6 @@
         <w:t>,</w:t>
     </w:r>
 </w:p>
-%image_2%
 <w:p w:rsidR="00724D47" w:rsidRPr="00297CEC" w:rsidRDefault="00724D47" w:rsidP="00724D47">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>
@@ -361,7 +358,6 @@
         <w:t>,</w:t>
     </w:r>
 </w:p>
-%image_3%
 <w:p w:rsidR="00724D47" w:rsidRDefault="00724D47" w:rsidP="00724D47">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>

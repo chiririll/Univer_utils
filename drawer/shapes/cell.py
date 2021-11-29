@@ -3,6 +3,7 @@ from PIL import ImageFont
 from .shape import Shape
 from .pointer import Pointer
 from .ground import Ground
+from .arrow_straignt import StraightArrow
 from .arrow import Arrow
 
 
@@ -62,11 +63,26 @@ class Cell(Shape):
             ground.draw(x + self.link[0], y + self.link[1])
 
         if self.node.link:
-            link_cell = Cell(self.drawer, self.node.link, (x, y + self.cell_spacing))
-            link_cell.draw()
-
-            if not self.node.ground:
+            if type(self.node.link) is int:
                 arrow = Arrow(self.drawer)
-                arrow.draw(x + self.link[0], y + self.link[1], x + self.link[0], link_cell.pos[1], 0)
+                arrow.draw(
+                    x + self.link[0], y + self.link[1],
+                    x + self.size[0], y - self.cell_spacing + self.size[1],
+                    self.link[0] * 1.7,
+                    ptr_type=3
+                )
+            else:
+                link_cell = Cell(self.drawer, self.node.link, (x, y + self.cell_spacing))
+                link_cell.draw()
 
-
+                if self.node.depth:
+                    arrow = Arrow(self.drawer)
+                    arrow.draw(
+                        x + self.link[0], y + self.link[1],
+                        x + 10, y + self.cell_spacing * self.node.depth,
+                        -self.link[0] * 1.7,
+                        ptr_type=7
+                    )
+                elif not self.node.ground:
+                    arrow = StraightArrow(self.drawer)
+                    arrow.draw(x + self.link[0], y + self.link[1], x + self.link[0], link_cell.pos[1])

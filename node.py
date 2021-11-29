@@ -8,3 +8,4 @@ class Node:
         self.ptr = kwargs.get('ptr', False)
         self.ground = kwargs.get('ground', False)
         self.tmp = kwargs.get('tmp', False)
+        self.depth = kwargs.get('depth', None)

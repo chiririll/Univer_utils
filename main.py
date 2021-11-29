@@ -29,40 +29,55 @@ def main(rels: str):
 
     document.add_step('T1', image_0=img0, image_1=img1)
 
+    max_depth = 0
+    ptr = None
     for rel_id, rel in enumerate(rels):
-        print(f"Relation #{rel_id} ({rel[0]}, {rel[1]})")
+        print(f"Relation #{rel_id} ({rel[0]} < {rel[1]})")
+
         document.add_step('T2', j=str(rel[0]), k=str(rel[1]))
+
         # Creating folder
         path = f"output/rel_{rel_id}"
         utils.mkdir(path)
 
+        # Finding bottom node
         parent = nodes[rel[0]]
         tmp = False
         while parent.link is not None:
             parent = parent.link
             tmp = True
 
+        # Incrementing count
         nodes[rel[1]].count += 1
         img0 = drawer.draw(nodes, f"{path}/0.png")
+        if ptr:
+            ptr.ptr = False
 
+        # Adding node
         parent.link = Node(ptr=True, id=rel[1], tmp=tmp)
+        ptr = parent.link
         img1 = drawer.draw(nodes, f"{path}/1.png")
 
+        # Displaying suc field
         parent.link.count = rel[1]
         img2 = drawer.draw(nodes, f"{path}/2.png")
 
+        # Checking complex node
         if tmp:
-            parent.link.ptr = False
-            # TODO: Draw arrows
+            parent.link.link = -1
+            img3 = drawer.draw(nodes, f"{path}/3.png")
+
+            nodes[rel[0]].depth = img3['depth']
+            img4 = drawer.draw(nodes, f"{path}/4.png")
+
+            nodes[rel[0]].depth = None
 
             # Swapping nodes
             t = nodes[rel[0]].link
             nodes[rel[0]].link = parent.link
             nodes[rel[0]].link.link = t
             parent.link = None
-            img3 = drawer.draw(nodes, f"{path}/3.png")
             parent.ground = True
-            img4 = drawer.draw(nodes, f"{path}/4.png")
         else:
             parent.link.ground = True
             img3 = drawer.draw(nodes, f"{path}/3.png")
@@ -70,18 +85,25 @@ def main(rels: str):
             parent.ground = False
             img4 = drawer.draw(nodes, f"{path}/4.png")
 
-            parent.link.ptr = False
+            # parent.link.ptr = False
 
-        document.add_step(
-            'T3',
-            j=str(rel[0]), k=str(rel[1]),
-            image_0=img0,
-            image_1=img1,
-            image_2=img2,
-            image_3=img3,
-            image_4=img4,
-        )
+        params = {
+            'j': str(rel[0]), 'k': str(rel[1]),
+            'count_k': str(nodes[rel[1]].count - 1), 'count_k_inc': str(nodes[rel[1]].count),
+            'image_0': img0,
+            'image_1': img1,
+            'image_2': img2,
+            'image_3': img3,
+            'image_4': img4,
+        }
 
+        if img4['depth'] > max_depth or rel_id < 2:
+            document.add_step('T3', **params)
+            max_depth = img4['depth']
+        else:
+            document.add_step('T3_min', **params)
+
+    document.add_step('T2_null')
     document.save()
 
 

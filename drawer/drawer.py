@@ -1,5 +1,6 @@
 from PIL import Image, ImageFont, ImageDraw
 
+from node import Node
 from . import shapes
 
 
@@ -12,7 +13,7 @@ def calc_depth(nodes: list):
     max = 0
     for node in nodes:
         cur = 0
-        while node.link is not None:
+        while type(node.link) is Node:
             node = node.link
             cur += 1
         if cur > max:
@@ -21,7 +22,8 @@ def calc_depth(nodes: list):
 
 
 def draw(nodes: list, path: str):
-    size = (width, height + height_delta * calc_depth(nodes))
+    depth = calc_depth(nodes)
+    size = (width, height + height_delta * depth)
 
     img = Image.new("RGB", size, "#ffffff")
     drawer = ImageDraw.ImageDraw(img)
@@ -34,7 +36,7 @@ def draw(nodes: list, path: str):
     drawer.text((14, 75), "QLINK[k]", "#000000", font)
     drawer.text((31, 95), "TOP[k]", "#000000", font)
 
-    for i in range(3):
+    for i in range(depth):
         drawer.text((45, 158 + 100*i), "SUC", "#000000", font)
         drawer.text((40, 187 + 100*i), "NEXT", "#000000", font)
 
@@ -43,4 +45,4 @@ def draw(nodes: list, path: str):
         cell.draw()
 
     img.save(path)
-    return {'path': path, 'size': size}
+    return {'path': path, 'size': size, 'depth': depth}

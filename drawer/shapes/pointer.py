@@ -6,7 +6,7 @@ from .shape import Shape
 class Pointer(Shape):
     color = "#000000"
     width = 2
-    length = 15
+    length = 10
     font_size = 14
 
     def __init__(self, drawer, **kwargs):
@@ -20,4 +20,4 @@ class Pointer(Shape):
         self.drawer.line((x, y, x-self.length, y-self.length), self.color, self.width)
 
         font = ImageFont.truetype("src/timesnewroman.ttf", self.font_size)
-        self.drawer.text((x-self.length-self.font_size, y-self.length-self.font_size), 'P', self.color, font)
+        self.drawer.text((x-self.length-self.font_size+5, y-self.length-self.font_size), 'P', self.color, font)

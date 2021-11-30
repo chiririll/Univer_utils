@@ -1,8 +1,12 @@
 import zipfile
 
+import utils
+
 
 class Document:
     def __init__(self, path):
+        # Creating empty doc file
+        utils.copy_file("src/empty_doc/Empty.doc", path)
         self.container = zipfile.ZipFile(path, mode='a')
 
         # Files
@@ -66,7 +70,7 @@ class Document:
                 img_id = self.add_image(val['path'])
                 val = self.__get_image_xml(img_id, val['size'])
 
-            step_xml = step_xml.replace(f"%{name}%", val)
+            step_xml = step_xml.replace(f"%{name}%", str(val))
 
         # Adding step to document
         self.document.append(step_xml)

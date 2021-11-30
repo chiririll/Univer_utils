@@ -1,0 +1,101 @@
+<w:p w:rsidR="00311D58" w:rsidRDefault="00311D58" w:rsidP="00311D58">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>T</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">4. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">[Поиск </w:t>
+    </w:r>
+    <w:r w:rsidRPr="009E0F1C">
+        <w:t>нулей</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>.] (К этому моменту завершена фаза ввода и входная информация преобразована в машинное представление, показанное на рис</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>унке выше</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">. Производим теперь начальную установку очереди вывода, которая связывается по полю </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">.) </w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00311D58" w:rsidRDefault="00311D58" w:rsidP="00311D58">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">R </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">← 0, </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">[0] ← 0. </w:t>
+    </w:r>
+</w:p>

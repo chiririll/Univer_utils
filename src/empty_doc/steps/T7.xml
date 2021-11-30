@@ -1,0 +1,131 @@
+<w:p w:rsidR="009145A9" w:rsidRDefault="009145A9" w:rsidP="009145A9">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>T</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">7. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">[Исключение из очереди.] </w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="009145A9" w:rsidRPr="00DE3DEB" w:rsidRDefault="009145A9" w:rsidP="009145A9">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="00DE3DEB">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7863">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>F</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00DE3DEB">
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7863">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00DE3DEB">
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7863">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>F</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00DE3DEB">
+        <w:t>]) = (</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7863">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>F</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00DE3DEB">
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7863">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>QLINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00DE3DEB">
+        <w:t>[%F%] = %qlink_F%).</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="009145A9" w:rsidRDefault="009145A9" w:rsidP="009145A9">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>Очередь вывода</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00414A39" w:rsidRPr="0080113F" w:rsidRDefault="00414A39" w:rsidP="00414A39">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>F</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>→ </w:t>
+    </w:r>
+    <w:r w:rsidRPr="0080113F">
+        <w:t xml:space="preserve">%queue%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t> ←</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00BE2F7B">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>R</w:t>
+    </w:r>
+</w:p>

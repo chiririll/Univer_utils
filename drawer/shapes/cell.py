@@ -8,16 +8,17 @@ from .arrow import Arrow
 
 
 class Cell(Shape):
-    size = (30, 60)
+    size = (30, 40)
     width = 1
     color = "#000000"
+    selection_color = "#00dd00"
 
-    k_pos = (10, -20)
-    count_pos = (10, 5)
+    k_pos = (12, -20)
+    count_pos = (12, 3)
     font_size = 14
-    cell_spacing = 100
+    cell_spacing = 70
 
-    link = (15, 45)
+    link = (15, 30)
 
     def __init__(self, drawer, node, pos):
         super().__init__(drawer)
@@ -36,8 +37,18 @@ class Cell(Shape):
         self.drawer.line((x, y + self.size[1], x + self.size[0], y + self.size[1]), self.color, self.width)
 
     def __draw_count(self, x, y):
-        if self.node.count is not None:
-            self.drawer.text((x + self.count_pos[0], y + self.count_pos[1]), str(self.node.count), self.color, self.font)
+        if self.node.count is None:
+            return
+
+        text = self.node.count
+        if self.node.qlink:
+            text = self.node.qlink
+            self.drawer.rectangle(
+                (x + self.count_pos[0] - 1, y + self.count_pos[1],
+                 x + self.count_pos[0] + self.font_size * 0.5, y + self.count_pos[1] + self.font_size),
+                self.selection_color
+            )
+        self.drawer.text((x + self.count_pos[0], y + self.count_pos[1]), str(text), self.color, self.font)
 
     def __draw_index(self, x, y):
         if self.node.k is not None:

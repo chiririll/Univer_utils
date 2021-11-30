@@ -3,7 +3,7 @@ from .shape import Shape
 
 class Ground(Shape):
 
-    length = 40
+    length = 25
     width = 1
     radius = 3
     color = "#000000"
@@ -18,4 +18,4 @@ class Ground(Shape):
 
         y = y + self.length
         for i in range(3):
-            self.drawer.line((x - 3*i - 3, y - 5*i, x + 3*i + 3, y - 5*i), self.color, self.width)
+            self.drawer.line((x - 2*i - 3, y - 3*i, x + 2*i + 3, y - 3*i), self.color, self.width)

@@ -22,9 +22,9 @@ class Sort:
         self.n = 9
 
         # Queue
-        # self.queue = deque()
-        self.f = 0
-        self.r = 0
+        self.queue = deque()
+        # self.f = 0
+        # self.r = 0
 
         # Answer
         self.steps = []
@@ -34,14 +34,7 @@ class Sort:
         self.max_depth = 0
 
     def __get_queue(self):
-        q = self.f
-        queue = []
-        while q is not None:
-            queue.append(q)
-            for i in range(self.nodes[q].count - 1):
-                queue.append(q)
-            q = self.nodes[q].qlink if q is not self.r else None
-        return ' → '.join(list(map(str, queue)))
+        return ' → '.join(list(map(str, self.queue)))
 
     def clear_folder(self):
         # Cleaning folders
@@ -149,17 +142,17 @@ class Sort:
 
         self.document.add_step('T4')
 
-        self.r = 0
         self.nodes[0].qlink = 0
 
         for k in range(1, 10):
+            r = self.queue[-1] if len(self.queue) > 0 else 0
             step = 'T4_true' if self.nodes[k].count == 0 else 'T4_false'
-            self.document.add_step(step, k=k, R=self.r, count_k=self.nodes[k].count)
+            self.document.add_step(step, k=k, R=r, count_k=self.nodes[k].count)
             if self.nodes[k].count == 0:
-                self.nodes[self.r].qlink = k
-                self.r = k
+                self.nodes[r].qlink = k
+                self.queue.append(k)
 
-        self.f = self.nodes[0].qlink
+        # f = self.nodes[0].qlink
 
         img = drawer.draw(self.nodes, "output/images/_P2/T4.png")
         self.document.add_step('T4_final', image=img, qlink_0=self.nodes[0].qlink, queue=self.__get_queue())
@@ -170,17 +163,20 @@ class Sort:
         print("T5.\t Adding to answer")
         self.steps.append('T5')
 
-        self.answer.append(self.f)
-        if self.f == 0:
-            self.document.add_step('T5_true', F=self.f)
+        f = self.queue[0]
+        if type(f) is str:
+            f = 0
+        self.answer.append(f)
+        if f == 0:
+            self.document.add_step('T5_true', F=f)
             self.T8()
             return
 
         self.n -= 1                             # N--
-        self.p.move(self.nodes[self.f].link)    # P <- TOP[F]
+        self.p.move(self.nodes[f].link)    # P <- TOP[F]
 
         img = drawer.draw(self.nodes, "output/images/_P2/T5.png")
-        self.document.add_step('T5_false', F=self.f, N=self.n + 1, N_dec=self.n, image=img)
+        self.document.add_step('T5_false', F=f, N=self.n + 1, N_dec=self.n, image=img)
 
         self.T6()
 
@@ -193,39 +189,38 @@ class Sort:
             self.T7()
             return
 
+        r = self.queue[-1]
         params = {
             'suc_p': self.p.get_suc(),
             'count_suc_p': self.nodes[self.p.get_suc()].count,
             'count_suc_p_dec': self.nodes[self.p.get_suc()].count - 1,
-            'R': self.r,
+            'R': r,
         }
-
-        self.nodes[self.p.get_suc()].count -= 1             # COUNT[SUC(P)] -= 1
+        self.document.add_step('T6_false', **params)
+        self.nodes[self.p.get_suc()].count -= 1         # COUNT[SUC(P)] -= 1
 
         if self.nodes[self.p.get_suc()].count == 0:
-            self.nodes[self.r].qlink = self.p.get_suc()     # QLINK[R] <- SUC(P)
-            self.r = self.p.get_suc()                       # R <- SUC(P)
+            self.nodes[r].qlink = self.p.get_suc()      # QLINK[R] <- SUC(P)
+            self.queue.append(self.p.get_suc())         # R <- SUC(P)
+            self.document.add_step('T6_false_zero', **params, queue=self.__get_queue())
 
-        self.nodes[self.r].qlink = self.p.get_suc()         # QLINK[R] <- SUC(P)
-        self.r = self.p.get_suc()                           # R <- SUC(P)
-
-        self.p.next()                                       # P <- NEXT(P)
+        self.p.next()                                   # P <- NEXT(P)
 
         img = drawer.draw(self.nodes, "output/images/_P2/T6.png")
-        self.document.add_step('T6_false', **params, image=img, queue=self.__get_queue())
+        self.document.add_step('T6_false_end', **params, image=img, queue=self.__get_queue())
         self.T6()
 
     def T7(self):
         print("T7.\t Excluding from queue")
         self.steps.append('T7')
 
-        # if len(self.queue) == 0:
-        #     self.queue.append(0)
+        f = self.queue.popleft()
 
-        f = self.f
-        if self.nodes[f].count == 0:
-            self.f = self.nodes[self.f].qlink   # F <- QLINK[F]
-        self.document.add_step('T7', queue=self.__get_queue(), F=f, qlink_F=self.nodes[f].qlink)
+        if len(self.queue) == 0:
+            self.queue.append("0, 5")
+
+        qlink_f = self.nodes[f].qlink
+        self.document.add_step('T7', queue=self.__get_queue(), F=f, qlink_F=qlink_f if qlink_f else 0)
         self.T5()
 
     def T8(self):

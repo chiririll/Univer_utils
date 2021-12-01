@@ -113,13 +113,13 @@
         <w:t>F</w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
-        <w:t>→ </w:t>
+        <w:t>→</w:t>
     </w:r>
     <w:r w:rsidRPr="0080113F">
-        <w:t xml:space="preserve">%queue%</w:t>
+        <w:t xml:space="preserve"> %queue% </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
-        <w:t> ←</w:t>
+        <w:t>←</w:t>
     </w:r>
     <w:r w:rsidRPr="00BE2F7B">
         <w:rPr>

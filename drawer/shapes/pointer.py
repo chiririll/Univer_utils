@@ -19,5 +19,5 @@ class Pointer(Shape):
 
         self.drawer.line((x, y, x-self.length, y-self.length), self.color, self.width)
 
-        font = ImageFont.truetype("src/timesnewroman.ttf", self.font_size)
+        font = ImageFont.truetype("/times.ttf", self.font_size)
         self.drawer.text((x-self.length-self.font_size+5, y-self.length-self.font_size), 'P', self.color, font)

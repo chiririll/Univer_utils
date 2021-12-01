@@ -25,7 +25,7 @@ class Cell(Shape):
 
         self.node = node
         self.pos = pos
-        self.font = ImageFont.truetype("src/timesnewroman.ttf", self.font_size)
+        self.font = ImageFont.truetype("/times.ttf", self.font_size)
 
     def __draw_box(self, x, y):
         self.drawer.line((x, y, x, y + self.size[1]), self.color, self.width)
@@ -37,7 +37,7 @@ class Cell(Shape):
         self.drawer.line((x, y + self.size[1], x + self.size[0], y + self.size[1]), self.color, self.width)
 
     def __draw_count(self, x, y):
-        if self.node.count is None:
+        if self.node.count is None and self.node.qlink is None:
             return
 
         text = self.node.count

@@ -19,8 +19,7 @@ class Document:
         self.__saved = False
 
     def __del__(self):
-        if not self.__saved:
-            self.save(delete=False)
+        self.save()
 
     def __get_image_xml(self, rel_id: int, size: tuple = ('467.25pt', '300pt')):
         path = f"src/empty_doc/parts/"
@@ -45,7 +44,10 @@ class Document:
 
         return xml_image
 
-    def save(self, delete=True):
+    def save(self):
+        if self.__saved:
+            return
+
         with open("src/empty_doc/document.xml", encoding='UTF-8') as f:
             document = f.read().replace("%_content_%", '\n'.join(self.document))
         with open("src/empty_doc/document.xml.rels", encoding='UTF-8') as f:
@@ -56,8 +58,7 @@ class Document:
         self.container.close()
 
         self.__saved = True
-        if delete:
-            del self
+        del self
 
     def add_step(self, step: str, **kwargs):
         # Reading step xml file

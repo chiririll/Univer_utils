@@ -15,7 +15,7 @@ def draw(nodes: list, path: str):
     img = Image.new("RGB", size, "#ffffff")
     drawer = ImageDraw.ImageDraw(img)
 
-    font = ImageFont.truetype("src/timesnewroman.ttf", 14)
+    font = ImageFont.truetype("/timesi.ttf", 14)
 
     # Text
     drawer.text((65, 30), "k", "#000000", font)

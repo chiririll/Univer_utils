@@ -1,6 +1,6 @@
 from PIL import Image, ImageFont, ImageDraw
 
-from node import Node
+import utils
 from . import shapes
 
 
@@ -8,20 +8,8 @@ width = 700
 height = 120
 
 
-def calc_depth(nodes: list):
-    max = 0
-    for node in nodes:
-        cur = 0
-        while type(node.link) is Node:
-            node = node.link
-            cur += 1
-        if cur > max:
-            max = cur
-    return max
-
-
 def draw(nodes: list, path: str):
-    depth = calc_depth(nodes)
+    depth = utils.calc_max_depth(nodes)
     size = (width, height + shapes.Cell.cell_spacing * depth)
 
     img = Image.new("RGB", size, "#ffffff")

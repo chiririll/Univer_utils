@@ -74,19 +74,20 @@ class Cell(Shape):
             ground.draw(x + self.link[0], y + self.link[1])
 
         if self.node.link:
-            if type(self.node.link) is int:
-                arrow = Arrow(self.drawer)
-                arrow.draw(
-                    x + self.link[0], y + self.link[1],
-                    x + self.size[0], y - self.cell_spacing + self.size[1],
-                    self.link[0] * 1.7,
-                    ptr_type=3
-                )
-            else:
+            if type(self.node.link) is not int:
                 link_cell = Cell(self.drawer, self.node.link, (x, y + self.cell_spacing))
                 link_cell.draw()
 
-                if self.node.depth:
+            if self.node.depth:
+                if type(self.node.link) is int:
+                    arrow = Arrow(self.drawer)
+                    arrow.draw(
+                        x + self.link[0], y + self.link[1],
+                        x + self.size[0], y - self.cell_spacing * (self.node.depth-1) + self.size[1],
+                        self.link[0] * 1.7,
+                        ptr_type=3
+                    )
+                else:
                     arrow = Arrow(self.drawer)
                     arrow.draw(
                         x + self.link[0], y + self.link[1],
@@ -94,6 +95,6 @@ class Cell(Shape):
                         -self.link[0] * 1.7,
                         ptr_type=7
                     )
-                elif not self.node.ground:
-                    arrow = StraightArrow(self.drawer)
-                    arrow.draw(x + self.link[0], y + self.link[1], x + self.link[0], link_cell.pos[1])
+            elif not self.node.ground:
+                arrow = StraightArrow(self.drawer)
+                arrow.draw(x + self.link[0], y + self.link[1], x + self.link[0], link_cell.pos[1])

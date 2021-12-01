@@ -97,12 +97,14 @@ class Sort:
         # Checking complex node
         if parent is not self.nodes[rel[0]]:
             parent.link.link = -1
+            parent.link.depth = utils.calc_depth(self.nodes[rel[0]])
             img3 = drawer.draw(self.nodes, f"{path}/3.png")
 
-            self.nodes[rel[0]].depth = img3['depth']
+            self.nodes[rel[0]].depth = utils.calc_depth(self.nodes[rel[0]])
             img4 = drawer.draw(self.nodes, f"{path}/4.png")
 
             self.nodes[rel[0]].depth = None
+            parent.link.depth = None
 
             # Swapping nodes
             t = self.nodes[rel[0]].link
@@ -133,13 +135,14 @@ class Sort:
         self.steps.append('T4')
 
         self.document.add_step('T4')
-        self.queue.append(0)
         for k in range(1, 10):
             step = 'T4_true' if self.nodes[k].count == 0 else 'T4_false'
-            self.document.add_step(step, k=k, R=self.queue[-1], count_k=self.nodes[k].count)
+            self.document.add_step(step, k=k, R=0, count_k=self.nodes[k].count)
             if self.nodes[k].count == 0:
-                self.nodes[self.queue[-1]].qlink = k
+                self.nodes[0].qlink = k
                 self.queue.append(k)            # R
+
+        self.queue.append(0)    # F
         img = drawer.draw(self.nodes, "output/images/_P2/T4.png")
         self.document.add_step('T4_final', image=img, qlink_0=self.nodes[0].qlink, queue=self.__get_queue())
 

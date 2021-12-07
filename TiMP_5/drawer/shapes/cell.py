@@ -7,6 +7,7 @@ class Cell(Shape):
     # Sizes
     size = (150, 50)
     spacing = 30
+    padding = (30, 30)
     w = size[0]
     h = size[1]
 
@@ -29,8 +30,8 @@ class Cell(Shape):
         self.cords = cords
         self.el = matrix.get(cords)
 
-        self.x = cords[1] * self.w + cords[1] * self.spacing
-        self.y = cords[0] * self.h + cords[0] * self.spacing
+        self.x = self.padding[1] + cords[1] * self.w + cords[1] * self.spacing
+        self.y = self.padding[0] + cords[0] * self.h + cords[0] * self.spacing
         self.pos = (self.x, self.y)
 
     def __draw_box(self):

@@ -11,6 +11,11 @@ def mkdir(path: str):
         os.makedirs(path)
 
 
+def check_path(path: str):
+    """ Create all folders """
+    mkdir('/'.join(path.split('/')[:-1]))
+
+
 def clear_folder(path: str):
     for f in os.listdir(path):
         f = os.path.join(path, f)

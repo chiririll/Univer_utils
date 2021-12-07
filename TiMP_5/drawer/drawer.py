@@ -1,11 +1,14 @@
 import svgwrite
 
 import shapes
+from TiMP_5 import utils, word_parser
 
 
-def draw(path: str, matrix: dict, pointers: list):
+def draw(filename: str, matrix: dict, pointers: list):
+    path = f"output/images/{filename}.svg"
+    utils.check_path(path)
 
-    dwg = svgwrite.Drawing(path)
+    dwg = svgwrite.Drawing(path, (1000, 500))
 
     # Edge elements
     for i in range(1, 5):
@@ -15,9 +18,10 @@ def draw(path: str, matrix: dict, pointers: list):
     for cord in matrix.keys():
         shapes.Cell(dwg, matrix, cord).draw()
 
-    # TODO
-
     dwg.save()
+
+    # Converting to emf
+    word_parser.export_emf(path)
 
 
 if __name__ == "__main__":
@@ -29,4 +33,4 @@ if __name__ == "__main__":
         (4, 3): -60,
         (4, 1): -30
     }
-    draw("../output/test.svg", matrix, [])
+    draw("test", matrix, [])

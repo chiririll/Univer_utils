@@ -1,6 +1,6 @@
 from PIL import Image, ImageFont, ImageDraw
 
-import utils
+from .. import utils
 from . import shapes
 
 
@@ -24,8 +24,8 @@ def draw(nodes: list, path: str):
     drawer.text((31, 84), "TOP[k]", "#000000", font)
 
     for i in range(depth):
-        drawer.text((45, 53 + shapes.Cell.cell_spacing * (i+1)), "SUC", "#000000", font)
-        drawer.text((40, 73 + shapes.Cell.cell_spacing * (i+1)), "NEXT", "#000000", font)
+        drawer.text((45, 53 + shapes.Cell.cell_spacing * (i + 1)), "SUC", "#000000", font)
+        drawer.text((40, 73 + shapes.Cell.cell_spacing * (i + 1)), "NEXT", "#000000", font)
 
     for node in nodes:
         cell = shapes.Cell(drawer, node, (60 * node.k + 110, 50))

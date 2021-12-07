@@ -1,6 +1,6 @@
 import zipfile
 
-import utils
+from TiMP_4 import utils
 
 
 class Document:

@@ -1,14 +1,9 @@
 import os
 
-from node import Node
 
-
-def parse_rels(s: str):
-    rels = []
-    for t in s.replace(' ', '').split(','):
-        parts = t.split('<')
-        rels.append((int(parts[0]), int(parts[1])))
-    return rels
+def parse_task(task: str) -> dict:
+    # TODO
+    return task
 
 
 def mkdir(path: str):
@@ -33,20 +28,3 @@ def copy_file(src: str, dst: str):
 
     f_dst.close()
     f_src.close()
-
-
-def calc_max_depth(nodes: list) -> int:
-    max = 0
-    for node in nodes:
-        cur = calc_depth(node)
-        if cur > max:
-            max = cur
-    return max
-
-
-def calc_depth(node: Node) -> int:
-    depth = 0
-    while type(node.link) is Node:
-        node = node.link
-        depth += 1
-    return depth

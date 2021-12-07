@@ -3,11 +3,20 @@ import utils
 
 class Lab3:
     def __init__(self, task):
+        task = utils.parse_task(task)
+
         # Matrix
-        self.matrix = utils.parse_task(task)
+        self.matrix = task['matrix']
+        self.pivot = task['pivot']
+
+        # Variables
+        self.pointers = []
 
         # Answers
         self.steps = []
+
+    def run(self):
+        pass
 
     def S1(self):
         print("S1: Initialization")

@@ -12,6 +12,10 @@ def draw(path: str, matrix: dict, pointers: list):
         shapes.Cell(dwg, matrix, (i, 0)).draw()
         shapes.Cell(dwg, matrix, (0, i)).draw()
 
+    # TODO
+
+    dwg.save()
+
 
 if __name__ == "__main__":
     matrix = {
@@ -22,4 +26,4 @@ if __name__ == "__main__":
         (4, 3): -60,
         (4, 1): -30
     },
-    draw("output/test.svg", matrix, [])
+    draw("../output/test.svg", matrix, [])

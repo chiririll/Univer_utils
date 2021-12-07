@@ -12,7 +12,7 @@ class Cell(Shape):
 
     # Colors
     col_line = "#000000"
-    col_fill = "#aaaaaa"
+    col_fill = "#bbbbbb"
     col_text = "#000000"
 
     # Text
@@ -44,7 +44,35 @@ class Cell(Shape):
             self.drawer.add(Line((x, self.y + self.h // 2), (x, self.y + self.h), stroke=self.col_line))
 
     def __paint_box(self):
-        pass
+        stroke = 1
+        rects = []
+
+        rects.append((
+            (self.x + self.w // 3 * 2 + stroke, self.y + self.h // 2 + stroke),
+            (self.w // 3 - stroke*2, self.h // 2 - stroke*2)
+        ))
+
+        if self.cords[0] == 0:
+            rects.append((
+                (self.x + self.w // 3 + stroke, self.y + self.h // 2 + stroke),
+                (self.w // 3 - stroke*2, self.h // 2 - stroke*2)
+            ))
+            rects.append((
+                (self.x + stroke, self.y + stroke),
+                (self.w // 2 - stroke*2, self.h // 2 - stroke*2)
+            ))
+        else:
+            rects.append((
+                (self.x + stroke, self.y + self.h // 2 + stroke),
+                (self.w // 3 - stroke*2, self.h // 2 - stroke*2)
+            ))
+            rects.append((
+                (self.x + self.w // 2 + stroke, self.y + stroke),
+                (self.w // 2 - stroke * 2, self.h // 2 - stroke * 2)
+            ))
+
+        for rect in rects:
+            self.drawer.add(Rect(*rect, fill=self.col_fill))
 
     def __draw_text(self, text, t_type: str):
         text = str(text)

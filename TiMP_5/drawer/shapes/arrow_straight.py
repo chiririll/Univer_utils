@@ -1,5 +1,4 @@
-from svgwrite.shapes import Ellipse, Line
-
+from svgwrite.shapes import Ellipse, Line, Polyline
 from .shape import Shape
 
 
@@ -23,4 +22,8 @@ class StraightArrow(Shape):
     def draw(self):
         self.drawer.add(Ellipse(self.src, self.radius, fill=self.color))
         self.drawer.add(Line(self.src, self.dst, stroke=self.color, stroke_width=self.width))
-        # TODO: Arrow
+
+        angle = self.get_angle((self.src, self.dst), ((0, 0), (0, -1)))
+        self.drawer.add(Polyline([(self.dst[0] - 5, self.dst[1] + 5), self.dst, (self.dst[0] + 5, self.dst[1] + 5)],
+                                 stroke=self.color, stroke_width=self.width,
+                                 transform=f"rotate({angle}, {self.dst[0]}, {self.dst[1]})"))

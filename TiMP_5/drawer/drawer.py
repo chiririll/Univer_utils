@@ -8,7 +8,7 @@ def draw(filename: str, matrix: dict, pointers: list):
     path = f"output/images/{filename}.svg"
     utils.check_path(path)
 
-    dwg = svgwrite.Drawing(path, (1000, 500))
+    dwg = svgwrite.Drawing(path, (1000, 500), version="1.2")
 
     # Edge elements
     for i in range(1, 5):

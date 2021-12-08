@@ -1,5 +1,6 @@
 from svgwrite.shapes import Rect, Line
 
+from .arrow import Arrow
 from .arrow_straight import StraightArrow
 from .shape import Shape
 
@@ -22,11 +23,11 @@ class Cell(Shape):
     arrow_up = (w // 4 * 3, h // 4)
 
     # Text
-    text_types = {
-        'row': (15, 43),
-        'col': (70, 43),
-        'val': (115, 43)
-    }
+    text_cols = [
+        'row',
+        'col',
+        'val'
+    ]
 
     def __init__(self, drawer, matrix, cords):
         self.matrix = matrix
@@ -42,58 +43,40 @@ class Cell(Shape):
     def __draw_box(self):
         self.drawer.add(Rect(self.pos, self.size, fill="#ffffff", stroke=self.col_line))
 
-        self.drawer.add(Line((self.x + self.w // 2, self.y), (self.x + self.w // 2, self.y + self.h // 2), stroke=self.col_line))
-        self.drawer.add(Line((self.x, self.y + self.h // 2), (self.x + self.w, self.y + self.h // 2), stroke=self.col_line))
+        for i in range(2):
+            fill = "none"
+            if self.cords[0] == 0 and i != 1 or self.cords[1] == 0 and i != 0:
+                fill = self.col_fill
+            self.drawer.add(Rect(
+                (self.x + self.w // 2 * i, self.y),
+                (self.w // 2, self.h // 2),
+                fill=fill, stroke=self.col_line)
+            )
 
-        for i in range(1, 3):
-            x = self.x + self.w // 3 * i
-            self.drawer.add(Line((x, self.y + self.h // 2), (x, self.y + self.h), stroke=self.col_line))
-
-    def __paint_box(self):
-        stroke = 1
-        rects = []
-
-        rects.append((
-            (self.x + self.w // 3 * 2 + stroke, self.y + self.h // 2 + stroke),
-            (self.w // 3 - stroke*2, self.h // 2 - stroke*2)
-        ))
-
-        if self.cords[0] == 0:
-            rects.append((
-                (self.x + self.w // 3 + stroke, self.y + self.h // 2 + stroke),
-                (self.w // 3 - stroke*2, self.h // 2 - stroke*2)
-            ))
-            rects.append((
-                (self.x + stroke, self.y + stroke),
-                (self.w // 2 - stroke*2, self.h // 2 - stroke*2)
-            ))
-        else:
-            rects.append((
-                (self.x + stroke, self.y + self.h // 2 + stroke),
-                (self.w // 3 - stroke*2, self.h // 2 - stroke*2)
-            ))
-            rects.append((
-                (self.x + self.w // 2 + stroke, self.y + stroke),
-                (self.w // 2 - stroke * 2, self.h // 2 - stroke * 2)
-            ))
-
-        for rect in rects:
-            self.drawer.add(Rect(*rect, fill=self.col_fill))
+        for i in range(3):
+            fill = "none"
+            if self.cords[1] == 0 and i != 1 or self.cords[0] == 0 and i != 0:
+                fill = self.col_fill
+            self.drawer.add(Rect(
+                (self.x + self.w // 3 * i, self.y + self.h // 2),
+                (self.w // 3, self.h // 2),
+                fill=fill, stroke=self.col_line)
+            )
 
     def __draw_text(self, text, t_type: str):
         text = str(text)
         text_style = "font-size:%ipt; font-family:%s" % (14, "Times New Roman")
-        # TODO: center
-        pos = (self.x + self.text_types[t_type][0], self.y + self.text_types[t_type][1])
-        self.drawer.add(self.drawer.text(text, pos, style=text_style))
-        pass
+
+        col = self.text_cols.index(t_type)
+        pos = (self.x + self.w // 3 * col + self.w // 6, self.y + self.h // 2 + self.h // 4 + 2)
+        self.drawer.add(self.drawer.text(text, pos, style=text_style, alignment_baseline="middle", text_anchor="middle"))
 
     def draw(self):
         self.__draw_box()
 
         if not self.el:
             # Edge cell
-            self.__paint_box()
+            # self.__paint_box()
             self.__draw_text(-1, 'row' if self.cords[0] == 0 else 'col')
         else:
             # Regular cell
@@ -101,4 +84,5 @@ class Cell(Shape):
             self.__draw_text(self.cords[1], 'col')
             self.__draw_text(self.el, 'val')
 
-        StraightArrow(self.drawer, self._get_c('arrow_left'), self._get_c('arrow_up')).draw()
+        # StraightArrow(self.drawer, self._get_c('arrow_left'), self._get_c('arrow_up')).draw()
+        Arrow(self.drawer, self._get_c('arrow_left'), self._get_c('arrow_up')).draw()

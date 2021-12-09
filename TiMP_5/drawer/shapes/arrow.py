@@ -4,10 +4,8 @@ from .shape import Shape
 
 
 class Arrow(Shape):
-    point_radius = (3, 3)
-    width = 2
-    color = "#000000"
 
+    point_radius = (3, 3)
     shift = (50, 30)
 
     def __init__(self, drawer, src: tuple, dst: tuple):
@@ -34,10 +32,10 @@ class Arrow(Shape):
             (self.x1, self.y1 - self.shift[1]),
             (self.x2, self.y2 - self.shift[1]),
 
-            (self.x2 + self.shift[0] // 2, self.y2 - self.shift[1]),
-            (self.x2 + self.shift[0], self.y2 - self.shift[1] // 3 * 2),
-            (self.x2 + self.shift[0], self.y2 - self.shift[1] // 3),
-            (self.x2 + self.shift[0] // 2, self.y2),
+            (self.x2 + self.shift[0] // 2, self.y1 - self.shift[1]),
+            (self.x2 + self.shift[0], self.y1 - self.shift[1] // 3 * 2),
+            (self.x2 + self.shift[0], self.y1 - self.shift[1] // 3),
+            (self.x2 + self.shift[0] // 2, self.y1),
             self.dst
         ]
         self.drawer.add(Polyline(points, stroke=self.color, stroke_width=self.width, fill="none"))

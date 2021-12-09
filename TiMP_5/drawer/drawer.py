@@ -1,14 +1,19 @@
+from random import randint
+
 import svgwrite
 
 import shapes
 from TiMP_5 import utils, word_parser
 
 
+Size = (1000, 500)
+
+
 def draw(filename: str, matrix: dict, pointers: list):
     path = f"output/images/{filename}.svg"
     utils.check_path(path)
 
-    dwg = svgwrite.Drawing(path, (1000, 500), version="1.2")
+    dwg = svgwrite.Drawing(path, Size)
 
     # Edge elements
     for i in range(1, 5):
@@ -17,6 +22,9 @@ def draw(filename: str, matrix: dict, pointers: list):
 
     for cord in matrix.keys():
         shapes.Cell(dwg, matrix, cord).draw()
+
+    for ptr in pointers:
+        shapes.Pointer(dwg, shapes.Cell.get_pos(ptr['cord']), text=ptr['label'], angle=randint(0, 360)).draw()
 
     dwg.save()
 
@@ -33,4 +41,10 @@ if __name__ == "__main__":
         (4, 3): -60,
         (4, 1): -30
     }
-    draw("test", matrix, [])
+
+    pointers = [
+        {'label': "PIVOT", 'cord': (2, 1)},
+        {'label': "PTR[i]", 'cord': (4, 1)}
+    ]
+
+    draw("test", matrix, pointers)

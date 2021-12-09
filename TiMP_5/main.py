@@ -1,4 +1,4 @@
-from TiMP5 import Lab3
+from TiMP5 import Lab5
 
 
 task = {
@@ -15,5 +15,5 @@ task = {
 
 
 if __name__ == "__main__":
-    laba = Lab3(task)
+    laba = Lab5(task)
     laba.run()

@@ -3,6 +3,12 @@ from svgwrite import Drawing
 
 
 class Shape:
+
+    text_style = "font-size:%ipt; font-family:%s" % (14, "Times New Roman")
+
+    color = "#000000"
+    width = 2
+
     def __init__(self, drawer: Drawing, **kwargs):
         self.drawer = drawer
 

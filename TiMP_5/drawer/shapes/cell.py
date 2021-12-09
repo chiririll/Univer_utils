@@ -34,9 +34,9 @@ class Cell(Shape):
         self.cords = cords
         self.el = matrix.get(cords)
 
-        self.x = self.padding[1] + cords[1] * self.w + cords[1] * self.spacing
-        self.y = self.padding[0] + cords[0] * self.h + cords[0] * self.spacing
-        self.pos = (self.x, self.y)
+        self.pos = self.get_pos(cords)
+        self.x = self.pos[0]
+        self.y = self.pos[1]
 
         super(Cell, self).__init__(drawer, pos=self.pos, arrow_left=self.arrow_left, arrow_up=self.arrow_up)
 
@@ -65,11 +65,10 @@ class Cell(Shape):
 
     def __draw_text(self, text, t_type: str):
         text = str(text)
-        text_style = "font-size:%ipt; font-family:%s" % (14, "Times New Roman")
 
         col = self.text_cols.index(t_type)
         pos = (self.x + self.w // 3 * col + self.w // 6, self.y + self.h // 2 + self.h // 4 + 2)
-        self.drawer.add(self.drawer.text(text, pos, style=text_style, alignment_baseline="middle", text_anchor="middle"))
+        self.drawer.add(self.drawer.text(text, pos, style=self.text_style, alignment_baseline="middle", text_anchor="middle"))
 
     def draw(self):
         self.__draw_box()
@@ -84,5 +83,8 @@ class Cell(Shape):
             self.__draw_text(self.cords[1], 'col')
             self.__draw_text(self.el, 'val')
 
-        # StraightArrow(self.drawer, self._get_c('arrow_left'), self._get_c('arrow_up')).draw()
-        Arrow(self.drawer, self._get_c('arrow_left'), self._get_c('arrow_up')).draw()
+    @staticmethod
+    def get_pos(cords: tuple) -> tuple:
+        x = Cell.padding[1] + cords[1] * Cell.w + cords[1] * Cell.spacing
+        y = Cell.padding[0] + cords[0] * Cell.h + cords[0] * Cell.spacing
+        return x, y

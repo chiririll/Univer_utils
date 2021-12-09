@@ -1,7 +1,7 @@
-import utils
+from TiMP_5 import utils
 
 
-class Lab3:
+class Lab5:
     def __init__(self, task):
         task = utils.parse_task(task)
 

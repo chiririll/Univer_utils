@@ -1,6 +1,6 @@
 from PIL import Image, ImageFont, ImageDraw
 
-from TiMP_4 import utils
+from TiMP_3 import utils
 from . import shapes
 
 

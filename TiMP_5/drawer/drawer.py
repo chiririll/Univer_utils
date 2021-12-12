@@ -2,8 +2,9 @@ from random import randint
 
 import svgwrite
 
-import shapes
-from TiMP_5 import utils, word_parser
+from . import shapes
+from .svg2emf import export_emf
+from . import utils
 
 
 Size = (1000, 500)
@@ -29,7 +30,9 @@ def draw(filename: str, matrix: dict, pointers: list):
     dwg.save()
 
     # Converting to emf
-    word_parser.export_emf(path)
+    export_emf(path)
+
+    return {'path': f"output/images/{filename}.emf", 'size': Size}
 
 
 if __name__ == "__main__":

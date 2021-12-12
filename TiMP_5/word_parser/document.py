@@ -1,12 +1,11 @@
+import shutil
 import zipfile
-
-from TiMP_5 import utils
 
 
 class Document:
     def __init__(self, path):
         # Creating empty doc file
-        utils.copy_file("src/empty_doc/Empty.doc", path)
+        shutil.copy("src/empty_doc/Empty.doc", path)
         self.container = zipfile.ZipFile(path, mode='a')
 
         # Files
@@ -23,7 +22,7 @@ class Document:
 
     def __get_image_xml(self, rel_id: int, size: tuple = ('467.25pt', '300pt')):
         path = f"src/empty_doc/parts/"
-        scale = 0.87     # Image scale
+        scale = 0.63     # Image scale
 
         if self.__shapetype_added:
             path += "image_min.xml"

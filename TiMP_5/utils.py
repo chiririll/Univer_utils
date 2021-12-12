@@ -23,13 +23,3 @@ def clear_folder(path: str):
             clear_folder(f)
         else:
             os.remove(f)
-
-
-def copy_file(src: str, dst: str):
-    f_src = open(src, 'rb')
-    f_dst = open(dst, 'wb')
-
-    f_dst.write(f_src.read())
-
-    f_dst.close()
-    f_src.close()

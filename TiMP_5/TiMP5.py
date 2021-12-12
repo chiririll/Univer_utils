@@ -1,9 +1,14 @@
-from TiMP_5 import utils
+import utils
+from drawer import draw
+from word_parser import Document
 
 
 class Lab5:
     def __init__(self, task):
         task = utils.parse_task(task)
+
+        # Document
+        self.document = Document("output/docs/out.doc")
 
         # Matrix
         self.matrix = task['matrix']
@@ -16,13 +21,18 @@ class Lab5:
         self.steps = []
 
     def run(self):
-        pass
+        self.S1()
 
     def S1(self):
         print("S1: Initialization")
         self.steps.append("S1")
 
-        pass
+        img1 = draw("S1_1", self.matrix, [])
+        img2 = draw("S2_2", self.matrix, [{'label': "PIVOT", 'cord': (2, 1)}])
+
+        val = self.matrix[self.pivot]
+        self.document.add_step('S1', pivot_row=self.pivot[0], pivot_col=self.pivot[1], pivot_val=val,
+                               res=1.0/val, image_1=img1, image_2=img2)
 
     def S2(self):
         print("S2: Handling axial row")

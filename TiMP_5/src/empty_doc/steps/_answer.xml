@@ -1,0 +1,24 @@
+<w:p w:rsidR="00194831" w:rsidRDefault="00194831" w:rsidP="00194831">
+    <w:r w:rsidRPr="00194831">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>Ответ:</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> Выполнена последовательность шагов алгоритма </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00194831">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>%steps%</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">. </w:t>
+    </w:r>
+    <w:r>
+        <w:t>Конечная матрица</w:t>
+    </w:r>
+</w:p>
+%matrix%

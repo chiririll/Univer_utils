@@ -1,0 +1,48 @@
+<w:p w:rsidR="009E3A70" w:rsidRDefault="009E3A70" w:rsidP="009E3A70">
+    <w:r w:rsidRPr="009E3A70">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>S</w:t>
+    </w:r>
+    <w:r w:rsidRPr="009E3A70">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>4.</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [Поиск нового столбца.]</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="009E3A70" w:rsidRDefault="009E3A70" w:rsidP="009E3A70">
+    <w:r>
+        <w:t>P0 ← LEFT(P0),</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="009E3A70" w:rsidRDefault="009E3A70" w:rsidP="009E3A70">
+    <w:r>
+        <w:t xml:space="preserve">J ← COL(P0) = </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%P0_col%</w:t>
+    </w:r>
+    <w:r>
+        <w:t>.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="009E3A70" w:rsidRDefault="009E3A70" w:rsidP="009E3A70">
+    <w:r>
+        <w:t xml:space="preserve">(J &lt; 0) = (%j% &lt; 0) = ЛОЖЬ.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00000000" w:rsidRDefault="009E3A70" w:rsidP="009E3A70">
+    <w:r>
+        <w:t>(J = J0) = (%j% = %j0%) = ЛОЖЬ.</w:t>
+    </w:r>
+</w:p>

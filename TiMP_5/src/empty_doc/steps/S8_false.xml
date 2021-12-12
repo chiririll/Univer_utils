@@ -1,0 +1,52 @@
+<w:p w:rsidR="008C72A2" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
+    <w:r w:rsidRPr="008C72A2">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>S</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008C72A2">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>8.</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [Исключение элемента I, J.]</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="008C72A2" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
+    <w:r>
+        <w:t>(UP(PTR[J]) ≠ P1) = (UP(PTR[%j%]) ≠ P1) = ЛОЖЬ, следовательно</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="008C72A2" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
+    <w:r>
+        <w:t>(UP(PTR[J]) ← UP(P1)) = (UP(PTR[%j%]) ← UP(P1)),</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="008C72A2" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
+    <w:r>
+        <w:t>LEFT(P) ← LEFT(P1),</w:t>
+    </w:r>
+</w:p>
+%image_2%
+<w:p w:rsidR="008C72A2" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
+    <w:r>
+        <w:t xml:space="preserve">AVAIL  P1,</w:t>
+    </w:r>
+</w:p>
+%image_3%
+<w:p w:rsidR="008C72A2" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
+    <w:r>
+        <w:t>P1 ← LEFT(P).</w:t>
+    </w:r>
+</w:p>
+%image_4%
+<w:p w:rsidR="00000000" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
+    <w:r>
+        <w:t>Вернуться к шагу S4.</w:t>
+    </w:r>
+</w:p>

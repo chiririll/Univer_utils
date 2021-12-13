@@ -4,7 +4,7 @@ from svgwrite import Drawing
 
 class Shape:
 
-    text_style = "font-size:%ipt; font-family:%s" % (14, "Times New Roman")
+    text_style = "font-size:%ipt; font-family:%s" % (12, "Times New Roman")
 
     color = "#000000"
     width = 2
@@ -18,7 +18,7 @@ class Shape:
 
         self.__cords = kwargs
 
-    def _get_c(self, name):
+    def get_c(self, name):
         cord = self.__cords.get(name)
         if cord:
             return self.x + cord[0], self.y + cord[1]

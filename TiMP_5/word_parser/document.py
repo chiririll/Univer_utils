@@ -5,7 +5,12 @@ import zipfile
 class Document:
     def __init__(self, path):
         # Creating empty doc file
-        shutil.copy("src/empty_doc/Empty.doc", path)
+        try:
+            shutil.copy("src/empty_doc/Empty.doc", path)
+        except PermissionError:
+            self.__saved = True
+            exit("Can't copy file! Please close it.")
+
         self.container = zipfile.ZipFile(path, mode='a')
 
         # Files
@@ -22,7 +27,7 @@ class Document:
 
     def __get_image_xml(self, rel_id: int, size: tuple = ('467.25pt', '300pt')):
         path = f"src/empty_doc/parts/"
-        scale = 0.63     # Image scale
+        scale = 1     # Image scale
 
         if self.__shapetype_added:
             path += "image_min.xml"
@@ -87,3 +92,15 @@ class Document:
         self.__r_id += 1
 
         return self.__r_id - 1
+
+    @staticmethod
+    def txt2xml(text: str) -> str:
+        """
+        Contverts multi line text to word xml
+        :param text: Text
+        :return: Formatted xml string
+        """
+        xml = ""
+        for line in text.split('\n'):
+            xml += f"<w:p><w:r><w:t>{line}</w:t></w:r></w:p>\n"
+        return xml

@@ -7,7 +7,7 @@ from .shape import Shape
 
 class Cell(Shape):
     # Sizes
-    size = (150, 50)
+    size = (90, 34)
     spacing = 30
     padding = (30, 30)
     w = size[0]
@@ -67,7 +67,7 @@ class Cell(Shape):
         text = str(text)
 
         col = self.text_cols.index(t_type)
-        pos = (self.x + self.w // 3 * col + self.w // 6, self.y + self.h // 2 + self.h // 4 + 2)
+        pos = (self.x + self.w // 3 * col + self.w // 6, self.y + self.h // 2 + self.h // 4 + 5)
         self.drawer.add(self.drawer.text(text, pos, style=self.text_style, alignment_baseline="middle", text_anchor="middle"))
 
     def draw(self):
@@ -82,6 +82,8 @@ class Cell(Shape):
             self.__draw_text(self.cords[0], 'row')
             self.__draw_text(self.cords[1], 'col')
             self.__draw_text(self.el, 'val')
+
+        Arrow(self.drawer, self.get_c('arrow_left'), self.get_c('arrow_up')).draw()
 
     @staticmethod
     def get_pos(cords: tuple) -> tuple:

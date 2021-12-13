@@ -25,5 +25,5 @@ class Pointer(Shape):
         self.drawer.add(Line((self.x, self.y - self.length), self.pos, stroke=self.color, stroke_width=self.width,
                              transform=f"rotate({self.angle}, {self.x}, {self.y})"))
 
-        self.drawer.add(self.drawer.text(self.text, self._get_c('text_c'), style=self.text_style,
+        self.drawer.add(self.drawer.text(self.text, self.get_c('text_c'), style=self.text_style,
                                          alignment_baseline="middle", text_anchor="middle"))

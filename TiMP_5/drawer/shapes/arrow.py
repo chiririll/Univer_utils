@@ -6,7 +6,7 @@ from .shape import Shape
 class Arrow(Shape):
 
     point_radius = (3, 3)
-    shift = (50, 30)
+    shift = (30, 30)
 
     def __init__(self, drawer, src: tuple, dst: tuple):
         super(Arrow, self).__init__(drawer)

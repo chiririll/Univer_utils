@@ -1,5 +1,5 @@
 from TiMP5 import Lab5
-
+import utils
 
 task = {
     'matrix': {
@@ -15,5 +15,7 @@ task = {
 
 
 if __name__ == "__main__":
+    utils.clear_folder("output/images")
+
     laba = Lab5(task)
     laba.run()

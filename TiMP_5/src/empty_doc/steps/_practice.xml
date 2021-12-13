@@ -43,69 +43,13 @@
 %image_1%
 <w:p w:rsidR="00EB42A0" w:rsidRDefault="00EB42A0" w:rsidP="00EB42A0">
     <w:r>
-        <w:t>Для эффективного выполнения операций включе</w:t>
-    </w:r>
-    <w:r>
-        <w:t>ния и исключения узлов вводится</w:t>
-    </w:r>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t xml:space="preserve"></w:t>
-    </w:r>
-    <w:r>
-        <w:t>таблица указателей PTR[j], по одному указателю на ка</w:t>
-    </w:r>
-    <w:r>
-        <w:t>ждый столбец матрицы. Благодаря</w:t>
-    </w:r>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t xml:space="preserve"></w:t>
-    </w:r>
-    <w:r>
-        <w:t>этим переменным обеспечивается возможность изменения связей</w:t>
-    </w:r>
-    <w:r>
-        <w:t xml:space="preserve"> узлов как в</w:t>
-    </w:r>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t xml:space="preserve"></w:t>
-    </w:r>
-    <w:r>
-        <w:t>горизонтальном, так и в вертикальном измерения</w:t>
-    </w:r>
-    <w:r>
-        <w:t>х. Алгоритм обрабатывает строки</w:t>
-    </w:r>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t xml:space="preserve"></w:t>
-    </w:r>
-    <w:r>
-        <w:t xml:space="preserve">матрицы последовательно </w:t>
-    </w:r>
-    <w:proofErr w:type="gramStart"/>
-    <w:r>
-        <w:t>снизу</w:t>
-    </w:r>
-    <w:r>
-        <w:t xml:space="preserve"> вверх</w:t>
-    </w:r>
-    <w:proofErr w:type="gramEnd"/>
-    <w:r>
-        <w:t>, а переменная PIV</w:t>
-    </w:r>
-    <w:r>
-        <w:t>OT указывает на осевой элемент.</w:t>
+        <w:t>Для эффективного выполнения операций включения и исключения узлов вводится таблица указателей PTR[j],</w:t>
+        <w:t xml:space="preserve"> </w:t>
+        <w:t>по одному указателю на каждый столбец матрицы. Благодаря этим переменным обеспечивается возможность</w:t>
+        <w:t xml:space="preserve"> </w:t>
+        <w:t>изменения связей узлов как в горизонтальном, так и в вертикальном измерениях.</w:t>
+        <w:t xml:space="preserve"> </w:t>
+        <w:t>Алгоритм обрабатывает строки матрицы последовательно снизу вверх, а переменная PIVOT указывает на осевой элемент.</w:t>
     </w:r>
 </w:p>
 %image_2%

@@ -18,10 +18,15 @@ class Shape:
 
         self.__cords = kwargs
 
-    def get_c(self, name):
+    def get_c(self, name, x=None, y=None, pos=None):
+        if pos:
+            x, y = pos
+        elif x is None or y is None:
+            x, y = self.x, self.y
+
         cord = self.__cords.get(name)
         if cord:
-            return self.x + cord[0], self.y + cord[1]
+            return x + cord[0], y + cord[1]
 
     def draw(self):
         pass

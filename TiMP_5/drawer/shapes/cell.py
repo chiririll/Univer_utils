@@ -81,9 +81,13 @@ class Cell(Shape):
             # Regular cell
             self.__draw_text(self.cords[0], 'row')
             self.__draw_text(self.cords[1], 'col')
-            self.__draw_text(self.el, 'val')
+            self.__draw_text(self.el.val, 'val')
 
-        Arrow(self.drawer, self.get_c('arrow_left'), self.get_c('arrow_up')).draw()
+            # Links
+            target = self.get_pos(self.el.left)
+            StraightArrow(self.drawer, self.get_c('arrow_left'), (target[0] + self.w, target[1] + self.arrow_left[1])).draw()
+            target = self.get_pos(self.el.up)
+            StraightArrow(self.drawer, self.get_c('arrow_up'), (target[0] + self.arrow_up[0], target[1] + self.h)).draw()
 
     @staticmethod
     def get_pos(cords: tuple) -> tuple:

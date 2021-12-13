@@ -24,6 +24,8 @@ class StraightArrow(Shape):
         self.drawer.add(Line(self.src, self.dst, stroke=self.color, stroke_width=self.width))
 
         angle = self.get_angle((self.src, self.dst), ((0, 0), (0, -1)))
+        if angle == 90:
+            angle = -90
         self.drawer.add(Polyline([(self.x2 - 5, self.y2 + 5), self.dst, (self.x2 + 5, self.y2 + 5)],
                                  stroke=self.color, stroke_width=self.width, fill="none",
                                  transform=f"rotate({angle}, {self.x2}, {self.y2})"))

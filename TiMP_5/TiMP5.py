@@ -72,6 +72,8 @@ class Lab5:
         print("S2: Handling axial row")
         self.steps.append("S2")
 
+        self.document.add_step('S2_')
+
         pass
 
     def S3(self):

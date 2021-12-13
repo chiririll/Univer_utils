@@ -23,6 +23,7 @@ def draw(filename: str, matrix: dict, pointers: list):
 
     for cord in matrix.keys():
         shapes.Cell(dwg, matrix, cord).draw()
+        # TODO: Draw arrows (links)
 
     for ptr in pointers:
         shapes.Pointer(dwg, shapes.Cell.get_pos(ptr['cord']), text=ptr['label'], angle=randint(0, 360)).draw()
@@ -33,21 +34,3 @@ def draw(filename: str, matrix: dict, pointers: list):
     export_emf(path)
 
     return {'path': f"output/images/{filename}.emf", 'size': Size}
-
-
-if __name__ == "__main__":
-    matrix = {
-        (1, 1): 50,
-        (2, 3): 20,
-        (2, 1): 10,
-        (4, 4): 5,
-        (4, 3): -60,
-        (4, 1): -30
-    }
-
-    pointers = [
-        {'label': "PIVOT", 'cord': (2, 1)},
-        {'label': "PTR[i]", 'cord': (4, 1)}
-    ]
-
-    draw("test", matrix, pointers)

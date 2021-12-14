@@ -1,32 +1,27 @@
-from random import randint
-
 import svgwrite
 
 from . import shapes
-from .svg2emf import export_emf
 from . import utils
-
+from .svg2emf import export_emf
 
 Size = (625, 350)
 
 
-def draw(filename: str, matrix: dict, pointers: list):
+def draw(filename: str, matrix, pointers: dict = None):
+    if pointers is None:
+        pointers = {}
     path = f"output/images/{filename}.svg"
     utils.check_path(path)
 
     dwg = svgwrite.Drawing(path, Size)
 
-    # Edge elements
-    for i in range(1, 5):
-        shapes.Cell(dwg, matrix, (i, 0)).draw()
-        shapes.Cell(dwg, matrix, (0, i)).draw()
+    # Base elements
+    for base in [*matrix.base_row, *matrix.base_col]:
+        shapes.Cell(dwg, matrix, base).draw()
 
-    for cord in matrix.keys():
-        shapes.Cell(dwg, matrix, cord).draw()
-        # TODO: Draw arrows (links)
-
-    for ptr in pointers:
-        shapes.Pointer(dwg, shapes.Cell.get_pos(ptr['cord']), text=ptr['label'], angle=randint(0, 360)).draw()
+    # Elements
+    for el in matrix:
+        shapes.Cell(dwg, matrix, el, pointers.get(el.get_cords())).draw()
 
     dwg.save()
 

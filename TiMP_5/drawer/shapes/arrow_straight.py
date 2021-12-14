@@ -5,7 +5,7 @@ from .shape import Shape
 class StraightArrow(Shape):
 
     radius = (3, 3)
-    width = 2
+    width = 1
     color = "#000000"
 
     def __init__(self, drawer, src: tuple, dst: tuple):

@@ -1,48 +1,32 @@
 import utils
+from matrix import *
 from drawer import draw
 from word_parser import Document
 
 
 class Lab5:
-    def __init__(self, task):
-        task = utils.parse_task(task)
-
+    def __init__(self, matrix: Matrix):
         # Document
         self.document = Document("output/docs/out.doc")
 
         # Matrix
-        self.matrix = task['matrix']
-        self.pivot = task['pivot']
-        self.pointers = []
+        self.matrix = matrix
+        self.pointers = {}
 
         # Variables
-        self.i0 = self.pivot[0]
-        self.j0 = self.pivot[1]
-        self.alpha = 1.0 / self.matrix[self.pivot]
+        self.i0 = self.matrix.pivot[0]
+        self.j0 = self.matrix.pivot[1]
+        self.alpha = 1.0 / self.matrix['PIVOT'].val
 
         # Answers
         self.steps = []
 
-    def get_task(self) -> str:
-        """
-        Method for converting task matrix to string
-        :return: Task string
-        """
-        task_string = ""
-        row = 1
-        for cord, val in self.matrix.items():
-            while cord[0] > row:
-                row += 1
-                task_string += '\n'
-            task_string += f"m[{cord[0]}][{cord[1]}] = {val}, "
-        return task_string[:-2]
-
     def run(self):
-        self.document.add_step('_task', axial_element=f"m[{self.pivot[0]}][{self.pivot[1]}]",
-                               task=Document.txt2xml(self.get_task() + ','))
+        self.document.add_step('_task', axial_element=f"m[{self.matrix.pivot[0]}][{self.matrix.pivot[1]}]",
+                               task=Document.txt2xml(str(self.matrix) + ','))
 
-        img1 = draw("_practice/img_1", self.matrix, self.pointers)
-        self.pointers.append({'label': "PIVOT", 'cord': (2, 1)})
+        img1 = draw("_practice/img_1", self.matrix)
+        self.pointers[(2, 1)] = ["PIVOT"]
         img2 = draw("_practice/img_2", self.matrix, self.pointers)
 
         self.document.add_step('_practice', image_1=img1, image_2=img2)
@@ -53,8 +37,8 @@ class Lab5:
         print("S1: Initialization")
         self.steps.append("S1")
 
-        val = self.matrix[self.pivot]
-        self.matrix[self.pivot] = 1.0
+        val = self.matrix['PIVOT']
+        self.matrix[self.matrix.pivot] = 1.0
 
         img1 = draw("S1/img_1", self.matrix, self.pointers)
 

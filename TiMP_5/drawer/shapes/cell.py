@@ -1,15 +1,16 @@
 from svgwrite.shapes import Rect, Line
 
+from .shape import Shape
 from .arrow import Arrow
 from .arrow_straight import StraightArrow
-from .shape import Shape
+from .pointer import Pointer
 
 
 class Cell(Shape):
     # Sizes
     size = (90, 34)
     spacing = 30
-    padding = (30, 30)
+    padding = (30, 20)
     w = size[0]
     h = size[1]
 
@@ -29,16 +30,17 @@ class Cell(Shape):
         'val'
     ]
 
-    def __init__(self, drawer, matrix, cords):
+    def __init__(self, drawer, matrix, element, pointers: list = None):
         self.matrix = matrix
-        self.cords = cords
-        self.el = matrix.get(cords)
+        self.el = element
+        self.cords = element.get_cords()
+        self.pointers = pointers
 
-        self.pos = self.get_pos(cords)
+        self.pos = self.get_pos(self.cords)
         self.x = self.pos[0]
         self.y = self.pos[1]
 
-        super(Cell, self).__init__(drawer, pos=self.pos, arrow_left=self.arrow_left, arrow_up=self.arrow_up)
+        super(Cell, self).__init__(drawer, pos=self.pos, arrow_left=self.arrow_left, arrow_up=self.arrow_up, ptr=(self.w, 0))
 
     def __draw_box(self):
         self.drawer.add(Rect(self.pos, self.size, fill="#ffffff", stroke=self.col_line))
@@ -70,12 +72,36 @@ class Cell(Shape):
         pos = (self.x + self.w // 3 * col + self.w // 6, self.y + self.h // 2 + self.h // 4 + 5)
         self.drawer.add(self.drawer.text(text, pos, style=self.text_style, alignment_baseline="middle", text_anchor="middle"))
 
+    def __draw_pointers(self):
+        if not self.pointers:
+            return
+        for ptr in self.pointers:
+            Pointer(self.drawer, self.get_c('ptr'), ptr, angle=70).draw()
+
+    def __draw_arrows(self):
+        # Left
+        if self.el.left:
+            target = Cell.get_pos(self.el.left)
+            params = (self.drawer, self.get_c('arrow_left'), (target[0] + self.w, target[1] + self.arrow_left[1]))
+            if self.cords[1] <= self.el.left[1]:
+                Arrow(*params).draw()
+            else:
+                StraightArrow(*params).draw()
+        # Up
+        if self.el.up:
+            target = Cell.get_pos(self.el.up)
+            params = (self.drawer, self.get_c('arrow_up'), (target[0] + self.arrow_up[0], target[1] + self.h))
+            StraightArrow(*params).draw()
+            if self.cords[0] <= self.el.up[1]:
+                Arrow(*params)#.draw()
+            else:
+                StraightArrow(*params).draw()
+
     def draw(self):
         self.__draw_box()
 
-        if not self.el:
+        if not self.el.val:
             # Edge cell
-            # self.__paint_box()
             self.__draw_text(-1, 'row' if self.cords[0] == 0 else 'col')
         else:
             # Regular cell
@@ -83,11 +109,8 @@ class Cell(Shape):
             self.__draw_text(self.cords[1], 'col')
             self.__draw_text(self.el.val, 'val')
 
-            # Links
-            target = self.get_pos(self.el.left)
-            StraightArrow(self.drawer, self.get_c('arrow_left'), (target[0] + self.w, target[1] + self.arrow_left[1])).draw()
-            target = self.get_pos(self.el.up)
-            StraightArrow(self.drawer, self.get_c('arrow_up'), (target[0] + self.arrow_up[0], target[1] + self.h)).draw()
+        self.__draw_arrows()
+        self.__draw_pointers()
 
     @staticmethod
     def get_pos(cords: tuple) -> tuple:

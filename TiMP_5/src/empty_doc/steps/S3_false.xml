@@ -42,7 +42,7 @@
 </w:p>
 <w:p w:rsidR="00165294" w:rsidRDefault="00165294" w:rsidP="00165294">
     <w:r>
-        <w:t>(P ← LOC(BASEROW[I])) = (P ← LOC(BASEROW[%i])),</w:t>
+        <w:t>(P ← LOC(BASEROW[I])) = (P ← LOC(BASEROW[%i%])),</w:t>
     </w:r>
 </w:p>
 %image_2%

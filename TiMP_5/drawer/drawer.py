@@ -23,7 +23,7 @@ def draw(filename: str, matrix, pointers: dict = None):
     dwg = svgwrite.Drawing(path, Size)
 
     # Base elements
-    for base in [*matrix.base_row, *matrix.base_col]:
+    for base in [*matrix.base_row[1:], *matrix.base_col[1:]]:
         shapes.Cell(dwg, matrix, base, ptrs.get(base.get_cords())).draw()
 
     # Elements

@@ -14,8 +14,14 @@ class Element:
 class Matrix:
     def __init__(self, pivot, matrix):
         self.__matrix = {}
-        self.base_row = [Element(None, i, 0) for i in range(1, 5)]
-        self.base_col = [Element(None, 0, i) for i in range(1, 5)]
+
+        self.base_row = []
+        self.base_row.append(None)
+        self.base_row += [Element(None, i, 0) for i in range(1, 5)]
+
+        self.base_col = []
+        self.base_col.append(None)
+        self.base_col += [Element(None, 0, i) for i in range(1, 5)]
 
         # Converting matrix
         if type(matrix) is dict:
@@ -49,9 +55,9 @@ class Matrix:
         """ Return element of matrix by cords or name (PIVOT) """
         if type(item) is tuple:
             if item[0] == 0:
-                return self.base_row[item[1] - 1]
+                return self.base_col[item[1]]
             if item[1] == 0:
-                return self.base_col[item[0] - 1]
+                return self.base_row[item[0]]
             return self.__matrix[item]
         else:
             return self.__matrix.get(self.__names.get(item))
@@ -81,7 +87,7 @@ class Matrix:
                     return new
 
         # Left
-        for base in self.base_row:
+        for base in self.base_row[1:]:
             base.left = find_next((base.row, 5), 0)
 
             new = base.left
@@ -91,7 +97,7 @@ class Matrix:
                 new = el
 
         # Up
-        for base in self.base_col:
+        for base in self.base_col[1:]:
             base.up = find_next((5, base.col), 1)
 
             new = base.up

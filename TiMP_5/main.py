@@ -16,8 +16,18 @@ matrix = Matrix(
 )
 
 
+def laba_5():
+    laba = Lab5(matrix)
+    laba.run()
+
+
+def test_drawer():
+    import drawer
+    drawer.draw('test', matrix)
+
+
 if __name__ == "__main__":
     utils.clear_folder("output/images")
 
-    laba = Lab5(matrix)
-    laba.run()
+    # test_drawer()
+    laba_5()

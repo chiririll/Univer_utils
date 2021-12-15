@@ -1,4 +1,4 @@
-from svgwrite.shapes import Ellipse, Polyline
+from svgwrite.shapes import Ellipse, Polyline, Line
 
 from .shape import Shape
 
@@ -6,7 +6,8 @@ from .shape import Shape
 class Arrow(Shape):
 
     point_radius = (3, 3)
-    shift = ((30, 20), (15, 20))
+    shift = ((30, 20), (-15, 20))
+    shift_90 = ((20, 35), (-15, 35))
 
     width = 1
 
@@ -26,27 +27,38 @@ class Arrow(Shape):
         self.y2 = dst[1] if not vertical else dst[0]
 
     def draw(self):
+        def draw_loop(x, y, sx, sy, angle=0):
+            points = [
+                (x, y),
+                (x - sx // 2, y),
+                (x - sx, y - sy // 3),
+                (x - sx, y - sy // 3 * 2),
+                (x - sx // 2, y - sy),
+                (x, y - sy)
+            ]
+            self.drawer.add(Polyline(points, stroke=self.color, stroke_width=self.width, fill="none",
+                                     transform=f"rotate({angle}, {x}, {y})"))
+
+        def draw_line(pos, s):
+            cords = []
+            for i in range(2):
+                cords.append((pos[i][0], pos[i][1] - s[i][1]) if self.angle == 0 else (pos[i][0] + s[i][1], pos[i][1]))
+            self.drawer.add(Line(*cords, stroke=self.color, stroke_width=self.width, fill="none"))
+
+        def draw_arrow(x, y, angle):
+            self.drawer.add(Polyline([(x - 5, y + 5), (x, y), (x + 5, y + 5)],
+                                     stroke=self.color, stroke_width=self.width, fill="none",
+                                     transform=f"rotate({angle}, {x}, {y})"))
+
+        def get_shift():
+            if self.angle == 0:
+                return self.shift
+            return self.shift_90
+
         self.drawer.add(Ellipse(self.src, self.point_radius, fill=self.color))
 
-        points = [
-            self.src,
-            (self.x1 - self.shift[0][0] // 2, self.y1),
-            (self.x1 - self.shift[0][0], self.y1 - self.shift[0][1] // 3),
-            (self.x1 - self.shift[0][0], self.y1 - self.shift[0][1] // 3 * 2),
-            (self.x1 - self.shift[0][0] // 2,  self.y1 - self.shift[0][1]),
+        draw_loop(*self.src, *get_shift()[0], self.angle)
+        draw_line((self.src, self.dst), get_shift())
+        draw_loop(*self.dst, *get_shift()[1], self.angle)
 
-            (self.x1, self.y1 - self.shift[0][1]),
-            (self.x2, self.y2 - self.shift[1][1]),
-
-            (self.x2 + self.shift[1][0] // 2, self.y1 - self.shift[1][1]),
-            (self.x2 + self.shift[1][0], self.y1 - self.shift[1][1] // 3 * 2),
-            (self.x2 + self.shift[1][0], self.y1 - self.shift[1][1] // 3),
-            (self.x2 + self.shift[1][0] // 2, self.y1),
-            self.dst
-        ]
-        self.drawer.add(Polyline(points, stroke=self.color, stroke_width=self.width, fill="none"))
-
-        angle = 270
-        self.drawer.add(Polyline([(self.x2 - 5, self.y2 + 5), self.dst, (self.x2 + 5, self.y2 + 5)],
-                                 stroke=self.color, stroke_width=self.width, fill="none",
-                                 transform=f"rotate({angle}, {self.x2}, {self.y2})"))
+        draw_arrow(*self.dst, self.angle - 90)

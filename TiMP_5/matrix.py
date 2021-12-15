@@ -56,6 +56,10 @@ class Matrix:
     def __getitem__(self, item) -> Element:
         """ Return element of matrix by cords or name (PIVOT) """
         if type(item) is tuple:
+            if item[0] == 0:
+                return self.base_row[item[1]]
+            if item[1] == 0:
+                return self.base_col[item[0]]
             return self.__matrix[item]
 
         match item:
@@ -68,45 +72,37 @@ class Matrix:
 
     def __update_links(self) -> None:
         """ Update up and left fields in every element """
-        # def find_next(cords, d: int):
-        #     """
-        #
-        #     :param cords:
-        #     :param d:
-        #     :return:
-        #     """
-        #     for n in range(cords[d]-1, -1, -1):
-        #         new = [n, n]
-        #         new[d] = cords[d]
-        #         if self.__matrix.get(new) or n == 0:
-        #             return new
+        def find_next(cords: tuple, d: int):
+            """
+            Function for finding next left (d = 0) or up (d = 1) element
+            :param cords: start cords
+            :param d: index of changing cord (0 for col (left), 1 for row (up))
+            :return: cords of the next element
+            """
+            for n in range(cords[(d+1) % 2]-1, -1, -1):
+                new = (n, cords[1]) if d else (cords[0], n)
+                if n == 0 or self.__matrix.get(new):
+                    return new
 
         # Left
         for base in self.base_row:
-            col = 4
-            while not self.__matrix.get((base.row, col)) and col > 0:
-                col -= 1
+            base.left = find_next((base.row, 5), 0)
 
-            el = (base.row, col)
-            self.base_row[base.row - 1].left = el
-            for col in range(col, -1, -1):
-                left = (base.row, col)
-                if left != el and (self.__matrix.get(left) or col == 0):
-                    self.__matrix[el].left = left
-                    el = left
+            new = base.left
+            while not (new[0] == 0 or new[1] == 0):
+                el = find_next(new, 0)
+                self.__matrix[new].left = el
+                new = el
+
         # Up
         for base in self.base_col:
-            row = 4
-            while not self.__matrix.get((row, base.col)) and row > 0:
-                row -= 1
+            base.up = find_next((5, base.col), 1)
 
-            el = (row, base.col)
-            self.base_col[base.col - 1].up = el
-            for row in range(row, -1, -1):
-                up = (row, base.col)
-                if up != el and (self.__matrix.get(up) or row == 0):
-                    self.__matrix[el].up = up
-                    el = up
+            new = base.up
+            while not (new[0] == 0 or new[1] == 0):
+                el = find_next(new, 1)
+                self.__matrix[new].up = el
+                new = el
 
     def add(self, element: Element) -> None:
         """ Appends element to matrix """

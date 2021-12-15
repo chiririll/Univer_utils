@@ -91,9 +91,8 @@ class Cell(Shape):
         if self.el.up:
             target = Cell.get_pos(self.el.up)
             params = (self.drawer, self.get_c('arrow_up'), (target[0] + self.arrow_up[0], target[1] + self.h))
-            StraightArrow(*params).draw()
-            if self.cords[0] <= self.el.up[1]:
-                Arrow(*params)#.draw()
+            if self.cords[0] <= self.el.up[0]:
+                Arrow(*params, angle=90).draw()
             else:
                 StraightArrow(*params).draw()
 

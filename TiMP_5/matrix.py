@@ -10,19 +10,6 @@ class Element:
     def get_cords(self) -> tuple:
         return self.row, self.col
 
-    def find_links(self, cords: tuple, matrix: dict):
-        self.left = (cords[0], 0)
-        self.up = (0, cords[1])
-
-        for i in range(cords[0] - 1, 0, -1):
-            if (i, cords[1]) in matrix.keys():
-                self.left = (i, cords[1])
-                break
-        for i in range(cords[1] - 1, 0, -1):
-            if (cords[0], i) in matrix.keys():
-                self.left = (cords[0], i)
-                break
-
 
 class Matrix:
     def __init__(self, pivot, matrix):
@@ -38,6 +25,11 @@ class Matrix:
 
         self.pivot = pivot
         self.ptr = []
+
+        # Named elements
+        self.__names = {
+            'PIVOT': self.pivot
+        }
 
         # Updating links
         self.__update_links()
@@ -57,14 +49,18 @@ class Matrix:
         """ Return element of matrix by cords or name (PIVOT) """
         if type(item) is tuple:
             if item[0] == 0:
-                return self.base_row[item[1]]
+                return self.base_row[item[1] - 1]
             if item[1] == 0:
-                return self.base_col[item[0]]
+                return self.base_col[item[0] - 1]
             return self.__matrix[item]
+        else:
+            return self.__matrix.get(self.__names.get(item))
 
-        match item:
-            case 'PIVOT':
-                return self.__matrix[self.pivot]
+    def __setitem__(self, key, value):
+        if type(value) is Element:
+            self[key] = value
+        else:
+            self[key].val = value
 
     def __iter__(self) -> Element:
         for el in self.__matrix.values():

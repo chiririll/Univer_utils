@@ -19,8 +19,5 @@ matrix = Matrix(
 if __name__ == "__main__":
     utils.clear_folder("output/images")
 
-    import drawer
-    drawer.draw('test', matrix, {(2, 1): ["PIVOT"]})
-
-    # laba = Lab5(task)
-    # laba.run()
+    laba = Lab5(matrix)
+    laba.run()

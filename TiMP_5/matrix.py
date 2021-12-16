@@ -54,16 +54,20 @@ class Matrix:
             task_string += f"m[{el.row}][{el.col}] = {el.val}, "
         return task_string[:-2]
 
-    def __getitem__(self, item) -> Element:
+    def __getitem__(self, i, j=None):
         """ Return element of matrix by cords or name (PIVOT) """
-        if type(item) is tuple:
-            if item[0] == 0:
-                return self.base_col[item[1]]
-            if item[1] == 0:
-                return self.base_row[item[0]]
-            return self.__matrix[item]
+        if type(i) is tuple:
+            if i[0] == 0:
+                return self.base_col[i[1]] if 0 < i[1] < len(self.base_col) else None
+            if i[1] == 0:
+                return self.base_row[i[0]] if 0 < i[0] < len(self.base_row) else None
+            return self.__matrix.get(i)
+        elif type(i) is int:
+            return self.__matrix.get((i, j))
+        elif type(i) is str:
+            return self.__matrix.get(self.__names.get(i))
         else:
-            return self.__matrix.get(self.__names.get(item))
+            return None
 
     def __setitem__(self, key, value):
         if type(value) is Element:

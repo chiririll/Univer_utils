@@ -24,9 +24,13 @@ class Shape:
         elif x is None or y is None:
             x, y = self.x, self.y
 
-        cord = self.__cords.get(name)
-        if cord:
-            return x + cord[0], y + cord[1]
+        cord = None
+        if type(name) is str:
+            cord = self.__cords.get(name)
+        elif type(name) is tuple:
+            cord = name
+
+        return x + cord[0], y + cord[1] if cord else None
 
     def draw(self):
         pass

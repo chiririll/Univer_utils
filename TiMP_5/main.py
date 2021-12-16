@@ -22,8 +22,12 @@ def laba_5():
 
 
 def test_drawer():
+    def get_pointers(count: int = 3):
+        names = [f"PTR[{i}]" for i in range(count)]
+        return dict(zip(names, [matrix[1, 1]] * count))
+
     import drawer
-    drawer.draw('test', matrix)
+    drawer.draw('test', matrix, get_pointers(4))
 
 
 if __name__ == "__main__":

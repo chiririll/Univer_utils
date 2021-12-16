@@ -30,6 +30,11 @@ class Cell(Shape):
         'val'
     ]
 
+    # Pointers
+    ptr_base_angle = (10, 65)
+    ptr_spacing = (int(w / 2.5), h // 3)
+    ptr_spacing_angle = (0, 8)
+
     def __init__(self, drawer, matrix, element, pointers: list = None):
         self.matrix = matrix
         self.el = element
@@ -73,11 +78,55 @@ class Cell(Shape):
         self.drawer.add(self.drawer.text(text, pos, style=self.text_style, alignment_baseline="middle", text_anchor="middle"))
 
     def __draw_pointers(self):
-        # TODO: Add different anchors
+        def get_free_sides():
+            sides = {
+                'right': (0, 1),
+                'bottom': (1, 0),
+                'left': (0, -1),
+                'top': (-1, 0),
+            }
+            free = []
+
+            i, j = self.el.get_cords()
+            for name, d in sides.items():
+                if not self.matrix[i + d[0], j + d[1]] and i > 0 and j > 0:
+                    free.append(name)
+            return free
+
+        def get_free_anchors(free_sides: list):
+            points = []
+            for side in free_sides:
+                match side:
+                    case 'bottom':
+                        for i, x in enumerate(range(0, self.w, self.ptr_spacing[0])):
+                            points.append({'pos': (x, self.h), 'angle': -180 - self.ptr_base_angle[0] - self.ptr_spacing_angle[0] * i})
+                    case 'top':
+                        for i, x in enumerate(range(0, self.w, self.ptr_spacing[0])):
+                            points.append({'pos': (x, 0), 'angle': self.ptr_base_angle[0] + self.ptr_spacing_angle[0] * i})
+                    case 'left':
+                        for i, y in enumerate(range(self.ptr_spacing[1], self.h, self.ptr_spacing[1])):
+                            points.append({'pos': (0, y), 'angle': -self.ptr_base_angle[1] - self.ptr_spacing_angle[1] * i})
+                    case 'right':
+                        for i, y in enumerate(range(0, self.h, self.ptr_spacing[1])):
+                            points.append({'pos': (self.w, y), 'angle': self.ptr_base_angle[1] + self.ptr_spacing_angle[1] * i})
+
+            points.append({'pos': (self.w, self.h), 'angle': 110})
+            if self.cords[0] == 0:
+                points.append({'pos': (0, self.h), 'angle': -110})
+            elif self.cords[1] == 0:
+                points.append({'pos': (self.w, 0), 'angle': 70})
+            else:
+                points.append({'pos': (0, 0), 'angle': -70})
+
+            return points
+
         if not self.pointers:
             return
+
+        params = get_free_anchors(get_free_sides())
         for ptr in self.pointers:
-            Pointer(self.drawer, self.get_c('ptr'), ptr, angle=70).draw()
+            param = params.pop(0)
+            Pointer(self.drawer, self.get_c(param['pos']), ptr, angle=param['angle']).draw()
 
     def __draw_arrows(self):
         # Left

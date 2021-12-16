@@ -73,6 +73,7 @@ class Cell(Shape):
         self.drawer.add(self.drawer.text(text, pos, style=self.text_style, alignment_baseline="middle", text_anchor="middle"))
 
     def __draw_pointers(self):
+        # TODO: Add different anchors
         if not self.pointers:
             return
         for ptr in self.pointers:
@@ -102,7 +103,7 @@ class Cell(Shape):
         if not self.el.val:
             # Edge cell
             self.__draw_text(-1, 'row' if self.cords[0] == 0 else 'col')
-        else:
+        elif self.el.draw_text:
             # Regular cell
             self.__draw_text(self.cords[0], 'row')
             self.__draw_text(self.cords[1], 'col')

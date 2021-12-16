@@ -35,7 +35,13 @@
 %image_2%
 <w:p w:rsidR="008C72A2" w:rsidRDefault="008C72A2" w:rsidP="008C72A2">
     <w:r>
-        <w:t xml:space="preserve">AVAIL  P1,</w:t>
+        <w:t xml:space="preserve">AVAIL </w:t>
+    </w:r>
+    <w:r>
+        <w:sym w:font="Symbol" w:char="F0DC"/>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> P1,</w:t>
     </w:r>
 </w:p>
 %image_3%

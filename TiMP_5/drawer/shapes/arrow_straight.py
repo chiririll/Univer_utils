@@ -20,6 +20,7 @@ class StraightArrow(Shape):
         self.y2 = dst[1]
 
     def draw(self):
+        # TODO: Add shift
         self.drawer.add(Ellipse(self.src, self.radius, fill=self.color))
         self.drawer.add(Line(self.src, self.dst, stroke=self.color, stroke_width=self.width))
 

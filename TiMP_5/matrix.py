@@ -1,11 +1,13 @@
 class Element:
-    def __init__(self, val, row, col, left: tuple = None, up: tuple = None):
+    def __init__(self, val, row, col, left: tuple = None, up: tuple = None, draw_text=True):
         self.left = left
         self.up = up
 
         self.row = row
         self.col = col
         self.val = val
+
+        self.draw_text = draw_text
 
     def get_cords(self) -> tuple:
         return self.row, self.col
@@ -42,6 +44,7 @@ class Matrix:
 
     def __str__(self) -> str:
         """ Returns matrix as string (task string) """
+        # TODO: Sort
         task_string = ""
         row = 1
         for el in self.__matrix.values():
@@ -106,10 +109,17 @@ class Matrix:
                 self.__matrix[new].up = el
                 new = el
 
-    def add(self, element: Element) -> None:
+    def add(self, element: Element):
         """ Appends element to matrix """
         self.__matrix[element.get_cords()] = element
-        self.__update_links()
+        return self.__matrix[element.get_cords()]
+
+    def exclude(self, element) -> None:
+        """ Excluding element from matrix """
+        if type(element) is tuple:
+            self.__matrix.pop(element)
+        elif type(element) is Element:
+            self.__matrix.pop(element.get_cords())
 
     @staticmethod
     def list_to_dict(matrix: list) -> dict:

@@ -14,8 +14,12 @@ class Lab5:
         self.pointers = {}
 
         # Variables
+        self.i = 0
+        self.j = 0
+
         self.i0 = self.matrix.pivot[0]
         self.j0 = self.matrix.pivot[1]
+
         self.alpha = 1.0 / self.matrix['PIVOT'].val
 
         # Answers
@@ -30,13 +34,15 @@ class Lab5:
         else:
             return self.pointers.get(name)
 
-    def __j(self) -> int:
-        j = self.__ptr('P0')
-        return -1 if j.col == 0 or j.row == 0 else j.col
-
     def __i(self) -> int:
         i = self.__ptr('Q0')
-        return -1 if i.col == 0 or i.row == 0 else i.row
+        self.i = -1 if i.col == 0 or i.row == 0 else i.row
+        return self.i
+
+    def __j(self) -> int:
+        j = self.__ptr('P0')
+        self.j = -1 if j.col == 0 or j.row == 0 else j.col
+        return self.j
 
     def run(self):
         self.document.add_step('_task', axial_element=f"m[{self.matrix.pivot[0]}][{self.matrix.pivot[1]}]",
@@ -51,7 +57,7 @@ class Lab5:
         self.S1()
 
     def finish(self):
-        self.document.add_step('_answer', steps=', '.join(self.steps), matrix=f"{str(self.matrix)}.")
+        self.document.add_step('_answer', steps=', '.join(self.steps), matrix=Document.txt2xml(f"{str(self.matrix)}."))
         del self
 
     def S1(self):
@@ -133,11 +139,12 @@ class Lab5:
             val = self.__ptr('Q0').val
             self.__ptr('Q0').val = -self.alpha * val
             img2 = draw('S4/img_2', self.matrix, self.pointers)
-            self.document.add_step('S4_next', P0_col=j, j=j, j0=self.j0, Q0_val=val, res=self.__ptr('Q0').val, alpha=self.alpha,
+            self.document.add_step('S4_true', P0_col=j, j=j, j0=self.j0, Q0_val=val, res=self.__ptr('Q0').val, alpha=self.alpha,
                                    image_1=img1, image_2=img2)
             self.S3()
         elif j == self.j0:
-            self.document.add_step('S4_true', P0_col=j, j=j, j0=self.j0, image_1=img1)
+            self.document.add_step('S4_repeat', P0_col=j, j=j, j0=self.j0, image_1=img1)
+            self.S4()
         else:
             self.document.add_step('S4_false', P0_col=j, j=j, j0=self.j0, image_1=img1)
             self.S5()
@@ -146,22 +153,97 @@ class Lab5:
         print("S5: Finding I,J element")
         self.steps.append("S5")
 
-        pass
+        col = self.__ptr('P1').col
+        if col > self.j:
+            self.__ptr('P', self.__ptr('P1'))
+            img1 = draw('S5/img_1', self.matrix, self.pointers)
+            self.__ptr('P1', self.__ptr('P').left)
+            img2 = draw('S5/img_2', self.matrix, self.pointers)
+
+            self.document.add_step('S5_true', P1_col=col, j=self.j, image_1=img1, image_2=img2)
+
+            self.S5()
+        elif col == self.j:
+            self.document.add_step('S5_false_S7', P1_col=col, j=self.j)
+            self.S7()
+        else:
+            self.document.add_step('S5_false_next', P1_col=col, j=self.j)
+            self.S6()
 
     def S6(self):
         print("S6: Appending I,J element")
         self.steps.append("S6")
 
-        pass
+        ptr_j_up_row = self.__ptr(f"PTR[{self.j}]").up[0]
+        if ptr_j_up_row > self.i:
+            self.__ptr(f'PTR[{self.j}]', self.__ptr(f'PTR[{self.j}]').up)
+            self.S6()
+        else:
+            element = self.matrix.add(Element(0, self.i, self.j, draw_text=False))
+            self.__ptr('X', element)
+            img1 = draw('S6/img_1', self.matrix, self.pointers)
+            element.draw_text = True
+            img2 = draw('S6/img_2', self.matrix, self.pointers)
+            element.left = self.__ptr('P1').get_cords()
+            img3 = draw('S6/img_3', self.matrix, self.pointers)
+            element.up = self.__ptr(f"PTR[{self.j}]").get_cords()
+            img4 = draw('S6/img_4', self.matrix, self.pointers)
+            self.__ptr('P').left = element.get_cords()
+            img5 = draw('S6/img_5', self.matrix, self.pointers)
+            self.__ptr(f"PTR[{self.j}]").up = element.get_cords()
+            img6 = draw('S6/img_6', self.matrix, self.pointers)
+            self.__ptr('P1', element)
+            img7 = draw('S6/img_7', self.matrix, self.pointers)
+            self.__ptr(f"PTR[{self.j}]", element)
+            img8 = draw('S6/img_8', self.matrix, self.pointers)
+            self.document.add_step('S6_false', i=self.i, j=self.j, ptr_j_up_row=ptr_j_up_row,
+                                   image_1=img1, image_2=img2, image_3=img3, image_4=img4, image_5=img5, image_6=img6,
+                                   image_7=img7, image_8=img8)
+            self.S7()
 
     def S7(self):
         print("S7: Axial operation")
         self.steps.append("S7")
 
-        pass
+        val_p1 = self.__ptr('P1').val
+        self.__ptr('P1').val = val_p1 - self.__ptr('Q0').val * self.__ptr('P0').val
+        img1 = draw('S7/img_1', self.matrix, self.pointers)
+        if self.__ptr('P1').val == 0:
+            self.document.add_step('S7_true', P1_val=val_p1, Q0_val=self.__ptr('Q0').val, P0_val=self.__ptr('P0').val,
+                                   res=self.__ptr('P1').val, image_1=img1)
+            self.S8()
+        else:
+            self.__ptr(f"PTR[{self.j}]", self.__ptr('P1'))
+            self.__ptr('P', self.__ptr('P1'))
+            img2 = draw('S7/img_2', self.matrix, self.pointers)
+            self.__ptr('P1', self.__ptr('P').left)
+            img3 = draw('S7/img_3', self.matrix, self.pointers)
+
+            self.document.add_step('S7_false', P1_val=val_p1, Q0_val=self.__ptr('Q0').val, P0_val=self.__ptr('P0').val,
+                                   res=self.__ptr('P1').val, j=self.j, image_1=img1, image_2=img2, image_3=img3)
+
+            self.S4()
 
     def S8(self):
         print("S8: Excluding I,J element")
         self.steps.append("S8")
 
-        pass
+        if self.__ptr(f"PTR[{self.j}]").up != self.__ptr('P1').get_cords():
+            self.__ptr(f"PTR[{self.j}]", self.__ptr(f"PTR[{self.j}]").up)
+            img1 = draw('S8/img_1', self.matrix, self.pointers)
+            self.document.add_step('S8_true', j=self.j, image_1=img1)
+            self.S8()
+        else:
+            self.__ptr(f"PTR[{self.j}]").up = self.__ptr('P1').up
+            img1 = draw('S8/img_1', self.matrix, self.pointers)
+            self.__ptr('P').left = self.__ptr('P1').left
+            img2 = draw('S8/img_2', self.matrix, self.pointers)
+            self.matrix.exclude(self.__ptr('P1'))
+            self.pointers.pop('P1')
+            img3 = draw('S8/img_3', self.matrix, self.pointers)
+            self.__ptr('P1', self.__ptr('P').left)
+            img4 = draw('S8/img_4', self.matrix, self.pointers)
+
+            self.document.add_step('S8_false', j=self.j,
+                                   image_1=img1, image_2=img2, image_3=img3, image_4=img4)
+            self.S4()

@@ -23,7 +23,13 @@
 </w:p>
 <w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
     <w:r>
-        <w:t>X  AVAIL,</w:t>
+        <w:t xml:space="preserve">X </w:t>
+    </w:r>
+    <w:r>
+        <w:sym w:font="Symbol" w:char="F0DE"/>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> AVAIL,</w:t>
     </w:r>
 </w:p>
 %image_1%

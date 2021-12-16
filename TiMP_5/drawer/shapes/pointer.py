@@ -7,7 +7,7 @@ from .shape import Shape
 
 class Pointer(Shape):
 
-    def __init__(self, drawer, pos: tuple, text="P", angle: int = 45, length: int = 30):
+    def __init__(self, drawer, pos: tuple, text="P", angle: int = 45, length: int = 20):
         a_rad = math.radians(angle)
         l = length + 14
         text_c = (round(math.sin(a_rad) * l), -round(math.cos(a_rad) * l))

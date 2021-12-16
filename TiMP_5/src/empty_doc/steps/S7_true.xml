@@ -18,7 +18,7 @@
 </w:p>
 <w:p w:rsidR="001814C6" w:rsidRDefault="001814C6" w:rsidP="001814C6">
     <w:r>
-        <w:t>VAL(P1) ← VAL(P1) – VAL(Q0) ∙ VAL(P0) = %P1_val% – %Q0_val% ∙ P0_val = %res%.</w:t>
+        <w:t>VAL(P1) ← VAL(P1) – VAL(Q0) ∙ VAL(P0) = %P1_val% – %Q0_val% ∙ %P0_val% = %res%.</w:t>
     </w:r>
 </w:p>
 %image_1%

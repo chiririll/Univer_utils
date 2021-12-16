@@ -8,7 +8,7 @@ class StraightArrow(Shape):
     width = 1
     color = "#000000"
 
-    offset = 14  # Shift length
+    offset = 10  # Shift length (shift = length / offset)
 
     def __init__(self, drawer, src: tuple, dst: tuple, shift=0):
         super(StraightArrow, self).__init__(drawer)
@@ -24,7 +24,7 @@ class StraightArrow(Shape):
         self.y2 = dst[1]
 
     def draw(self):
-        def get_multiline(src: tuple, dst: tuple, shift: int) -> list:
+        def get_multiline(src: tuple, dst: tuple, shift: int, length: int) -> list:
             """
             Function for getting multiline points
             :param src: Start point
@@ -34,12 +34,13 @@ class StraightArrow(Shape):
             """
             x1, y1 = src
             x2, y2 = dst
+            offset = length // self.offset
             return [
                 src,
-                (x1, y1 - self.offset // 2),
-                (x1 + shift, y1 - self.offset),
-                (x2 + shift, y2 + self.offset),
-                (x2, y2 + self.offset // 2),
+                (x1, y1 - offset // 2),
+                (x1 + shift, y1 - offset),
+                (x2 + shift, y2 + offset),
+                (x2, y2 + offset // 2),
                 dst
             ]
 
@@ -49,7 +50,7 @@ class StraightArrow(Shape):
 
         self.drawer.add(Ellipse(self.src, self.radius, fill=self.color))
         length = int(self.get_distance(self.src, self.dst))
-        self.drawer.add(Polyline(get_multiline(self.src, (self.x1, self.y1 - length), self.shift), stroke=self.color,
+        self.drawer.add(Polyline(get_multiline(self.src, (self.x1, self.y1 - length), self.shift, length), stroke=self.color,
                                  stroke_width=self.width, fill="none", transform=f"rotate({angle}, {self.x1}, {self.y1})"))
 
         self.drawer.add(Polyline([(self.x2 - 5, self.y2 + 5), self.dst, (self.x2 + 5, self.y2 + 5)],

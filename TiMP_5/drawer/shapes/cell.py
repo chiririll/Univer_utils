@@ -10,7 +10,7 @@ class Cell(Shape):
     # Sizes
     size = (90, 34)
     spacing = 30
-    padding = (30, 20)
+    padding = (40, 40)
     w = size[0]
     h = size[1]
 
@@ -32,7 +32,7 @@ class Cell(Shape):
 
     # Pointers
     ptr_base_angle = (10, 70)
-    ptr_spacing = (int(w / 2.5), h // 3)
+    ptr_spacing = (w // 3, int(h / 2.8))
     ptr_spacing_angle = (0, 8)
 
     def __init__(self, drawer, matrix, element, pointers: list = None):
@@ -71,8 +71,6 @@ class Cell(Shape):
             )
 
     def __draw_text(self, text, t_type: str):
-        if type(text) is float:
-            text = int(text) if int(text) == text else text
         text = str(text)
 
         col = self.text_cols.index(t_type)
@@ -154,7 +152,7 @@ class Cell(Shape):
     def draw(self):
         self.__draw_box()
 
-        if not self.el.val:
+        if self.el.val is None:
             # Edge cell
             self.__draw_text(-1, 'row' if self.cords[0] == 0 else 'col')
         elif self.el.draw_text:

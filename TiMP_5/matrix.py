@@ -1,5 +1,8 @@
 class Element:
     def __init__(self, val, row, col, left: tuple = None, up: tuple = None, draw_text=True):
+        self.draw_text = draw_text
+        self.is_pivot = False
+
         self.left = left
         self.up = up
 
@@ -7,7 +10,15 @@ class Element:
         self.col = col
         self.val = val
 
-        self.draw_text = draw_text
+    def __setattr__(self, key, value):
+        match key:
+            case 'val':
+                if not self.__dict__['is_pivot'] and type(value) is float and int(value) == value:
+                    self.__dict__['val'] = int(value)
+                else:
+                    self.__dict__['val'] = value
+            case _:
+                self.__dict__[key] = value
 
     def get_cords(self) -> tuple:
         return self.row, self.col
@@ -30,6 +41,8 @@ class Matrix:
             self.__matrix = matrix
         elif type(matrix) is list:
             self.__matrix = self.list_to_dict(matrix)
+
+        self.__matrix[pivot].is_pivot = True
 
         self.pivot = pivot
         self.ptr = []

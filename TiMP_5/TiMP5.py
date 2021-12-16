@@ -177,6 +177,8 @@ class Lab5:
         ptr_j_up_row = self.__ptr(f"PTR[{self.j}]").up[0]
         if ptr_j_up_row > self.i:
             self.__ptr(f'PTR[{self.j}]', self.__ptr(f'PTR[{self.j}]').up)
+            img1 = draw('S6/img_1', self.matrix, self.pointers)
+            self.document.add_step('S6_true', i=self.i, j=self.j, ptr_j_up_row=ptr_j_up_row, image_1=img1)
             self.S6()
         else:
             element = self.matrix.add(Element(0, self.i, self.j, draw_text=False))
@@ -186,7 +188,7 @@ class Lab5:
             img2 = draw('S6/img_2', self.matrix, self.pointers)
             element.left = self.__ptr('P1').get_cords()
             img3 = draw('S6/img_3', self.matrix, self.pointers)
-            element.up = self.__ptr(f"PTR[{self.j}]").get_cords()
+            element.up = self.__ptr(f"PTR[{self.j}]").up
             img4 = draw('S6/img_4', self.matrix, self.pointers)
             self.__ptr('P').left = element.get_cords()
             img5 = draw('S6/img_5', self.matrix, self.pointers)

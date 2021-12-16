@@ -144,6 +144,7 @@ class Cell(Shape):
             if self.cords[0] <= self.el.up[0]:
                 Arrow(*params, angle=90).draw()
             else:
+                # TODO: check neighbours
                 StraightArrow(*params).draw()
 
     def draw(self):

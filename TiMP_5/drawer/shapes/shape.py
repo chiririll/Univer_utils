@@ -46,3 +46,9 @@ class Shape:
                                           (math.sqrt(a[0] * a[0] + a[1] * a[1]) * math.sqrt(b[0] * b[0] + b[1] * b[1]))))
         except ValueError:
             return 0
+
+    @staticmethod
+    def get_distance(src: tuple, dst: tuple) -> float:
+        x1, y1 = src
+        x2, y2 = dst
+        return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)

@@ -33,5 +33,5 @@ def test_drawer():
 if __name__ == "__main__":
     utils.clear_folder("output/images")
 
-    test_drawer()
-    # laba_5()
+    # test_drawer()
+    laba_5()

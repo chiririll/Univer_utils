@@ -81,37 +81,37 @@ class Matrix:
 
     def __update_links(self) -> None:
         """ Update up and left fields in every element """
-        def find_next(cords: tuple, d: int):
-            """
-            Function for finding next left (d = 0) or up (d = 1) element
-            :param cords: start cords
-            :param d: index of changing cord (0 for col (left), 1 for row (up))
-            :return: cords of the next element
-            """
-            for n in range(cords[(d+1) % 2]-1, -1, -1):
-                new = (n, cords[1]) if d else (cords[0], n)
-                if n == 0 or self.__matrix.get(new):
-                    return new
-
         # Left
         for base in self.base_row[1:]:
-            base.left = find_next((base.row, 5), 0)
+            base.left = self.find_next((base.row, 5), 0)
 
             new = base.left
             while not (new[0] == 0 or new[1] == 0):
-                el = find_next(new, 0)
+                el = self.find_next(new, 0)
                 self.__matrix[new].left = el
                 new = el
 
         # Up
         for base in self.base_col[1:]:
-            base.up = find_next((5, base.col), 1)
+            base.up = self.find_next((5, base.col), 1)
 
             new = base.up
             while not (new[0] == 0 or new[1] == 0):
-                el = find_next(new, 1)
+                el = self.find_next(new, 1)
                 self.__matrix[new].up = el
                 new = el
+
+    def find_next(self, cords: tuple, d: int):
+        """
+        Function for finding next left (d = 0) or up (d = 1) element
+        :param cords: start cords
+        :param d: index of changing cord (0 for col (left), 1 for row (up))
+        :return: cords of the next element
+        """
+        for n in range(cords[(d + 1) % 2] - 1, -1, -1):
+            new = (n, cords[1]) if d else (cords[0], n)
+            if n == 0 or self.__matrix.get(new):
+                return new
 
     def add(self, element: Element):
         """ Appends element to matrix """

@@ -1,4 +1,4 @@
-from svgwrite.shapes import Rect, Line
+from svgwrite.shapes import Rect
 
 from .shape import Shape
 from .arrow import Arrow
@@ -31,7 +31,7 @@ class Cell(Shape):
     ]
 
     # Pointers
-    ptr_base_angle = (10, 65)
+    ptr_base_angle = (10, 70)
     ptr_spacing = (int(w / 2.5), h // 3)
     ptr_spacing_angle = (0, 8)
 
@@ -71,6 +71,8 @@ class Cell(Shape):
             )
 
     def __draw_text(self, text, t_type: str):
+        if type(text) is float:
+            text = int(text) if int(text) == text else text
         text = str(text)
 
         col = self.text_cols.index(t_type)
@@ -81,15 +83,15 @@ class Cell(Shape):
         def get_free_sides():
             sides = {
                 'right': (0, 1),
-                'bottom': (1, 0),
                 'left': (0, -1),
+                'bottom': (1, 0),
                 'top': (-1, 0),
             }
             free = []
 
             i, j = self.el.get_cords()
             for name, d in sides.items():
-                if not self.matrix[i + d[0], j + d[1]] and i > 0 and j > 0:
+                if not self.matrix[i + d[0], j + d[1]] and (i > 0 or j > 0):
                     free.append(name)
             return free
 
@@ -110,13 +112,14 @@ class Cell(Shape):
                         for i, y in enumerate(range(0, self.h, self.ptr_spacing[1])):
                             points.append({'pos': (self.w, y), 'angle': self.ptr_base_angle[1] + self.ptr_spacing_angle[1] * i})
 
-            points.append({'pos': (self.w, self.h), 'angle': 110})
+            points.append({'pos': (self.w, self.h), 'angle': 90 + self.ptr_base_angle[1]})
             if self.cords[0] == 0:
-                points.append({'pos': (0, self.h), 'angle': -110})
+
+                points.append({'pos': (self.w, 0), 'angle': self.ptr_base_angle[1]})
             elif self.cords[1] == 0:
-                points.append({'pos': (self.w, 0), 'angle': 70})
+                points.append({'pos': (0, self.h), 'angle': -90 - self.ptr_base_angle[1]})
             else:
-                points.append({'pos': (0, 0), 'angle': -70})
+                points.append({'pos': (0, 0), 'angle': -self.ptr_base_angle[1]})
 
             return points
 
@@ -136,7 +139,8 @@ class Cell(Shape):
             if self.cords[1] <= self.el.left[1]:
                 Arrow(*params).draw()
             else:
-                StraightArrow(*params).draw()
+                shift = 15 if self.matrix.find_next(self.cords, 0) != self.el.left else 0
+                StraightArrow(*params, shift=shift).draw()
         # Up
         if self.el.up:
             target = Cell.get_pos(self.el.up)
@@ -144,8 +148,8 @@ class Cell(Shape):
             if self.cords[0] <= self.el.up[0]:
                 Arrow(*params, angle=90).draw()
             else:
-                # TODO: check neighbours
-                StraightArrow(*params).draw()
+                shift = 30 if self.matrix.find_next(self.cords, 1) != self.el.up else 0
+                StraightArrow(*params, shift=shift).draw()
 
     def draw(self):
         self.__draw_box()

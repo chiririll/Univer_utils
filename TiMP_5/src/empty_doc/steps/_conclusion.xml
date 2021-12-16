@@ -1,0 +1,29 @@
+<w:p w:rsidR="000C4DD8" w:rsidRPr="000C4DD8" w:rsidRDefault="000C4DD8" w:rsidP="000C4DD8">
+    <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="000C4DD8">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Заключение</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00B06525" w:rsidRDefault="000C4DD8" w:rsidP="000C4DD8">
+    <w:r>
+        <w:t>В ходе выполнения лабораторной работы я познакомился с понятием циклически</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> связанных ортогональных списков и алгоритмом реализации</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> осевого шага в разреженной матрице, представленной такими списками.</w:t>
+    </w:r>
+    <w:r>
+        <w:cr/>
+    </w:r>
+</w:p>
+<w:p/>

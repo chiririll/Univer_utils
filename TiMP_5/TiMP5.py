@@ -58,6 +58,7 @@ class Lab5:
 
     def finish(self):
         self.document.add_step('_answer', steps=', '.join(self.steps), matrix=Document.txt2xml(f"{str(self.matrix)}."))
+        self.document.add_step('_conclusion')
         del self
 
     def S1(self):

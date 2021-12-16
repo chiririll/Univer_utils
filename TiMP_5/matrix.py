@@ -57,15 +57,18 @@ class Matrix:
 
     def __str__(self) -> str:
         """ Returns matrix as string (task string) """
-        # TODO: Sort
+        # Converting to 2d array
+        matrix = [[None for i in range(len(self.base_col) - 1)] for i in range(len(self.base_row) - 1)]
+        for cord, el in self.__matrix.items():
+            matrix[cord[0]-1][cord[1]-1] = el.val
+
         task_string = ""
-        row = 1
-        for el in self.__matrix.values():
-            while el.row > row:
-                row += 1
-                task_string += '\n'
-            task_string += f"m[{el.row}][{el.col}] = {el.val}, "
-        return task_string[:-2]
+        for i in range(len(matrix)):
+            for j in range(len(matrix[i])-1, -1, -1):
+                if matrix[i][j] is not None:
+                    task_string += f"m[{i+1}][{j+1}] = {matrix[i][j]}, "
+            task_string += '\n'
+        return task_string[:-3]
 
     def __getitem__(self, i, j=None):
         """ Return element of matrix by cords or name (PIVOT) """

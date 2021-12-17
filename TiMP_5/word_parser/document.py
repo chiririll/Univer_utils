@@ -27,7 +27,7 @@ class Document:
 
     def __get_image_xml(self, rel_id: int, size: tuple = ('467.25pt', '300pt')):
         path = f"src/empty_doc/parts/"
-        scale = .94     # Image scale
+        scale = 1     # Image scale
 
         if self.__shapetype_added:
             path += "image_min.xml"

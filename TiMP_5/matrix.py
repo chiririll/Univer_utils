@@ -8,7 +8,7 @@ class Element:
 
         self.row = row
         self.col = col
-        self.val = val
+        self.val = int(val) if type(val) is float and int(val) == val else val
 
     def __setattr__(self, key, value):
         match key:
@@ -42,10 +42,7 @@ class Matrix:
         elif type(matrix) is list:
             self.__matrix = self.list_to_dict(matrix)
 
-        self.__matrix[pivot].is_pivot = True
-
         self.pivot = pivot
-        self.ptr = []
 
         # Named elements
         self.__names = {
@@ -54,6 +51,7 @@ class Matrix:
 
         # Updating links
         self.__update_links()
+        self.__matrix[self.pivot].is_pivot = True
 
     def __str__(self) -> str:
         """ Returns matrix as string (task string) """

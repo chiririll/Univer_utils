@@ -10,7 +10,7 @@ class Cell(Shape):
     # Sizes
     size = (90, 34)
     spacing = 30
-    padding = (40, 40)
+    padding = (20, 30)
     w = size[0]
     h = size[1]
 
@@ -32,7 +32,7 @@ class Cell(Shape):
 
     # Pointers
     ptr_base_angle = (10, 70)
-    ptr_spacing = (w // 3, int(h / 2.8))
+    ptr_spacing = (w // 2, int(h / 2.8))
     ptr_spacing_angle = (0, 8)
 
     def __init__(self, drawer, matrix, element, pointers: list = None):
@@ -78,18 +78,27 @@ class Cell(Shape):
         self.drawer.add(self.drawer.text(text, pos, style=self.text_style, alignment_baseline="middle", text_anchor="middle"))
 
     def __draw_pointers(self):
+        def check_cond(cond, num):
+            if type(cond) is tuple:
+                return cond[0] < num < cond[1]
+            elif type(cond) is bool:
+                return cond
+
         def get_free_sides():
+            n = len(self.matrix.base_col)
+            m = len(self.matrix.base_row)
             sides = {
-                'right': (0, 1),
-                'left': (0, -1),
-                'bottom': (1, 0),
-                'top': (-1, 0),
+                'right': ((0, 1), (-1, m-1), True),
+                'left': ((0, -1), (0, m), True),
+                'bottom': ((1, 0), True, (-1, n-1)),
+                'top': ((-1, 0), True, (0, n)),
             }
             free = []
 
             i, j = self.el.get_cords()
-            for name, d in sides.items():
-                if not self.matrix[i + d[0], j + d[1]] and (i > 0 or j > 0):
+            for name, conditions in sides.items():
+                d, cond_x, cond_y = conditions
+                if not self.matrix[i + d[0], j + d[1]] and check_cond(cond_x, j) and check_cond(cond_y, i):
                     free.append(name)
             return free
 
@@ -110,13 +119,11 @@ class Cell(Shape):
                         for i, y in enumerate(range(0, self.h, self.ptr_spacing[1])):
                             points.append({'pos': (self.w, y), 'angle': self.ptr_base_angle[1] + self.ptr_spacing_angle[1] * i})
 
-            points.append({'pos': (self.w, self.h), 'angle': 90 + self.ptr_base_angle[1]})
-            if self.cords[0] == 0:
-
+            if self.cords[1] < len(self.matrix.base_col) - 1:
+                points.append({'pos': (self.w, self.h), 'angle': 45 + self.ptr_base_angle[1]})
                 points.append({'pos': (self.w, 0), 'angle': self.ptr_base_angle[1]})
-            elif self.cords[1] == 0:
-                points.append({'pos': (0, self.h), 'angle': -90 - self.ptr_base_angle[1]})
-            else:
+            if self.cords[1] > 0:
+                points.append({'pos': (0, self.h), 'angle': -45 - self.ptr_base_angle[1]})
                 points.append({'pos': (0, 0), 'angle': -self.ptr_base_angle[1]})
 
             return points

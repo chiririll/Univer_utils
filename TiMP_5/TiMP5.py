@@ -1,13 +1,12 @@
-import utils
 from matrix import *
 from drawer import draw
 from word_parser import Document
 
 
 class Lab5:
-    def __init__(self, matrix: Matrix):
+    def __init__(self, matrix: Matrix, name='out'):
         # Document
-        self.document = Document("output/docs/out.doc")
+        self.document = Document(f"output/docs/{name}.doc")
 
         # Matrix
         self.matrix = matrix

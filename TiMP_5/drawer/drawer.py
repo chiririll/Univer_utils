@@ -5,7 +5,7 @@ from . import utils
 from .svg2emf import export_emf
 
 
-Size = (650, 350)
+Size = (625, 350)
 
 
 def draw(filename: str, matrix, pointers: dict = None):

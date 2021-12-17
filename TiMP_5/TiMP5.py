@@ -208,7 +208,8 @@ class Lab5:
         self.steps.append("S7")
 
         val_p1 = self.__ptr('P1').val
-        self.__ptr('P1').val = val_p1 - self.__ptr('Q0').val * self.__ptr('P0').val
+        res = val_p1 - self.__ptr('Q0').val * self.__ptr('P0').val
+        self.__ptr('P1').val = res
         img1 = draw('S7/img_1', self.matrix, self.pointers)
         if self.__ptr('P1').val == 0:
             self.document.add_step('S7_true', P1_val=val_p1, Q0_val=self.__ptr('Q0').val, P0_val=self.__ptr('P0').val,
@@ -222,7 +223,7 @@ class Lab5:
             img3 = draw('S7/img_3', self.matrix, self.pointers)
 
             self.document.add_step('S7_false', P1_val=val_p1, Q0_val=self.__ptr('Q0').val, P0_val=self.__ptr('P0').val,
-                                   res=self.__ptr('P1').val, j=self.j, image_1=img1, image_2=img2, image_3=img3)
+                                   res=res, j=self.j, image_1=img1, image_2=img2, image_3=img3)
 
             self.S4()
 

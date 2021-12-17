@@ -40,8 +40,8 @@ var_1 = Matrix(
 
 def make_all():
     all = utils.tasks_parser('src/tasks.txt')
-    need = [# 5, 6, 9, 10, 11, 13, 15,
-            16, 17, 18, 20, 21, 23, 24]
+    # need = [5, 6, 9, 10, 11, 13, 15, 16, 17, 18, 20, 21, 23, 24]
+    need = [9, 11, 13, 16, 17, 21]
     for var in need:
         print(f"\n === Variant {var} ===")
         laba = Lab5(all[var], f"var_{var}")

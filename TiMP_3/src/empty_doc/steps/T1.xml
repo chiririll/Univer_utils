@@ -1,3 +1,17 @@
+<w:p w:rsidR="00EB42A0" w:rsidRPr="00EB42A0" w:rsidRDefault="00EB42A0" w:rsidP="00EB42A0">
+    <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00EB42A0">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Практическая часть</w:t>
+    </w:r>
+</w:p>
 <w:p w:rsidR="00963822" w:rsidRDefault="00963822" w:rsidP="00963822">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>

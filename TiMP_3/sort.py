@@ -15,6 +15,7 @@ class Sort:
         # Containers
         self.document = Document("output/Output.doc")
         self.rels = utils.parse_rels(task)
+        self.task_string = task
         self.nodes = [Node(k=i) for i in range(10)]
 
         # Variables
@@ -45,6 +46,7 @@ class Sort:
 
     def run(self):
         # Preparing
+        self.document.add_step('_task', task=self.task_string)
         self.T1()
 
         # Registering relations
@@ -228,3 +230,4 @@ class Sort:
         self.steps.append('T8')
 
         self.document.add_step('T8', answer_set=', '.join(list(map(str, self.answer))), answer_sequence=', '.join(self.steps))
+        self.document.add_step('_conclusion')

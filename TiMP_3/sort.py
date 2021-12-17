@@ -15,7 +15,7 @@ class Sort:
         # Containers
         self.document = Document("output/Output.doc")
         self.rels = utils.parse_rels(task)
-        self.task_string = task
+        self.task_string = task.replace('<', ' &lt; ')
         self.nodes = [Node(k=i) for i in range(10)]
 
         # Variables

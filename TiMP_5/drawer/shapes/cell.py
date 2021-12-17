@@ -10,7 +10,7 @@ class Cell(Shape):
     # Sizes
     size = (90, 34)
     spacing = 30
-    padding = (20, 30)
+    padding = (20, 35)
     w = size[0]
     h = size[1]
 
@@ -125,6 +125,9 @@ class Cell(Shape):
             if self.cords[1] > 0:
                 points.append({'pos': (0, self.h), 'angle': -45 - self.ptr_base_angle[1]})
                 points.append({'pos': (0, 0), 'angle': -self.ptr_base_angle[1]})
+
+            points.append({'pos': (self.w // 2, self.h), 'angle': 45 + self.ptr_base_angle[1]})
+            points.append({'pos': (self.w // 2, 0), 'angle': self.ptr_base_angle[1]})
 
             return points
 

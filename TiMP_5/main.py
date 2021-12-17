@@ -40,8 +40,10 @@ var_1 = Matrix(
 
 def make_all():
     all = utils.tasks_parser('src/tasks.txt')
-    need = [5, 6, 9, 10, 11, 13, 15, 16, 17, 18, 20, 21, 23, 24]
+    need = [# 5, 6, 9, 10, 11, 13, 15,
+            16, 17, 18, 20, 21, 23, 24]
     for var in need:
+        print(f"\n === Variant {var} ===")
         laba = Lab5(all[var], f"var_{var}")
         laba.run()
 
@@ -64,5 +66,5 @@ if __name__ == "__main__":
     utils.clear_folder("output/images")
 
     # test_drawer()
-    laba_5()
-    # make_all()
+    # laba_5()
+    make_all()

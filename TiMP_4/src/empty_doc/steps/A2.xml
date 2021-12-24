@@ -1,0 +1,5 @@
+(ABC(P) < ABC(Q)) = (A(P) + B(P) + C(P) < A(Q) + B(Q) + C(Q) или A(P) + B(P) + C(P) = A(Q) + B(Q) + C(Q) и (A(P) < A(Q) или A(P) = A(Q) и B(P) < B(Q))) =
+(%a_p% + %b_p% + %c_p% < %a_p% + %b_p% + %c_p% или %a_p% + %b_p% + %c_p% = %a_p% + %b_p% + %c_p% и (%a_p% < %a_q% или %a_p% = %a_q% и %b_p% < %b_q%)) =
+(%psum% < %qsum% или %psum% = %qsum% и (%a_lt% или %a_eq% и %b_lt%)) = (%p_lt% или %p_eq% и (%a_lt% или %a_eq_and_b_lt%)) =
+(%p_lt% или %p_eq% и %a_lt_or_a_eq_and_b_lt%) = (%p_lt% или %p_eq_a_lt_or_a_eq_and_b_lt%) = %res%
+

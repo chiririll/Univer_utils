@@ -1,0 +1,11 @@
+<w:p w:rsidR="00302ACB" w:rsidRPr="006E2525" w:rsidRDefault="00302ACB" w:rsidP="00302ACB">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(ABC(P) = ABC(Q)) = (A(P) = A(Q) и B(P) = B(Q) и C(P) = C(Q)) = (%a_p% = %a_q% и %b_p% = %b_q% и %c_p% = %c_q%) = (%a_lt% и %b_lt% и %c_lt%) = (%a_lt_and_b_lt% и %c_lt%) = %res%</w:t>
+    </w:r>
+</w:p>
+<w:p />

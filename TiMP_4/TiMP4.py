@@ -120,10 +120,8 @@ class Laba4:
             params['coef_q_prev'] = self.__ptr('Q')[0]
             params['coef_p'] = self.__ptr('P')[0]
 
-            self.__ptr('Q')[0] = self.__ptr('P')[0]
-            params['coef_q'] = self.__ptr('Q')[0]
-
-
+            #self.__ptr('Q')[0] = self.__ptr('P')[0]
+            #params['coef_q'] = self.__ptr('Q')[0]
 
     def A4(self):
         print("A4: ")

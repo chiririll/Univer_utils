@@ -23,7 +23,10 @@ class Document:
         self.__saved = False
 
     def __del__(self):
-        self.save()
+        try:
+            self.save()
+        except AttributeError:
+            pass
 
     def __get_image_xml(self, rel_id: int, size: tuple = ('467.25pt', '300pt')):
         path = f"src/empty_doc/parts/"

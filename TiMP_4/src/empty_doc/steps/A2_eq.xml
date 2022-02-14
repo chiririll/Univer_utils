@@ -1,0 +1,28 @@
+<w:p w:rsidR="005A580D" w:rsidRDefault="00727000" w:rsidP="005A580D">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r>
+        <w:t>П</w:t>
+    </w:r>
+    <w:r w:rsidR="005A580D">
+        <w:t>ерейти к шагу</w:t>
+    </w:r>
+    <w:r w:rsidR="005A580D" w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t xml:space="preserve"></w:t>
+    </w:r>
+    <w:r w:rsidR="005A580D" w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>A</w:t>
+    </w:r>
+    <w:r w:rsidR="005A580D" w:rsidRPr="001B6196">
+        <w:t>3.</w:t>
+    </w:r>
+</w:p>

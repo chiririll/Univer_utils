@@ -50,11 +50,7 @@
         <w:t xml:space="preserve">,</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="00076118" w:rsidRDefault="00076118">
-    <w:r>
-        <w:t>%img_1%</w:t>
-    </w:r>
-</w:p>
+%img_1%
 <w:p w:rsidR="00076118" w:rsidRDefault="00076118">
     <w:r w:rsidRPr="001B6196">
         <w:rPr>
@@ -86,11 +82,7 @@
         <w:t>,</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="00076118" w:rsidRDefault="00076118">
-    <w:r>
-        <w:t>%img_2%</w:t>
-    </w:r>
-</w:p>
+%img_2%
 <w:p w:rsidR="00076118" w:rsidRDefault="00076118">
     <w:pPr>
         <w:rPr>
@@ -136,11 +128,7 @@
         <w:t>,</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="00076118" w:rsidRDefault="00076118">
-    <w:r>
-        <w:t>%img_3%</w:t>
-    </w:r>
-</w:p>
+%img_3%
 <w:p w:rsidR="00076118" w:rsidRPr="00380505" w:rsidRDefault="00076118" w:rsidP="00076118">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>

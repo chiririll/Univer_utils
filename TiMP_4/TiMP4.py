@@ -1,4 +1,5 @@
 from word_parser import Document
+from utils import bool_params_to_string
 
 
 class Laba4:
@@ -45,14 +46,21 @@ class Laba4:
         print("A1: Initialization")
         self.steps.append('A1')
 
+        params = {
+            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
+            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
+            'img_3': "<w:p><w:r><w:t>%img_3%</w:t></w:r></w:p>"
+        }
+
         self.__ptr_move('P')
+
         # Image
         self.__ptr('Q1', 'Q')
         # Image
         self.__ptr_move('Q')
         # Image
 
-        self.document.add_step('A1')
+        self.document.add_step('A1', **params)
         self.A2()
 
     def A2(self):
@@ -60,6 +68,9 @@ class Laba4:
         self.steps.append('A2')
 
         params = {
+            # Images temp
+            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
+            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
             # P
             'a_p': self.__ptr('P')[1],
             'b_p': self.__ptr('P')[2],
@@ -74,39 +85,41 @@ class Laba4:
         }
 
         # Conditions
-        params['a_lt'] = "ИСТИНА" if params['a_p'] < params['a_q'] else "ЛОЖЬ"
-        params['a_eq'] = "ИСТИНА" if params['a_p'] == params['a_q'] else "ЛОЖЬ"
-        params['b_lt'] = "ИСТИНА" if params['b_p'] < params['b_q'] else "ЛОЖЬ"
-        params['p_lt'] = "ИСТИНА" if params['psum'] < params['qsum'] else "ЛОЖЬ"
-        params['p_eq'] = "ИСТИНА" if params['psum'] == params['qsum'] else "ЛОЖЬ"
+        params['a_lt'] = params['a_p'] < params['a_q']
+        params['a_eq'] = params['a_p'] == params['a_q']
+        params['b_lt'] = params['b_p'] < params['b_q']
+        params['b_eq'] = params['b_p'] == params['b_q']
+        params['c_lt'] = params['c_p'] < params['c_q']
+        params['c_eq'] = params['c_p'] == params['c_q']
+        params['p_lt'] = params['psum'] < params['qsum']
+        params['p_eq'] = params['psum'] == params['qsum']
 
         params['a_eq_and_b_lt'] = params['a_eq'] and params['b_lt']
+        params['a_lt_and_b_lt'] = params['a_lt'] and params['b_lt']
+        params['a_eq_and_b_eq'] = params['a_eq'] and params['b_eq']
         params['a_lt_or_a_eq_and_b_lt'] = params['a_lt'] or params['a_eq_and_b_lt']
         params['p_eq_and_a_lt_or_a_eq_and_b_lt'] = params['p_eq'] and params['a_lt_or_a_eq_and_b_lt']
-        params['res'] = params['p_lt'] or params['p_eq_and_a_lt_or_a_eq_and_b_lt']
+        params['abc_p_lt'] = params['p_lt'] or params['p_eq_and_a_lt_or_a_eq_and_b_lt']
+        params['abc_p_eq'] = params['a_eq_and_b_eq'] and params['c_eq']
 
-        self.document.add_step('A2_cond', **params)
+        params_str = bool_params_to_string(params)
+        self.document.add_step('A2')
+        self.document.add_step('A2_cond_ltr', **params_str)
 
-        if params['res'] == "ИСТИНА":
+        if params['abc_p_lt']:
             self.__ptr('Q1', 'Q')
             # Image
             self.__ptr_move('Q')
             # Image
 
-            self.document.add_step('A2_true')
+            self.document.add_step('A2_ltr', **params_str)
             self.A2()
+        elif params['abc_p_eq']:
+            self.document.add_step('A2_cond_eq', **params_str)
+            self.A3()
         else:
-            # Conditions
-            params['c_lt'] = "ИСТИНА" if params['c_p'] < params['c_q'] else "ЛОЖЬ"
-            params['a_lt_and_b_lt'] = "ИСТИНА" if params['a_lt'] and params['b_lt'] else "ЛОЖЬ"
-            params['res'] = "ИСТИНА" if params['a_lt_and_b_lt'] and params['c_lt'] else "ЛОЖЬ"
-
-            self.document.add_step('A2_false_cond', **params)
-            if params['res'] == "ИСТИНА":
-                self.document.add_step('A2_false_true')
-                self.A3()
-            else:
-                self.document.add_step('A2_false_false_cond')
+            self.document.add_step('A2_gtr', **params_str)
+            self.A5()
 
     def A3(self):
         print("A3: Summation")
@@ -124,13 +137,33 @@ class Laba4:
             #params['coef_q'] = self.__ptr('Q')[0]
 
     def A4(self):
-        print("A4: ")
+        print("A4: Excluding part")
         self.steps.append('A4')
 
-        pass
+        params = {
+            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
+            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
+            'img_3': "<w:p><w:r><w:t>%img_3%</w:t></w:r></w:p>",
+            'img_4': "<w:p><w:r><w:t>%img_4%</w:t></w:r></w:p>",
+            'img_5': "<w:p><w:r><w:t>%img_5%</w:t></w:r></w:p>",
+            'img_6': "<w:p><w:r><w:t>%img_6%</w:t></w:r></w:p>",
+        }
+
+        self.document.add_step('A4', **params)
+        # self.A2()
 
     def A5(self):
-        print("A5: ")
+        print("A5: Appending new part")
         self.steps.append('A5')
 
-        pass
+        params = {
+            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
+            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
+            'img_3': "<w:p><w:r><w:t>%img_3%</w:t></w:r></w:p>",
+            'img_4': "<w:p><w:r><w:t>%img_4%</w:t></w:r></w:p>",
+            'img_5': "<w:p><w:r><w:t>%img_5%</w:t></w:r></w:p>",
+            'img_6': "<w:p><w:r><w:t>%img_6%</w:t></w:r></w:p>",
+        }
+
+        self.document.add_step('A5', **params)
+        # self.A2()

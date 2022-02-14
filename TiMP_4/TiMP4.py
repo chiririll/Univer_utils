@@ -1,5 +1,7 @@
 from word_parser import Document
-from utils import bool_params_to_string
+
+
+DEFAULT_IMG = "<w:p><w:r><w:t>%image%</w:t></w:r></w:p>"
 
 
 class Laba4:
@@ -42,14 +44,17 @@ class Laba4:
     def run(self):
         self.A1()
 
+    def finish(self):
+        pass
+
     def A1(self):
         print("A1: Initialization")
         self.steps.append('A1')
 
         params = {
-            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
-            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
-            'img_3': "<w:p><w:r><w:t>%img_3%</w:t></w:r></w:p>"
+            'img_1': DEFAULT_IMG,
+            'img_2': DEFAULT_IMG,
+            'img_3': DEFAULT_IMG
         }
 
         self.__ptr_move('P')
@@ -68,9 +73,6 @@ class Laba4:
         self.steps.append('A2')
 
         params = {
-            # Images temp
-            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
-            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
             # P
             'a_p': self.__ptr('P')[1],
             'b_p': self.__ptr('P')[2],
@@ -102,39 +104,63 @@ class Laba4:
         params['abc_p_lt'] = params['p_lt'] or params['p_eq_and_a_lt_or_a_eq_and_b_lt']
         params['abc_p_eq'] = params['a_eq_and_b_eq'] and params['c_eq']
 
-        params_str = bool_params_to_string(params)
         self.document.add_step('A2')
-        self.document.add_step('A2_cond_ltr', **params_str)
+        self.document.add_step('A2_cond_ltr', **params)
 
-        if params['abc_p_lt']:
+        if params['abc_p_lt']:      # ABC(P) < ABC(Q)
             self.__ptr('Q1', 'Q')
-            # Image
+            params['img_1'] = DEFAULT_IMG
             self.__ptr_move('Q')
-            # Image
+            params['img_2'] = DEFAULT_IMG
 
-            self.document.add_step('A2_ltr', **params_str)
+            self.document.add_step('A2_ltr', **params)
             self.A2()
-        elif params['abc_p_eq']:
-            self.document.add_step('A2_cond_eq', **params_str)
+        elif params['abc_p_eq']:    # ABC(P) = ABC(Q)
+            self.document.add_step('A2_cond_eq', **params)
             self.A3()
-        else:
-            self.document.add_step('A2_gtr', **params_str)
+        else:                       # ABC(P) > ABC(Q)
+            self.document.add_step('A2_gtr', **params)
             self.A5()
 
     def A3(self):
         print("A3: Summation")
         self.steps.append('A3')
 
-        params = {}
+        params = {
+            'abc_p': ''.join(self.__ptr('P')[1:]),
+            'abc_p_ltr_0': self.__ptr('P')[1:] < (0, 0, 0),
+            'coef_p': self.__ptr('P')[0],
+            'coef_q': self.__ptr('Q')[0],
+        }
 
-        if self.__ptr('P')[1:] < (0, 0, 0):
-            pass
+        if params['abc_p_ltr_0']:
+            self.document.add_step('A3_finish', **params)
+            self.finish()
         else:
-            params['coef_q_prev'] = self.__ptr('Q')[0]
-            params['coef_p'] = self.__ptr('P')[0]
+            self.__ptr('Q')[0] = self.__ptr('P')[0] + self.__ptr('Q')[0]
+            params['coef_q_new'] = self.__ptr('Q')[0]
+            params['coef_q_eq_0'] = self.__ptr('Q')[0] == 0
 
-            #self.__ptr('Q')[0] = self.__ptr('P')[0]
-            #params['coef_q'] = self.__ptr('Q')[0]
+            params['img_1'] = DEFAULT_IMG
+
+            if params['coef_q_eq_0']:
+                self.document.add_step('A3_zero', **params)
+                self.A4()
+            else:
+                self.__ptr('Q1', 'Q')
+
+                params['img_2'] = DEFAULT_IMG
+
+                self.__ptr_move('P')
+
+                params['img_3'] = DEFAULT_IMG
+
+                self.__ptr_move('Q')
+
+                params['img_4'] = DEFAULT_IMG
+
+                self.document.add_step('A3_non_zero', **params)
+                self.A2()
 
     def A4(self):
         print("A4: Excluding part")

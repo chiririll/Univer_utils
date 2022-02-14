@@ -74,9 +74,11 @@ class Document:
 
         # Replacing markers
         for name, val in kwargs.items():
-            if "image" in name:
+            if "image" in name:     # or "img" in name:
                 img_id = self.add_image(val['path'])
                 val = self.__get_image_xml(img_id, val['size'])
+            if type(val) is bool:
+                val = "ИСТИНА" if val else "ЛОЖЬ"
 
             step_xml = step_xml.replace(f"%{name}%", str(val))
 

@@ -42,10 +42,16 @@ class Laba4:
             self.pointers[name][1] = 0
 
     def run(self):
+        # self.document.add_step('_title_page')
+
+        img_1 = DEFAULT_IMG
+        self.document.add_step('_practice', img_1=img_1)
+
         self.A1()
 
     def finish(self):
-        pass
+        self.document.add_step('_answer', steps=', '.join(self.steps))
+        self.document.add_step('conclusion')
 
     def A1(self):
         print("A1: Initialization")
@@ -133,6 +139,9 @@ class Laba4:
             'coef_q': self.__ptr('Q')[0],
         }
 
+        self.document.add_step('A3', **params)
+        self.document.add_step('A3_cond_finish', **params)
+
         if params['abc_p_ltr_0']:
             self.document.add_step('A3_finish', **params)
             self.finish()
@@ -143,20 +152,19 @@ class Laba4:
 
             params['img_1'] = DEFAULT_IMG
 
+            self.document.add_step('A3_cond_zero', **params)
+
             if params['coef_q_eq_0']:
                 self.document.add_step('A3_zero', **params)
                 self.A4()
             else:
                 self.__ptr('Q1', 'Q')
-
                 params['img_2'] = DEFAULT_IMG
 
                 self.__ptr_move('P')
-
                 params['img_3'] = DEFAULT_IMG
 
                 self.__ptr_move('Q')
-
                 params['img_4'] = DEFAULT_IMG
 
                 self.document.add_step('A3_non_zero', **params)
@@ -166,14 +174,19 @@ class Laba4:
         print("A4: Excluding part")
         self.steps.append('A4')
 
-        params = {
-            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
-            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
-            'img_3': "<w:p><w:r><w:t>%img_3%</w:t></w:r></w:p>",
-            'img_4': "<w:p><w:r><w:t>%img_4%</w:t></w:r></w:p>",
-            'img_5': "<w:p><w:r><w:t>%img_5%</w:t></w:r></w:p>",
-            'img_6': "<w:p><w:r><w:t>%img_6%</w:t></w:r></w:p>",
-        }
+        params = {}
+
+        self.__ptr('Q2', 'Q')
+        params['img_1'] = DEFAULT_IMG
+
+        self.__ptr_move('Q')
+        params['img_2'] = DEFAULT_IMG
+
+        # TODO: LINK(Q1) = Q
+        params['img_3'] = DEFAULT_IMG
+
+        # TODO: AVAIL <- Q2
+        params['img_4'] = DEFAULT_IMG
 
         self.document.add_step('A4', **params)
         # self.A2()
@@ -183,13 +196,15 @@ class Laba4:
         self.steps.append('A5')
 
         params = {
-            'img_1': "<w:p><w:r><w:t>%img_1%</w:t></w:r></w:p>",
-            'img_2': "<w:p><w:r><w:t>%img_2%</w:t></w:r></w:p>",
-            'img_3': "<w:p><w:r><w:t>%img_3%</w:t></w:r></w:p>",
-            'img_4': "<w:p><w:r><w:t>%img_4%</w:t></w:r></w:p>",
-            'img_5': "<w:p><w:r><w:t>%img_5%</w:t></w:r></w:p>",
-            'img_6': "<w:p><w:r><w:t>%img_6%</w:t></w:r></w:p>",
+            'img_1': DEFAULT_IMG,
+            'img_2': DEFAULT_IMG,
+            'img_3': DEFAULT_IMG,
+            'img_4': DEFAULT_IMG,
+            'img_5': DEFAULT_IMG,
+            'img_6': DEFAULT_IMG,
         }
+
+        # Q2 <- AAVAIL
 
         self.document.add_step('A5', **params)
         # self.A2()

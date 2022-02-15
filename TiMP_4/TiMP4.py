@@ -5,15 +5,17 @@ DEFAULT_IMG = "<w:p><w:r><w:t>%image%</w:t></w:r></w:p>"
 
 
 class Laba4:
-    def __init__(self, polynomial_1: list, polynomial_2: list, name="out"):
+    def __init__(self, task: list, name="out"):
         # Document
         self.document = Document(f"output/docs/{name}.doc")
 
+        self.task = []
+
         # Data
-        self.pols = [
-            polynomial_1,
-            polynomial_2
-        ]
+        self.task = task
+        # Part: [COEF, A, B, C, NEXT_INDEX]
+        self.pols = []
+        self.__parse_task()
 
         # Pointers
         self.pointers = {'P': [0, len(self.pols[0]) - 1], 'Q': [1, len(self.pols[1]) - 1]}
@@ -21,25 +23,40 @@ class Laba4:
         # Answer
         self.steps = []
 
+    def __parse_task(self):
+        # [COEF, A, B, C]
+        for pol in self.task:
+            new_pol = []
+            for i, part in enumerate(pol):
+                new_part = list(part)
+                new_part.append((i+1) % len(pol))
+                new_pol.append(new_part)
+            self.pols.append(new_pol)
+
     def __ptr(self, name: str, val=None):
+        # Editing pointer
         if val:
+            # Create new pointer and set default position
             if name not in self.pointers.keys():
                 self.pointers[name] = (0, 0)
+            # Change position inside polynomial
             if type(val) is int:
                 self.pointers[name][1] = val
+            # Change position and polynomial
             elif type(val) is list or type(val) is tuple:
                 self.pointers[name] = val
+            # Move one pointer to another
             elif type(val) is str:
                 self.pointers[name] = self.pointers[val]
         else:
+            # Returning pointer
             ptr = self.pointers.get(name)
             return self.pols[ptr[0]][ptr[1]]
 
     def __ptr_move(self, name: str):
-        self.pointers[name][1] += 1
         ptr = self.pointers[name]
-        if ptr[1] >= len(self.pols[ptr[0]]):
-            self.pointers[name][1] = 0
+        # Moving to next link
+        self.pointers[name][1] = self.pols[ptr[0]][ptr[1]][4]
 
     def run(self):
         # self.document.add_step('_title_page')

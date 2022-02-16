@@ -191,7 +191,7 @@
         <w:rPr>
             <w:spacing w:val="-2"/>
         </w:rPr>
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r>
         <w:rPr>
@@ -252,7 +252,7 @@
             <w:i/>
             <w:spacing w:val="-2"/>
         </w:rPr>
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="00CE0DFA">
         <w:rPr>
@@ -437,13 +437,13 @@
         <w:t>AVAIL</w:t>
     </w:r>
     <w:r w:rsidRPr="008438A0">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
         <w:sym w:font="Symbol" w:char="F0DC"/>
     </w:r>
     <w:r w:rsidRPr="008438A0">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="00CE0DFA">
         <w:rPr>
@@ -491,7 +491,7 @@
         <w:t>.</w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
 </w:p>
 <w:p w:rsidR="00B0659B" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">

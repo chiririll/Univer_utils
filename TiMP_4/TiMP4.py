@@ -64,21 +64,38 @@ class Laba4:
     def __add_part(self, pol: int = 0, pos: int = 0, ptr: str = None):
         if ptr:
             pol, pos = self.pointers[ptr]
+
+        # Updating links
         for i in range(pos - 1, len(self.pols[pol]) - 1):
             self.pols[pol][i][4] = (self.pols[pol][i][4] + 1) % (len(self.pols[pol]) + 1)
 
+        # Moving pointers
         for k, v in self.pointers.items():
             if k != ptr and v[0] == pol and v[1] >= pos:
                 self.pointers[k][1] += 1
 
+        # Adding part
         self.pols[pol].insert(pos, [None, None, None, None, None])
 
-    def __exclude_part(self):
-        # TODO
-        pass
+    def __exclude_part(self, pol: int = 0, pos: int = 0, ptr: str = None):
+        if ptr:
+            pol, pos = self.pointers[ptr]
+
+        # Updating links
+        for i in range(pos + 1, len(self.pols[pol]) - 1):
+            self.pols[pol][i][4] -= 1
+
+        # Moving pointers
+        self.pointers.pop(ptr)
+        for k, v in self.pointers.items():
+            if v[0] == pol and v[1] >= pos:
+                self.pointers[k][1] -= 1
+
+        # Excluding part
+        self.pols[pol].pop(pos)
 
     def run(self):
-        # self.document.add_step('_title_page')
+        self.document.add_step('_title_page')
 
         img_1 = draw('A0/A0', self.pols, self.pointers)
 
@@ -88,7 +105,7 @@ class Laba4:
 
     def finish(self):
         self.document.add_step('_answer', steps=', '.join(self.steps))
-        self.document.add_step('conclusion')
+        self.document.add_step('_conclusion')
 
     def A1(self):
         print("A1: Initialization")
@@ -122,8 +139,8 @@ class Laba4:
             'b_q': self.__ptr('Q')[2],
             'c_q': self.__ptr('Q')[3],
             # Sum
-            'psum': sum(self.__ptr('P')[1:]),
-            'qsum': sum(self.__ptr('Q')[1:]),
+            'psum': sum(self.__ptr('P')[1:-1]),
+            'qsum': sum(self.__ptr('Q')[1:-1]),
         }
 
         # Conditions
@@ -156,20 +173,31 @@ class Laba4:
 
             self.document.add_step('A2_ltr', **params)
             self.A2()
-        elif params['abc_p_eq']:    # ABC(P) = ABC(Q)
-            self.document.add_step('A2_cond_eq', **params)
+            return
+
+        self.document.add_step('A2_cond_eq', **params)
+        if params['abc_p_eq']:    # ABC(P) = ABC(Q)
+            self.document.add_step('A2_eq', **params)
             self.A3()
-        else:                       # ABC(P) > ABC(Q)
-            self.document.add_step('A2_gtr', **params)
-            self.A5()
+            return
+
+        # ABC(P) > ABC(Q)
+        self.document.add_step('A2_gtr', **params)
+        self.A5()
 
     def A3(self):
+        def abc_str(ptr: str):
+            abc = ""
+            for s in self.__ptr(ptr)[1:-1]:
+                abc += str(s)
+            return abc
+
         print("A3: Summation")
         self.steps.append('A3')
 
         params = {
-            'abc_p': ''.join(self.__ptr('P')[1:]),
-            'abc_p_ltr_0': self.__ptr('P')[1:] < (0, 0, 0),
+            'abc_p': abc_str('P'),
+            'abc_p_ltr_0': self.__ptr('P')[1:-1] < [0, 0, 0],
             'coef_p': self.__ptr('P')[0],
             'coef_q': self.__ptr('Q')[0],
         }
@@ -221,14 +249,19 @@ class Laba4:
         # LINK(Q1) = Q
         self.__ptr('Q1')[4] = self.pointers['Q'][1]
         params['img_3'] = DEFAULT_IMG
-        # params['img_3'] = draw('A4/img_3', self.pols, self.pointers)
+        params['img_3'] = draw('A4/img_3', self.pols, self.pointers)
 
-        # TODO: AVAIL <- Q2
-        params['img_4'] = DEFAULT_IMG
-        # params['img_4'] = draw('A4/img_4', self.pols, self.pointers)
+        # AVAIL <- Q2
+        self.__exclude_part(ptr='Q2')
+        self.__ptr('Q1')[4] = self.pointers['Q'][1]
+        params['img_4'] = draw('A4/img_4', self.pols, self.pointers)
+
+        # P <- LINK(P)
+        self.__ptr_move('P')
+        params['img_5'] = draw('A4/img_5', self.pols, self.pointers)
 
         self.document.add_step('A4', **params)
-        # self.A2()
+        self.A2()
 
     def A5(self):
         print("A5: Appending new part")

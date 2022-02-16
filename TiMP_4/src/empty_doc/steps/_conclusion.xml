@@ -1,6 +1,7 @@
 <w:p />
 <w:p w:rsidR="00BE582F" w:rsidRDefault="00BE582F" w:rsidP="00BE582F">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:b/>
@@ -12,14 +13,6 @@
         </w:rPr>
         <w:t>Заключение</w:t>
     </w:r>
-</w:p>
-<w:p w:rsidR="00BE582F" w:rsidRPr="0004036B" w:rsidRDefault="00BE582F" w:rsidP="00BE582F">
-    <w:pPr>
-        <w:jc w:val="center"/>
-        <w:rPr>
-            <w:b/>
-        </w:rPr>
-    </w:pPr>
 </w:p>
 <w:p w:rsidR="00BE582F" w:rsidRDefault="00BE582F" w:rsidP="00BE582F">
     <w:pPr>
@@ -34,8 +27,5 @@
     </w:r>
     <w:r w:rsidRPr="0004036B">
         <w:t>.</w:t>
-    </w:r>
-    <w:r>
-        <w:t xml:space="preserve"></w:t>
     </w:r>
 </w:p>

@@ -1,5 +1,6 @@
 <w:p w:rsidR="00BE582F" w:rsidRDefault="00BE582F" w:rsidP="00BE582F">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:b/>
@@ -14,6 +15,7 @@
 </w:p>
 <w:p>
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
     </w:pPr>
     <w:r w:rsidRPr="0004036B">

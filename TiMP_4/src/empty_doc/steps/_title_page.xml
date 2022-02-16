@@ -1,6 +1,7 @@
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a5"/>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
@@ -20,12 +21,12 @@
         </w:rPr>
         <w:t>высшего</w:t>
     </w:r>
-    <w:r w:rsidRPr="00FC1320">
+    <w:r w:rsidRPr="00437914">
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001074A1">
         <w:rPr>
@@ -35,17 +36,9 @@
         <w:t>образования Российской Федерации</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:jc w:val="center"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -102,17 +95,9 @@
         <w:t>»</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="006D29A6" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="00445FC5" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:jc w:val="center"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="00445FC5" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -127,8 +112,9 @@
         <w:t>Институт автоматики и информационных технологий</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -136,8 +122,9 @@
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -145,10 +132,10 @@
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:jc w:val="left"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
@@ -162,42 +149,29 @@
         <w:t>Кафедра «Информационные системы и защита информации»</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
         <w:pStyle w:val="1"/>
-        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -212,8 +186,9 @@
         <w:t>О Т Ч Е Т</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -249,8 +224,9 @@
         <w:t xml:space="preserve"> на тему</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -280,8 +256,9 @@
         <w:t>»</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -289,8 +266,9 @@
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -302,11 +280,12 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>Вариант № %var%</w:t>
+        <w:t>Вариант №%var%</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
+        <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -314,28 +293,9 @@
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:jc w:val="center"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:jc w:val="center"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
@@ -356,10 +316,9 @@
         <w:t>СИБ201</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
@@ -373,10 +332,9 @@
         <w:t>%name%</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
@@ -404,39 +362,35 @@
         <w:t xml:space="preserve"> г.</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="00FC1320" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="00FC1320" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
     </w:pPr>
     <w:r w:rsidRPr="00FC1320">
         <w:t>(Подпись)</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
@@ -450,10 +404,9 @@
         <w:t>Проверил: доцент Кулаков Ю.В.</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
@@ -481,63 +434,16 @@
         <w:t xml:space="preserve"> г.</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="00FC1320" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="00FC1320" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:ind w:left="4820"/>
+        <w:ind w:left="4820" w:firstLine="0"/>
     </w:pPr>
     <w:r w:rsidRPr="00FC1320">
         <w:t>(Подпись)</w:t>
     </w:r>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:pStyle w:val="a3"/>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-    </w:pPr>
-</w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="005042EC" w:rsidP="005042EC">
-    <w:pPr>
-        <w:pStyle w:val="1"/>
         <w:ind w:firstLine="0"/>
         <w:rPr>
             <w:sz w:val="28"/>
@@ -545,60 +451,62 @@
         </w:rPr>
     </w:pPr>
 </w:p>
-<w:p w:rsidR="005042EC" w:rsidRPr="00E57CE5" w:rsidRDefault="005042EC" w:rsidP="005042EC">
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+    <w:bookmarkEnd w:id="0"/>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
     <w:pPr>
         <w:pStyle w:val="1"/>
-        <w:ind w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="00E57CE5" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:pStyle w:val="1"/>
         <w:jc w:val="center"/>
         <w:rPr>
-            <w:b w:val="0"/>
-            <w:i w:val="0"/>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
     </w:pPr>
     <w:r w:rsidRPr="001074A1">
         <w:rPr>
-            <w:b w:val="0"/>
-            <w:i w:val="0"/>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>Тамбов</w:t>
+        <w:t>Тамбов20</w:t>
     </w:r>
     <w:r>
         <w:rPr>
-            <w:b w:val="0"/>
-            <w:i w:val="0"/>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-        <w:t xml:space="preserve"></w:t>
-    </w:r>
-    <w:r w:rsidRPr="001074A1">
-        <w:rPr>
-            <w:b w:val="0"/>
-            <w:i w:val="0"/>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-        <w:t>20</w:t>
-    </w:r>
-    <w:r>
-        <w:rPr>
-            <w:b w:val="0"/>
-            <w:i w:val="0"/>
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
         <w:t>21</w:t>
     </w:r>
-</w:p>
-<w:p w:rsidR="004A132C" w:rsidRPr="005042EC" w:rsidRDefault="005042EC" w:rsidP="005042EC">
     <w:r>
         <w:rPr>
-            <w:b/>
-            <w:i/>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
         </w:rPr>
         <w:br w:type="page"/>
     </w:r>

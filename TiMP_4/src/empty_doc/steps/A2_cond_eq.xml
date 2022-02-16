@@ -101,7 +101,7 @@
         <w:t>и</w:t>
     </w:r>
     <w:r w:rsidRPr="006E2525">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="006E2525">
         <w:rPr>
@@ -151,7 +151,7 @@
         <w:t>и</w:t>
     </w:r>
     <w:r w:rsidRPr="006E2525">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="006E2525">
         <w:rPr>
@@ -203,7 +203,7 @@
         <w:t>%a_q%</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
         <w:rPr>
@@ -213,7 +213,7 @@
         <w:t>и</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidR="00727000">
         <w:t>%b_p%</w:t>
@@ -225,7 +225,7 @@
         <w:t>%b_q%</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
         <w:rPr>
@@ -235,7 +235,7 @@
         <w:t>и</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidR="00727000">
         <w:t>%c_p%</w:t>
@@ -259,7 +259,7 @@
         <w:t>%a_eq%</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
         <w:rPr>
@@ -269,13 +269,13 @@
         <w:t>и</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidR="00727000" w:rsidRPr="00727000">
         <w:t>%b_eq%</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
         <w:rPr>
@@ -285,7 +285,7 @@
         <w:t>и</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidR="00727000" w:rsidRPr="00727000">
         <w:t>%c_eq%</w:t>
@@ -306,7 +306,7 @@
         <w:t>%a_eq_and_b_eq%</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
         <w:rPr>
@@ -316,7 +316,7 @@
         <w:t>и</w:t>
     </w:r>
     <w:r w:rsidRPr="00E92C17">
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidR="00727000">
         <w:rPr>

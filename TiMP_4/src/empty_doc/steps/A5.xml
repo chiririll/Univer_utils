@@ -85,7 +85,7 @@
         <w:rPr>
             <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="001B6196">
         <w:sym w:font="Symbol" w:char="F0DC"/>
@@ -94,7 +94,7 @@
         <w:rPr>
             <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t xml:space="preserve"></w:t>
+        <w:t xml:space="preserve"> </w:t>
     </w:r>
     <w:r w:rsidRPr="005143FF">
         <w:rPr>
@@ -430,6 +430,7 @@
         <w:t xml:space="preserve">, </w:t>
     </w:r>
 </w:p>
+%img_6%
 <w:p w:rsidR="007314D2" w:rsidRPr="008438A0" w:rsidRDefault="007314D2" w:rsidP="007314D2">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>
@@ -469,7 +470,7 @@
         <w:t xml:space="preserve">) </w:t>
     </w:r>
 </w:p>
-%img_6%
+%img_7%
 <w:p w:rsidR="007314D2" w:rsidRPr="00925900" w:rsidRDefault="007314D2" w:rsidP="007314D2">
     <w:pPr>
         <w:spacing w:line="360" w:lineRule="auto"/>

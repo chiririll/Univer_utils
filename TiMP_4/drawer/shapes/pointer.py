@@ -11,7 +11,7 @@ class Pointer(Shape):
         a_rad = math.radians(angle)
         l = (length + len(text) * 5,
              length + 14)
-        text_c = (round(math.sin(a_rad) * l[0]) , -round(math.cos(a_rad) * l[1]))
+        text_c = (round(math.sin(a_rad) * l[0]), -round(math.cos(a_rad) * l[1]) + 5)
 
         self.text = str(text)
         self.angle = angle

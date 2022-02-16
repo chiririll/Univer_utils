@@ -74,7 +74,7 @@ class Document:
 
         # Replacing markers
         for name, val in kwargs.items():
-            if "image" in name:     # or "img" in name:
+            if type(val) is dict and ("image" in name or "img" in name):
                 img_id = self.add_image(val['path'])
                 val = self.__get_image_xml(img_id, val['size'])
             if type(val) is bool:

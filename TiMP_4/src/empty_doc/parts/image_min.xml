@@ -1,8 +1,8 @@
 <w:p w:rsidR="00724D47" w:rsidRPr="00EB0ED9" w:rsidRDefault="00724D47" w:rsidP="00724D47">
     <w:pPr>
         <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
         <w:spacing w:line="360" w:lineRule="auto"/>
-        <w:jc w:val="both"/>
     </w:pPr>
     <w:r>
         <w:pict>

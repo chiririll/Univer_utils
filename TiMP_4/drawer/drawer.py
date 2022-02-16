@@ -1,28 +1,37 @@
 import svgwrite
 
-# from . import shapes
-# from . import utils
-# from .svg2emf import export_emf
+from . import shapes
+from . import utils
+from .svg2emf import export_emf
 
-import shapes
-import utils
-from svg2emf import export_emf
+# import shapes
+# import utils
+# from svg2emf import export_emf
 
-padding = (50, 50)
-spacing = (30, 100)
+padding = (30, 30)
+padding_bottom = 0
+spacing = (20, 70)
 
 
 def draw(filename: str, pols, pointers: dict = None):
+    # TODO: Center
     def calculate_size():
         parts_count = []
         for p in pols:
             parts_count.append(len(p))
 
         return 2 * padding[0] + max(parts_count) * 5 * shapes.Part.w + (max(parts_count) - 1) * spacing[0], \
-               2 * padding[1] + len(pols) * shapes.Part.h + (len(pols) - 1) * spacing[1]
+               2 * padding[1] + len(pols) * shapes.Part.h + (len(pols) - 1) * spacing[1] + padding_bottom
 
     if pointers is None:
         pointers = {}
+
+    ptrs = {}
+    for k, v in pointers.items():
+        part = tuple(v)
+        if part not in ptrs.keys():
+            ptrs[part] = []
+        ptrs[part].append(k)
 
     path = f"output/images/{filename}.svg"
     utils.check_path(path)
@@ -36,7 +45,7 @@ def draw(filename: str, pols, pointers: dict = None):
                 padding[0] + shapes.Part.w * 5 * j + spacing[0] * j,
                 padding[1] + shapes.Part.h * i + spacing[1] * i
             )
-            p = shapes.Part(dwg, pos, part, [])
+            p = shapes.Part(dwg, pos, part, ptrs.get((i, j), []))
             p.draw()
 
             if len(part) < 5 or part[4] is None:
@@ -53,7 +62,8 @@ def draw(filename: str, pols, pointers: dict = None):
                 ).draw()
             else:
                 # Reverse arrow
-                shapes.Arrow(dwg, arrow_pos, (padding[0], arrow_pos[1]), 180, 2 * shapes.Part.h).draw()
+                shapes.Arrow(dwg, arrow_pos, (padding[0] + 5 * shapes.Part.w * part[4] + spacing[0] * part[4],
+                                              arrow_pos[1]), 180).draw()
 
     dwg.save()
 

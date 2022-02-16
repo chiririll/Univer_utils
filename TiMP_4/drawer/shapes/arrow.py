@@ -7,7 +7,7 @@ class Arrow(Shape):
 
     point_radius = (3, 3)
     shift = ((30, 20), (-15, 20))
-    shift_90 = ((20, 35), (-15, 35))
+    shift_90 = ((20, 28), (-15, 28))
 
     width = 1
 

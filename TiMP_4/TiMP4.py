@@ -1,4 +1,5 @@
 from word_parser import Document
+from drawer import draw
 
 
 DEFAULT_IMG = "<w:p><w:r><w:t>%image%</w:t></w:r></w:p>"
@@ -43,11 +44,13 @@ class Laba4:
             if type(val) is int:
                 self.pointers[name][1] = val
             # Change position and polynomial
-            elif type(val) is list or type(val) is tuple:
-                self.pointers[name] = val
+            elif type(val) is list:
+                self.pointers[name] = val.copy()
+            elif type(val) is tuple:
+                self.pointers[name] = list(val)
             # Move one pointer to another
             elif type(val) is str:
-                self.pointers[name] = self.pointers[val]
+                self.pointers[name] = self.pointers[val].copy()
         else:
             # Returning pointer
             ptr = self.pointers.get(name)
@@ -58,10 +61,27 @@ class Laba4:
         # Moving to next link
         self.pointers[name][1] = self.pols[ptr[0]][ptr[1]][4]
 
+    def __add_part(self, pol: int = 0, pos: int = 0, ptr: str = None):
+        if ptr:
+            pol, pos = self.pointers[ptr]
+        for i in range(pos - 1, len(self.pols[pol]) - 1):
+            self.pols[pol][i][4] = (self.pols[pol][i][4] + 1) % (len(self.pols[pol]) + 1)
+
+        for k, v in self.pointers.items():
+            if k != ptr and v[0] == pol and v[1] >= pos:
+                self.pointers[k][1] += 1
+
+        self.pols[pol].insert(pos, [None, None, None, None, None])
+
+    def __exclude_part(self):
+        # TODO
+        pass
+
     def run(self):
         # self.document.add_step('_title_page')
 
-        img_1 = DEFAULT_IMG
+        img_1 = draw('A0/A0', self.pols, self.pointers)
+
         self.document.add_step('_practice', img_1=img_1)
 
         self.A1()
@@ -74,19 +94,16 @@ class Laba4:
         print("A1: Initialization")
         self.steps.append('A1')
 
-        params = {
-            'img_1': DEFAULT_IMG,
-            'img_2': DEFAULT_IMG,
-            'img_3': DEFAULT_IMG
-        }
+        params = {}
 
         self.__ptr_move('P')
+        params['img_1'] = draw('A1/img_1', self.pols, self.pointers)
 
-        # Image
         self.__ptr('Q1', 'Q')
-        # Image
+        params['img_2'] = draw('A1/img_2', self.pols, self.pointers)
+
         self.__ptr_move('Q')
-        # Image
+        params['img_3'] = draw('A1/img_3', self.pols, self.pointers)
 
         self.document.add_step('A1', **params)
         self.A2()
@@ -132,9 +149,10 @@ class Laba4:
 
         if params['abc_p_lt']:      # ABC(P) < ABC(Q)
             self.__ptr('Q1', 'Q')
-            params['img_1'] = DEFAULT_IMG
+            params['img_1'] = draw('A2/img_1', self.pols, self.pointers)
+
             self.__ptr_move('Q')
-            params['img_2'] = DEFAULT_IMG
+            params['img_2'] = draw('A2/img_2', self.pols, self.pointers)
 
             self.document.add_step('A2_ltr', **params)
             self.A2()
@@ -168,6 +186,7 @@ class Laba4:
             params['coef_q_eq_0'] = self.__ptr('Q')[0] == 0
 
             params['img_1'] = DEFAULT_IMG
+            params['img_1'] = draw('A3/img_1', self.pols, self.pointers)
 
             self.document.add_step('A3_cond_zero', **params)
 
@@ -176,13 +195,13 @@ class Laba4:
                 self.A4()
             else:
                 self.__ptr('Q1', 'Q')
-                params['img_2'] = DEFAULT_IMG
+                params['img_2'] = draw('A3/img_2', self.pols, self.pointers)
 
                 self.__ptr_move('P')
-                params['img_3'] = DEFAULT_IMG
+                params['img_3'] = draw('A3/img_3', self.pols, self.pointers)
 
                 self.__ptr_move('Q')
-                params['img_4'] = DEFAULT_IMG
+                params['img_4'] = draw('A3/img_4', self.pols, self.pointers)
 
                 self.document.add_step('A3_non_zero', **params)
                 self.A2()
@@ -194,16 +213,19 @@ class Laba4:
         params = {}
 
         self.__ptr('Q2', 'Q')
-        params['img_1'] = DEFAULT_IMG
+        params['img_1'] = draw('A4/img_1', self.pols, self.pointers)
 
         self.__ptr_move('Q')
-        params['img_2'] = DEFAULT_IMG
+        params['img_2'] = draw('A4/img_2', self.pols, self.pointers)
 
-        # TODO: LINK(Q1) = Q
+        # LINK(Q1) = Q
+        self.__ptr('Q1')[4] = self.pointers['Q'][1]
         params['img_3'] = DEFAULT_IMG
+        # params['img_3'] = draw('A4/img_3', self.pols, self.pointers)
 
         # TODO: AVAIL <- Q2
         params['img_4'] = DEFAULT_IMG
+        # params['img_4'] = draw('A4/img_4', self.pols, self.pointers)
 
         self.document.add_step('A4', **params)
         # self.A2()
@@ -212,16 +234,38 @@ class Laba4:
         print("A5: Appending new part")
         self.steps.append('A5')
 
-        params = {
-            'img_1': DEFAULT_IMG,
-            'img_2': DEFAULT_IMG,
-            'img_3': DEFAULT_IMG,
-            'img_4': DEFAULT_IMG,
-            'img_5': DEFAULT_IMG,
-            'img_6': DEFAULT_IMG,
-        }
+        params = {}
 
-        # Q2 <- AAVAIL
+        # Q2 <- AVAIL
+        self.__ptr('Q2', (1, (self.__ptr('Q')[4] - 1) % len(self.pols[1])))
+        self.__add_part(ptr='Q2')
+        params['img_1'] = draw('A5/img_1', self.pols, self.pointers)
+
+        # COEF(Q2) <- COEF(P)
+        self.__ptr('Q2')[0] = self.__ptr('P')[0]
+        params['img_2'] = draw('A5/img_2', self.pols, self.pointers)
+
+        # ABC(Q2) <- ABC(P)
+        self.__ptr('Q2')[1] = self.__ptr('P')[1]
+        self.__ptr('Q2')[2] = self.__ptr('P')[2]
+        self.__ptr('Q2')[3] = self.__ptr('P')[3]
+        params['img_3'] = draw('A5/img_3', self.pols, self.pointers)
+
+        # LINK(Q2) <- Q
+        self.__ptr('Q2')[4] = self.pointers['Q'][1]
+        params['img_4'] = draw('A5/img_4', self.pols, self.pointers)
+
+        # LINK(Q1) <- Q2
+        self.__ptr('Q1')[4] = self.pointers['Q2'][1]
+        params['img_5'] = draw('A5/img_5', self.pols, self.pointers)
+
+        # Q1 <- Q2
+        self.__ptr('Q1', 'Q2')
+        params['img_6'] = draw('A5/img_6', self.pols, self.pointers)
+
+        # P <- LINK(P)
+        self.__ptr_move('P')
+        params['img_7'] = draw('A5/img_7', self.pols, self.pointers)
 
         self.document.add_step('A5', **params)
-        # self.A2()
+        self.A2()

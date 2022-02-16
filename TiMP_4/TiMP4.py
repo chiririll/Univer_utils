@@ -6,14 +6,15 @@ DEFAULT_IMG = "<w:p><w:r><w:t>%image%</w:t></w:r></w:p>"
 
 
 class Laba4:
-    def __init__(self, task: list, name="out"):
+    def __init__(self, task: list, filename="out", var=0, name="Ivanov I.I."):
         # Document
-        self.document = Document(f"output/docs/{name}.doc")
-
-        self.task = []
+        self.document = Document(f"output/docs/{filename}.doc")
 
         # Data
         self.task = task
+        self.var = var
+        self.name = name
+
         # Part: [COEF, A, B, C, NEXT_INDEX]
         self.pols = []
         self.__parse_task()
@@ -39,7 +40,7 @@ class Laba4:
         if val:
             # Create new pointer and set default position
             if name not in self.pointers.keys():
-                self.pointers[name] = (0, 0)
+                self.pointers[name] = [0, 0]
             # Change position inside polynomial
             if type(val) is int:
                 self.pointers[name][1] = val
@@ -95,7 +96,7 @@ class Laba4:
         self.pols[pol].pop(pos)
 
     def run(self):
-        self.document.add_step('_title_page')
+        self.document.add_step('_title_page', var=self.var, name=self.name)
 
         img_1 = draw('A0/A0', self.pols, self.pointers)
 
@@ -104,7 +105,52 @@ class Laba4:
         self.A1()
 
     def finish(self):
-        self.document.add_step('_answer', steps=', '.join(self.steps))
+        def generate_pol(pol: list):
+            res = []
+            for i, part in enumerate(pol):
+                if part[0] == 0:
+                    continue
+                valid = abs(part[0]) != 1
+
+                if i > 0:
+                    res.append((" - " if part[0] < 0 else " + ") + (str(abs(part[0])) if abs(part[0]) != 1 else ""))
+                elif abs(part[0]) != 1:
+                    res.append(str(part[0]))
+                elif part[0] < 0:
+                    res.append('-')
+
+                variables = ['x', 'y', 'z']
+                for i in range(1, 4):
+                    if part[i] != 0:
+                        valid = True
+                        res.append(variables[i - 1])
+                        res.append('^' + (str(part[i]) if part[i] != 1 else ""))
+
+                if not valid:
+                    res.append("1")
+            return res
+
+        def generate_xml(equation: list):
+            res = "<w:r><w:t xml:space=\"preserve\">"
+            for p in equation:
+                if p[0] == '^':
+                    res += "</w:t></w:r>"
+                    res += "<w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t xml:space=\"preserve\">"
+                    res += p[1:]
+                    res += "</w:t></w:r><w:r><w:t xml:space=\"preserve\">"
+                else:
+                    res += p
+            res += "</w:t></w:r>"
+            return res
+
+        params = {
+            'steps': ", ".join(self.steps),
+            'polynomial_1': generate_xml(generate_pol(self.task[0])),
+            'polynomial_2': generate_xml(generate_pol(self.task[1])),
+            'polynomial_answer': generate_xml(generate_pol(self.pols[1])),
+        }
+
+        self.document.add_step('_answer', **params)
         self.document.add_step('_conclusion')
 
     def A1(self):

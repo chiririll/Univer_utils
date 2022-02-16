@@ -50,7 +50,6 @@ class Part(Shape):
         self.drawer.add(self.drawer.text(text, pos, style=self.text_style, alignment_baseline="middle", text_anchor="middle"))
 
     def __draw_pointers(self):
-        # TODO: Fix indices
         for i, ptr in enumerate(self.pointers):
             pos = (self.x + self.ptr_spacing * i, self.y)
             Pointer(self.drawer, pos, ptr, angle=-45).draw()

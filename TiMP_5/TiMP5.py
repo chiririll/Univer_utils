@@ -4,9 +4,13 @@ from word_parser import Document
 
 
 class Lab5:
-    def __init__(self, matrix: Matrix, name='out'):
+    def __init__(self, matrix: Matrix, filename='out', var=0, name="Ivanov I.I."):
         # Document
-        self.document = Document(f"output/docs/{name}.doc")
+        self.document = Document(f"output/docs/{filename}.doc")
+
+        # Data
+        self.var = var
+        self.name = name
 
         # Matrix
         self.matrix = matrix
@@ -44,6 +48,7 @@ class Lab5:
         return self.j
 
     def run(self):
+        self.document.add_step('_title_page', var=self.var, name=self.name)
         self.document.add_step('_task', axial_element=f"m[{self.matrix.pivot[0]}][{self.matrix.pivot[1]}]",
                                task=Document.txt2xml(str(self.matrix) + ','))
 

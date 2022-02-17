@@ -15,7 +15,7 @@ Variants = {
 
 def main():
     variant = 15
-    name = ""
+    name = "Рагулина В.В."
 
     sorter = Sort(Variants[variant], var=variant, name=name)
     sorter.run()

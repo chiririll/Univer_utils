@@ -10,7 +10,7 @@ class Cell(Shape):
     # Sizes
     size = (90, 34)
     spacing = 30
-    padding = (20, 35)
+    padding = (25, 35)
     w = size[0]
     h = size[1]
 

@@ -8,9 +8,13 @@ from word_parser import Document
 
 
 class Sort:
-    def __init__(self, task):
+    def __init__(self, task, var=0, name="Ivanov I.I."):
         # Pre run tasks
         self.clear_folder()
+
+        # Data
+        self.var = var
+        self.name = name
 
         # Containers
         self.document = Document("output/Output.doc")
@@ -46,6 +50,7 @@ class Sort:
 
     def run(self):
         # Preparing
+        self.document.add_step('_title_page', var= self.var, name=self.name)
         self.document.add_step('_task', task=self.task_string)
         self.T1()
 

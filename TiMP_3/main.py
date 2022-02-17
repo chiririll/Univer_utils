@@ -14,7 +14,10 @@ Variants = {
 
 
 def main():
-    sorter = Sort(Variants[24])
+    variant = 15
+    name = ""
+
+    sorter = Sort(Variants[variant], var=variant, name=name)
     sorter.run()
 
 

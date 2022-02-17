@@ -1,0 +1,113 @@
+<w:p w:rsidR="00B71CFF" w:rsidRPr="00E57CE5" w:rsidRDefault="00B71CFF" w:rsidP="00B71CFF">
+    <w:pPr>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="009A1515">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Цель работы:</w:t>
+    </w:r>
+    <w:r w:rsidRPr="009A1515">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CF2139">
+        <w:t>Знакомство с понятием связанного распределения памяти при хранении циклических списков и алгоритмом сложения многочленов, представленных циклическими списками</w:t>
+    </w:r>
+    <w:r w:rsidRPr="009A1515">
+        <w:t>.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00B71CFF" w:rsidRPr="005143FF" w:rsidRDefault="00B71CFF" w:rsidP="00B71CFF">
+    <w:pPr>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="009A1515">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Задание:</w:t>
+    </w:r>
+    <w:r w:rsidRPr="009A1515">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="007209D1">
+        <w:t>Используя графическую иллюстрацию, проследить за ходом выполнения алгоритма</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00B003E2">
+        <w:rPr>
+            <w:rFonts w:ascii="Courier New" w:hAnsi="Courier New" w:cs="Courier New"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008013D7">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>A</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">, реализующего </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008013D7">
+        <w:t xml:space="preserve">прибавление многочлена </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008013D7">
+        <w:rPr>
+            <w:rFonts w:eastAsia="TimesNewRoman"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    %polynomial_1%
+    <w:r w:rsidRPr="008013D7">
+        <w:rPr>
+            <w:rFonts w:eastAsia="TimesNewRoman"/>
+            <w:iCs/>
+        </w:rPr>
+        <w:t>)</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008013D7">
+        <w:t xml:space="preserve"> к многочлену </w:t>
+    </w:r>
+    <w:r w:rsidRPr="008013D7">
+        <w:rPr>
+            <w:rFonts w:eastAsia="TimesNewRoman"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    %polynomial_2%
+    <w:r w:rsidRPr="008013D7">
+        <w:rPr>
+            <w:rFonts w:eastAsia="TimesNewRoman"/>
+        </w:rPr>
+        <w:t>)</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008013D7">
+        <w:t xml:space="preserve">. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:t xml:space="preserve">Определить последовательность выполнения шагов алгоритма и итоговый многочлен. Последовательность выполнения шагов алгоритма записать в одной строке, а итоговый многочлен, начиная с узла списка по адресу </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:t>), и далее по порядку.</w:t>
+    </w:r>
+</w:p>
+<w:p />

@@ -1,6 +1,6 @@
 from word_parser import Document
 from drawer import draw
-
+from utils import generate_pol, generate_xml
 
 DEFAULT_IMG = "<w:p><w:r><w:t>%image%</w:t></w:r></w:p>"
 
@@ -98,6 +98,9 @@ class Laba4:
     def run(self):
         self.document.add_step('_title_page', var=self.var, name=self.name)
 
+        self.document.add_step('_task', polynomial_1=generate_xml(generate_pol(self.task[0])),
+                               polynomial_2=generate_xml(generate_pol(self.task[1])))
+
         img_1 = draw('A0/A0', self.pols, self.pointers)
 
         self.document.add_step('_practice', img_1=img_1)
@@ -105,44 +108,6 @@ class Laba4:
         self.A1()
 
     def finish(self):
-        def generate_pol(pol: list):
-            res = []
-            for i, part in enumerate(pol):
-                if part[0] == 0:
-                    continue
-                valid = abs(part[0]) != 1
-
-                if i > 0:
-                    res.append((" - " if part[0] < 0 else " + ") + (str(abs(part[0])) if abs(part[0]) != 1 else ""))
-                elif abs(part[0]) != 1:
-                    res.append(str(part[0]))
-                elif part[0] < 0:
-                    res.append('-')
-
-                variables = ['x', 'y', 'z']
-                for i in range(1, 4):
-                    if part[i] != 0:
-                        valid = True
-                        res.append(variables[i - 1])
-                        res.append('^' + (str(part[i]) if part[i] != 1 else ""))
-
-                if not valid:
-                    res.append("1")
-            return res
-
-        def generate_xml(equation: list):
-            res = "<w:r><w:t xml:space=\"preserve\">"
-            for p in equation:
-                if p[0] == '^':
-                    res += "</w:t></w:r>"
-                    res += "<w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t xml:space=\"preserve\">"
-                    res += p[1:]
-                    res += "</w:t></w:r><w:r><w:t xml:space=\"preserve\">"
-                else:
-                    res += p
-            res += "</w:t></w:r>"
-            return res
-
         params = {
             'steps': ", ".join(self.steps),
             'polynomial_1': generate_xml(generate_pol(self.task[0])),

@@ -81,13 +81,13 @@ class Document:
         self.document.append(step_xml)
 
     def add_image(self, path) -> int:
-        self.container.write(path, f"word/media/{str(self.__r_id)}.png")
+        self.container.write(path, f"word/media/{str(self.__r_id)}.emf")
 
         # Adding rel and incrementing free id
         self.rels.append(
             f"<Relationship Id=\"rId{str(self.__r_id)}\" "
             f"Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/image\" "
-            f"Target=\"media/{str(self.__r_id)}.png\"/>"
+            f"Target=\"media/{str(self.__r_id)}.emf\"/>"
         )
         self.__r_id += 1
 

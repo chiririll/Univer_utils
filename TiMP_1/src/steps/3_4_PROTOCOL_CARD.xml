@@ -1,0 +1,119 @@
+<w:tbl>
+    <w:tblPr>
+        <w:tblStyle w:val="ab"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+        <w:gridCol w:w="907"/>
+        <w:gridCol w:w="908"/>
+        <w:gridCol w:w="908"/>
+        <w:gridCol w:w="908"/>
+        <w:gridCol w:w="908"/>
+    </w:tblGrid>
+    <w:tr w:rsidR="0009312D" w:rsidTr="0009312D">
+        <w:trPr>
+            <w:trHeight w:val="227"/>
+        </w:trPr>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="907" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="nil"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                </w:tcBorders>
+            </w:tcPr>
+            <w:p w:rsidR="0009312D" w:rsidRDefault="0009312D" w:rsidP="0009312D">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:rPr>
+                        <w:sz w:val="32"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r>
+                    <w:t>%addr%</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="908" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                </w:tcBorders>
+            </w:tcPr>
+            <w:p w:rsidR="0009312D" w:rsidRDefault="0009312D" w:rsidP="0009312D">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:rPr>
+                        <w:sz w:val="32"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r>
+                    <w:t>%tag%</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="908" w:type="dxa"/>
+            </w:tcPr>
+            <w:p w:rsidR="0009312D" w:rsidRDefault="0009312D" w:rsidP="0009312D">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:rPr>
+                        <w:sz w:val="32"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r>
+                    <w:t>%suit%</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="908" w:type="dxa"/>
+            </w:tcPr>
+            <w:p w:rsidR="0009312D" w:rsidRDefault="0009312D" w:rsidP="0009312D">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:rPr>
+                        <w:sz w:val="32"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r>
+                    <w:t>%rank%</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="908" w:type="dxa"/>
+            </w:tcPr>
+            <w:p w:rsidR="0009312D" w:rsidRDefault="0009312D" w:rsidP="0009312D">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:rPr>
+                        <w:sz w:val="32"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r>
+                    <w:t>%next%</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+    </w:tr>
+</w:tbl>
+<w:p/>

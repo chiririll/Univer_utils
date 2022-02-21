@@ -1,0 +1,510 @@
+<w:p w:rsidR="00AB0C51" w:rsidRPr="005A37F8" w:rsidRDefault="00AB0C51" w:rsidP="00AB0C51">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Протокол</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>работы</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>программы</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00AB0C51" w:rsidRPr="005A37F8" w:rsidRDefault="00AB0C51" w:rsidP="00AB0C51">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>с</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>соответствующим</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>распределением</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>содержанием</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>памяти</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>компьютера</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>,</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00AB0C51" w:rsidRPr="005A37F8" w:rsidRDefault="00AB0C51" w:rsidP="00AB0C51">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>а</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>также</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>графическим</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>представлением</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>связанного</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005A37F8">
+        <w:rPr>
+            <w:rFonts w:hint="eastAsia"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>списка</w:t>
+    </w:r>
+</w:p>
+<w:p/>
+<w:p w:rsidR="007C0B95" w:rsidRPr="00176611" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+    </w:pPr>
+    <w:r w:rsidRPr="002D2587">
+        <w:t>TOP=NULL</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="007C0B95" w:rsidRPr="00176611" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="007C0B95" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+    </w:r>
+    <w:r w:rsidRPr="0004774C">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Фактические карты</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+        <w:t>Машинное представление</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="007C0B95" w:rsidRPr="00FE45AB" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+    </w:pPr>
+</w:p>
+<w:tbl>
+    <w:tblPr>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblBorders>
+            <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+        <w:gridCol w:w="3652"/>
+        <w:gridCol w:w="5919"/>
+    </w:tblGrid>
+    <w:tr w:rsidR="007C0B95" w:rsidRPr="001D1044" w:rsidTr="005022E0">
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="3652" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+            <w:p w:rsidR="007C0B95" w:rsidRPr="00A53C03" w:rsidRDefault="007C0B95" w:rsidP="005022E0">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:rPr>
+                        <w:sz w:val="24"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+            </w:p>
+            <w:p w:rsidR="007C0B95" w:rsidRPr="00A53C03" w:rsidRDefault="007C0B95" w:rsidP="005022E0">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:i/>
+                        <w:sz w:val="24"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00A53C03">
+                    <w:rPr>
+                        <w:sz w:val="24"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                    <w:t>Стопка карт пуста</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="5919" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+            <w:p w:rsidR="007C0B95" w:rsidRPr="00A53C03" w:rsidRDefault="007C0B95" w:rsidP="005022E0">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:rPr>
+                        <w:sz w:val="24"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+            </w:p>
+            <w:p w:rsidR="007C0B95" w:rsidRPr="00A53C03" w:rsidRDefault="007C0B95" w:rsidP="005022E0">
+                <w:pPr>
+                    <w:pStyle w:val="3"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:i/>
+                        <w:sz w:val="24"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00A53C03">
+                    <w:rPr>
+                        <w:i/>
+                        <w:sz w:val="24"/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                    <w:t>TOP = NULL</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+    </w:tr>
+</w:tbl>
+<w:p w:rsidR="007C0B95" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="007C0B95" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="007C0B95" w:rsidRPr="00E90A44" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00E90A44">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Графическое представление связанного списка</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="007C0B95" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="007C0B95" w:rsidRPr="007C3857" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Указатель TOP никуда не указывает</w:t>
+    </w:r>
+</w:p>
+<w:p/>

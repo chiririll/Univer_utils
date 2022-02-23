@@ -3,6 +3,7 @@ from . import utils
 
 
 def draw_cards(cards):
+    skin = 1
     card_size = (148, 230)
     offset = (30, 30)
     scale = 0.4
@@ -17,7 +18,7 @@ def draw_cards(cards):
     img = Image.new("RGBA", size)
 
     for i, c in enumerate(cards):
-        card_path = f"src/CARDS/" + ("BACK" if c['TAG'] else f"SUIT_{str(c['SUIT'])}/{c['RANK']:X}") + ".png"
+        card_path = f"src/CARDS_{skin}/" + ("BACK" if c['TAG'] else f"SUIT_{str(c['SUIT'])}/{c['RANK']:X}") + ".png"
         card = Image.open(card_path)
         img.paste(card, (offset[0] * i, offset[1] * i))
 

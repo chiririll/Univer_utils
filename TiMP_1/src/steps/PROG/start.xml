@@ -66,30 +66,9 @@
         <w:rPr>
             <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t xml:space="preserve">#define WORD </w:t>
+        <w:t xml:space="preserve">#define WORD struct word_type</w:t>
     </w:r>
-    <w:proofErr w:type="spellStart"/>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t>struct</w:t>
-    </w:r>
-    <w:proofErr w:type="spellEnd"/>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t xml:space="preserve"></w:t>
-    </w:r>
-    <w:proofErr w:type="spellStart"/>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t>word_type</w:t>
-    </w:r>
-    <w:proofErr w:type="spellEnd"/>
+
 </w:p>
 <w:p w:rsidR="00DD2980" w:rsidRDefault="00DD2980" w:rsidP="00DD2980">
     <w:pPr>
@@ -102,21 +81,7 @@
         <w:rPr>
             <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t>#include&lt;</w:t>
-    </w:r>
-    <w:proofErr w:type="spellStart"/>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t>stdio.h</w:t>
-    </w:r>
-    <w:proofErr w:type="spellEnd"/>
-    <w:r>
-        <w:rPr>
-            <w:lang w:val="en-US"/>
-        </w:rPr>
-        <w:t>&gt;</w:t>
+        <w:t>#include &lt;stdio.h&gt;</w:t>
     </w:r>
 </w:p>
 <w:p w:rsidR="00DD2980" w:rsidRDefault="00DD2980" w:rsidP="00DD2980">
@@ -124,23 +89,7 @@
         <w:pStyle w:val="a9"/>
     </w:pPr>
     <w:r>
-        <w:t>#</w:t>
-    </w:r>
-    <w:proofErr w:type="spellStart"/>
-    <w:r>
-        <w:t>include</w:t>
-    </w:r>
-    <w:proofErr w:type="spellEnd"/>
-    <w:r>
-        <w:t>&lt;</w:t>
-    </w:r>
-    <w:proofErr w:type="spellStart"/>
-    <w:r>
-        <w:t>stdlib.h</w:t>
-    </w:r>
-    <w:proofErr w:type="spellEnd"/>
-    <w:r>
-        <w:t>&gt;</w:t>
+        <w:t>#include &lt;stdlib.h&gt;</w:t>
     </w:r>
 </w:p>
 <w:p w:rsidR="00DD2980" w:rsidRDefault="00DD2980" w:rsidP="00DD2980">

@@ -150,7 +150,7 @@
         <w:rPr>
             <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t xml:space="preserve">      /*A3*/ TOP-&gt;TAG=%tag%; TOP-&gt;SUIT=%suit%; TOP-&gt;RANK=%rank%;</w:t>
+        <w:t xml:space="preserve">      /*A3*/ TOP-&gt;TAG=%TAG%; TOP-&gt;SUIT=%SUIT%; TOP-&gt;RANK=%RANK%;</w:t>
     </w:r>
 </w:p>
 <w:p w:rsidR="00F561F2" w:rsidRDefault="00F561F2" w:rsidP="004F128C">

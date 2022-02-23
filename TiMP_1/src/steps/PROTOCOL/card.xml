@@ -35,7 +35,7 @@
                     </w:rPr>
                 </w:pPr>
                 <w:r>
-                    <w:t>%addr%</w:t>
+                    <w:t>%ADDR%: </w:t>
                 </w:r>
             </w:p>
         </w:tc>
@@ -50,13 +50,14 @@
                 <w:pPr>
                     <w:pStyle w:val="3"/>
                     <w:ind w:firstLine="0"/>
+                    <w:jc w:val="right"/>
                     <w:rPr>
                         <w:sz w:val="32"/>
                         <w:szCs w:val="24"/>
                     </w:rPr>
                 </w:pPr>
                 <w:r>
-                    <w:t>%tag%</w:t>
+                    <w:t>%TAG%</w:t>
                 </w:r>
             </w:p>
         </w:tc>
@@ -68,13 +69,14 @@
                 <w:pPr>
                     <w:pStyle w:val="3"/>
                     <w:ind w:firstLine="0"/>
+                    <w:jc w:val="right"/>
                     <w:rPr>
                         <w:sz w:val="32"/>
                         <w:szCs w:val="24"/>
                     </w:rPr>
                 </w:pPr>
                 <w:r>
-                    <w:t>%suit%</w:t>
+                    <w:t>%SUIT%</w:t>
                 </w:r>
             </w:p>
         </w:tc>
@@ -86,13 +88,14 @@
                 <w:pPr>
                     <w:pStyle w:val="3"/>
                     <w:ind w:firstLine="0"/>
+                    <w:jc w:val="right"/>
                     <w:rPr>
                         <w:sz w:val="32"/>
                         <w:szCs w:val="24"/>
                     </w:rPr>
                 </w:pPr>
                 <w:r>
-                    <w:t>%rank%</w:t>
+                    <w:t>%RANK%</w:t>
                 </w:r>
             </w:p>
         </w:tc>
@@ -104,13 +107,14 @@
                 <w:pPr>
                     <w:pStyle w:val="3"/>
                     <w:ind w:firstLine="0"/>
+                    <w:jc w:val="right"/>
                     <w:rPr>
                         <w:sz w:val="32"/>
                         <w:szCs w:val="24"/>
                     </w:rPr>
                 </w:pPr>
                 <w:r>
-                    <w:t>%next%</w:t>
+                    <w:t>%NEXT%</w:t>
                 </w:r>
             </w:p>
         </w:tc>

@@ -1,26 +1,118 @@
+import random
+
 from word_parser import Document
 
 
 class Laba1:
-    def __init__(self, task: list = None, filename="out", var=0, name="Ivanov I.I."):
+
+    def __init__(self, task: list, filename="out", var=0, name="Ivanov I.I."):
         # Document
         self.document = Document(f"output/{filename}.doc")
 
+        # Task  [TOP, ..., BOTTOM]
+        # Cards [BOTTOM, ..., TOP]
+        # Card  [TAG, SUIT, RANK]
+        self.cards = self.prepare_task(task)
+
         # Data
-        self.task = task
         self.var = var
         self.name = name
 
+    @staticmethod
+    def prepare_task(task) -> list:
+        card_size = 32
+        base = random.randint(2 ** 8, 2 ** 16 - len(task) * card_size - 1)
+
+        cards = []
+        for i, card in enumerate(reversed(task)):
+            cards.append(
+                {'TAG': card[0], 'SUIT': card[1], 'RANK': card[2], 'ADDR': f'{base + i * card_size:0>4X}'}
+            )
+
+        return cards
+
+    @staticmethod
+    def card_to_string(card: dict, *exclude: str) -> str:
+        string = ""
+        for k, v in card.items():
+            if k not in exclude:
+                string += f"{k} = {v}, "
+        return string
+
     def run(self):
-        self.document.add_step('_title_page')
-        self.document.add_step('1_1_PROG_START')
-        self.document.add_step('1_2_PROG_CARD')
-        self.document.add_step('1_3_PROG_END')
+        self.document.add_step('_title_page', var=self.var, name=self.name)
+        self.task()
 
-        self.document.add_step('2_1_RESULT_START')
-        self.document.add_step('2_2_RESULT_CARD')
-        self.document.add_step('2_3_RESULT_END')
+        self.program()
+        self.result()
+        self.protocol()
 
-        self.document.add_step('3_1_PROTOCOL')
-        self.document.add_step('1_2_PROG_CARD')
-        self.document.add_step('3_3_PROTOCOL_STEP', cards=self.document.get_step_xml('3_4_PROTOCOL_CARD'))
+    def task(self):
+        positions = ["первая", "вторая", "третья", "четвертая", "пятая", "шестая", "седьмая", "восьмая", "девятая"]
+        cards_xml = []
+        for i, c in enumerate(reversed(self.cards)):
+            card = "- "
+            card += "верхняя карта" if i == 0 else f"{positions[i]} сверху"
+            card += " (нижняя)" if i >= len(self.cards) - 1 else ""
+            card += f": " + self.card_to_string(c, 'ADDR')
+
+            cards_xml.append(f"<w:p><w:r><w:t>{card}</w:t></w:r></w:p>")
+        self.document.add_step('_task', cards="\n".join(cards_xml))
+
+    def program(self):
+        print("Generating program")
+
+        self.document.add_step('PROG/start')
+
+        for i in range(len(self.cards)):
+            self.program_card(i)
+
+        self.document.add_step('PROG/end')
+
+    def program_card(self, i: int):
+        def get_comment(index: int) -> str:
+            if index >= len(self.cards) - 1:
+                return "Добавление верхней карты в стопку"
+            if index == 0:
+                return "Помещение нижней карты в пустую стопку"
+            else:
+                return "Добавление новой карты в стопку сверху"
+
+        print(f"\t Adding program card #{i}: {self.card_to_string(self.cards[i])}")
+        self.document.add_step('PROG/card', comment=get_comment(i), **self.cards[i])
+
+    def result(self):
+        print("Generating result")
+
+        self.document.add_step('RESULT/start')
+
+        for i, c in enumerate(self.cards):
+            self.document.add_step('RESULT/card', card_addr=c['ADDR'])
+
+        params = {
+            'top_tag': self.cards[-1]['TAG'],
+            'top_suit': self.cards[-1]['SUIT'],
+            'top_next_rank': self.cards[-2]['RANK'],
+            'n': len(self.cards),
+        }
+        self.document.add_step('RESULT/end', **params)
+
+    def protocol(self):
+        print("Generating protocol")
+
+        self.document.add_step('PROTOCOL/protocol')
+
+        for i, top in enumerate(self.cards):
+            self.program_card(i)
+
+            params = {
+                'cards': "",
+                'top_addr': top['ADDR'],
+                'image_1': "<w:p/>",
+                'image_2': "<w:p/>"
+            }
+            for j in range(i + 1):
+                next_card = "Λ" if j <= 0 else self.cards[j - 1]['ADDR']
+                params['cards'] += self.document.get_step_xml('PROTOCOL/card', **self.cards[j], NEXT=next_card)
+
+            self.document.add_step('PROTOCOL/step', **params)

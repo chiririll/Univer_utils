@@ -1,7 +1,7 @@
 <w:p>
     <w:pPr>
-        <w:ind w:firstLine="0"/>
-        <w:jc w:val="center"/>
+        <w:ind w:firstLine="%first_line%"/>
+        <w:jc w:val="%align%"/>
     </w:pPr>
     <w:r>
         <w:pict>

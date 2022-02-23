@@ -30,19 +30,23 @@ class Document:
         except AttributeError:
             pass
 
-    def __get_image_xml(self, rel_id: int, size: tuple = ('467.25pt', '300pt')):
+    @staticmethod
+    def __get_image_xml(rel_id: int, **settings):
         scale = 1     # Image scale
+        size = (100, 100)
 
         with open('src/empty_doc/image.xml', 'r') as f:
             xml_image = f.read()
 
         params = {
-            'rId': str(rel_id),
-            'width': str(size[0] * scale) + 'px',
-            'height': str(size[1] * scale) + 'px'
+            'rId': rel_id,
+            'width': str(settings.get('size', size)[0] * scale) + 'px',
+            'height': str(settings.get('size', size)[1] * scale) + 'px',
+            'align': settings.get('align', "center"),
+            'first_line': settings.get('first_line', 0)
         }
         for name, val in params.items():
-            xml_image = xml_image.replace(f"%{name}%", val)
+            xml_image = xml_image.replace(f"%{name}%", str(val))
 
         return xml_image
 
@@ -71,7 +75,7 @@ class Document:
         for name, val in kwargs.items():
             if type(val) is dict and ("image" in name or "img" in name):
                 img_id = self.add_image(val['path'])
-                val = self.__get_image_xml(img_id, val['size'])
+                val = self.__get_image_xml(img_id, **val)
             if type(val) is bool:
                 val = "ИСТИНА" if val else "ЛОЖЬ"
 

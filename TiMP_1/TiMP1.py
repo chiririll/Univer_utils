@@ -1,6 +1,7 @@
 import random
 
 from word_parser import Document
+from drawer import draw_cards
 
 
 class Laba1:
@@ -108,7 +109,7 @@ class Laba1:
             params = {
                 'cards': "",
                 'top_addr': top['ADDR'],
-                'image_1': "<w:p/>",
+                'image_1': draw_cards(self.cards[:i+1]),
                 'image_2': "<w:p/>"
             }
             for j in range(i + 1):

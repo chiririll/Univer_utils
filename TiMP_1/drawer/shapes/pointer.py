@@ -7,7 +7,9 @@ from .shape import Shape
 
 class Pointer(Shape):
 
-    def __init__(self, drawer, pos: tuple, text="P", angle: int = 45, length: int = 20):
+    width = 1
+
+    def __init__(self, drawer, pos: tuple, text="P", index: bool = False, angle: int = 45, length: int = 20):
         a_rad = math.radians(angle)
         l = (length + len(text) * 5,
              length + 14)
@@ -16,6 +18,7 @@ class Pointer(Shape):
         text_index = (text_c[0] + 5, text_c[1] + 2)
 
         self.text = str(text)
+        self.index = index
         self.angle = angle
         self.length = length
 
@@ -28,8 +31,9 @@ class Pointer(Shape):
         self.drawer.add(Line((self.x, self.y - self.length), self.pos, stroke=self.color, stroke_width=self.width,
                              transform=f"rotate({self.angle}, {self.x}, {self.y})"))
 
-        self.drawer.add(self.drawer.text(self.text[0], self.get_c('text_c'), style=self.text_style,
-                                         alignment_baseline="middle", text_anchor="middle", font_style="italic"))
-
-        self.drawer.add(self.drawer.text(self.text[1:], self.get_c('text_index'), style=self.text_style_index,
-                                         alignment_baseline="middle", text_anchor="start", font_style="normal"))
+        self.drawer.add(self.drawer.text(self.text[0] if self.index else self.text, self.get_c('text_c'),
+                                         style=self.text_style, alignment_baseline="middle", text_anchor="middle",
+                                         font_style="italic"))
+        if self.index:
+            self.drawer.add(self.drawer.text(self.text[1:], self.get_c('text_index'), style=self.text_style_index,
+                                             alignment_baseline="middle", text_anchor="start", font_style="normal"))

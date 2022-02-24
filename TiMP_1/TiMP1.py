@@ -1,7 +1,7 @@
 import random
 
 from word_parser import Document
-from drawer import draw_cards
+from drawer import draw_cards, draw_scheme
 
 
 class Laba1:
@@ -38,7 +38,7 @@ class Laba1:
         for k, v in card.items():
             if k not in exclude:
                 string += f"{k} = {v}, "
-        return string
+        return string[:-2]
 
     def run(self):
         self.document.add_step('_title_page', var=self.var, name=self.name)
@@ -55,7 +55,7 @@ class Laba1:
             card = "- "
             card += "верхняя карта" if i == 0 else f"{positions[i]} сверху"
             card += " (нижняя)" if i >= len(self.cards) - 1 else ""
-            card += f": " + self.card_to_string(c, 'ADDR')
+            card += f": " + self.card_to_string(c, 'ADDR') + ", "
 
             cards_xml.append(f"<w:p><w:r><w:t>{card}</w:t></w:r></w:p>")
         self.document.add_step('_task', cards="\n".join(cards_xml))
@@ -110,7 +110,7 @@ class Laba1:
                 'cards': "",
                 'top_addr': top['ADDR'],
                 'image_1': draw_cards(self.cards[:i+1]),
-                'image_2': "<w:p/>"
+                'image_2': draw_scheme(f"prog_{i}", self.cards[:i+1])
             }
             for j in range(i + 1):
                 next_card = "Λ" if j <= 0 else self.cards[j - 1]['ADDR']

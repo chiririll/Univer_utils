@@ -77,7 +77,7 @@ class Document:
                 img_id = self.add_image(val['path'])
                 val = self.__get_image_xml(img_id, **val)
             if type(val) is bool:
-                val = "ИСТИНА" if val else "ЛОЖЬ"
+                val = "true" if val else "false"
 
             step_xml = step_xml.replace(f"%{name}%", str(val))
         return step_xml

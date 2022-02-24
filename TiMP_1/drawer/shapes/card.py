@@ -21,8 +21,9 @@ class Card(Shape):
     # Pointers
     ptr_spacing = w * 2
 
-    def __init__(self, drawer, pos, card: dict, pointers: list = None):
+    def __init__(self, drawer, pos, card: dict, pointers: list = None, draw_ptr_arrow: bool = True):
         self.card = card
+        self.draw_ptr_arrow = draw_ptr_arrow
 
         if pointers is None:
             pointers = []
@@ -51,7 +52,7 @@ class Card(Shape):
     def __draw_pointers(self):
         for i, ptr in enumerate(self.pointers):
             pos = (self.x + self.ptr_spacing * i, self.y)
-            Pointer(self.drawer, pos, ptr, angle=-45).draw()
+            Pointer(self.drawer, pos, ptr, angle=-45, draw_arrow=self.draw_ptr_arrow).draw()
 
     def draw(self):
         self.__draw_box()

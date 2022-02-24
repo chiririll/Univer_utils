@@ -48,6 +48,8 @@ class Laba1:
         self.result()
         self.protocol()
 
+        self.document.add_step('_conclusion')
+
     def task(self):
         positions = ["первая", "вторая", "третья", "четвертая", "пятая", "шестая", "седьмая", "восьмая", "девятая"]
         cards_xml = []
@@ -117,3 +119,16 @@ class Laba1:
                 params['cards'] += self.document.get_step_xml('PROTOCOL/card', **self.cards[j], NEXT=next_card)
 
             self.document.add_step('PROTOCOL/step', **params)
+
+        print("Counting cards")
+        self.document.add_step('PROTOCOL/counting/start')
+
+        self.document.add_step('PROTOCOL/counting/B1', **self.cards[-1], image=draw_scheme(f"count_{0}", self.cards, 0))
+        for i in range(1, len(self.cards) + 1):
+            img = draw_scheme(f"count_{i}", self.cards, min(i, len(self.cards) - 1), i < len(self.cards))
+            addr = "NULL" if i >= len(self.cards) else self.cards[-i-1]['ADDR']
+            self.document.add_step('PROTOCOL/counting/B2', **self.cards[-i], is_null=False)
+            self.document.add_step('PROTOCOL/counting/B3', n=i-1, n_1=i, ADDR=addr, image=img)
+
+        self.document.add_step('PROTOCOL/counting/B2', ADDR="NULL", is_null=True)
+        self.document.add_step('PROTOCOL/counting/end', n=len(self.cards))

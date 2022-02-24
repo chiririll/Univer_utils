@@ -27,8 +27,8 @@ def draw_cards(cards):
     return {'path': path, 'size': (size[0] * scale, size[1] * scale), 'align': "left", 'first_line': 709}
 
 
-def draw_scheme(filename: str, cards: list, pointer_pos: int = None):
-    padding = (50, 30)
+def draw_scheme(filename: str, cards: list, pointer_pos: int = None, draw_ptr_arrow: bool = True):
+    padding = (50, 35)
     spacing = 20
     size = (
         len(cards) * shapes.Card.get_size()[0] + padding[0] * 2 + spacing * (len(cards) - 1),
@@ -43,7 +43,7 @@ def draw_scheme(filename: str, cards: list, pointer_pos: int = None):
     shapes.Pointer(dwg, (padding[0], padding[1] + shapes.Card.h // 2), "TOP", False, -90).draw()
     for i, c in enumerate(reversed(cards)):
         pos = (padding[0] + spacing * i + shapes.Card.get_size()[0] * i, padding[1])
-        card = shapes.Card(dwg, pos, c, ['X'] if pointer_pos == i else [])
+        card = shapes.Card(dwg, pos, c, ['X'] if pointer_pos == i else [], draw_ptr_arrow)
         card.draw()
 
         if i < len(cards) - 1:

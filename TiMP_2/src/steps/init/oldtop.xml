@@ -1,0 +1,566 @@
+<w:p w:rsidR="00CB54EB" w:rsidRPr="005713AF" w:rsidRDefault="00CB54EB" w:rsidP="00CB54EB">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="240"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Инициализация массива </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>OLDTOP</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00CB54EB" w:rsidRDefault="00CB54EB" w:rsidP="00CB54EB">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">В дополнительном массиве </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>OLDTOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005713AF">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">сохраним начальные значения элементов массива </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005713AF">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">(значения, бывшие в массиве </w:t>
+    </w:r>
+    <w:r w:rsidRPr="005713AF">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005713AF">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> непосредственно после предыдущего распределения памяти)</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t>:</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00CB54EB" w:rsidRPr="005713AF" w:rsidRDefault="00CB54EB" w:rsidP="00CB54EB">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>OLDTOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">[1] </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D30B7F">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>1</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>]</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> = %top_1%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">;   </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>OLDTOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>2</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D30B7F">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>2</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>]</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> = %top_2%</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00CB54EB" w:rsidRDefault="00CB54EB" w:rsidP="00CB54EB">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>OLDTOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>3</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D30B7F">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>3</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>]</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> = %top_3%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">;   </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>OLDTOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>4</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve">← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D30B7F">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>4</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00A30EFA">
+        <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+            <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
+        </w:rPr>
+        <w:t>] = %top_4%</w:t>
+    </w:r>
+</w:p>
+<w:p/>

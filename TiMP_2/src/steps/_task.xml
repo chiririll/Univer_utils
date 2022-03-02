@@ -1,0 +1,310 @@
+<w:p w:rsidR="0069279E" w:rsidRPr="004B6FE5" w:rsidRDefault="0069279E" w:rsidP="0069279E">
+    <w:pPr>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="004B6FE5">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Цель работы:</w:t>
+    </w:r>
+    <w:r w:rsidRPr="004B6FE5">
+        <w:t xml:space="preserve"> Знакомство с понятием последовательного распределения памяти при хранении линейных списков, особенностями сосуществования трех и более линейных списков переменного размера в общей области памяти и алгоритмом переупаковки памяти.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="0069279E" w:rsidRDefault="0069279E" w:rsidP="0069279E">
+    <w:pPr>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="004B6FE5">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Задание:</w:t>
+    </w:r>
+    <w:r w:rsidRPr="004B6FE5">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>Пусть состояние памяти</w:t>
+    </w:r>
+    <w:r>
+        <w:t>, наступившее</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> по окончании последней </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:t>переупаковки четырёх последовательных стеков, задано их базовыми адресами и адресами верхних элементов:</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>1</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">] = %base_1%; </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>2</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %base_2%;</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>3</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %base_3%;</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>4</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %base_4%;</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[1</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %top_1%;</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[2</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %top_2%;</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[3</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %top_3%;</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[4</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %top_4%.</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve">В результате выполнения </w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">заданной последовательности </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>операций</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> по включению новых элементов в эти списки</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="003F6238">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>I</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EF329A">
+        <w:t>2</w:t>
+    </w:r>
+    <w:r w:rsidRPr="003F6238">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>I</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EF329A">
+        <w:t>3</w:t>
+    </w:r>
+    <w:r w:rsidRPr="003F6238">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>I</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D77D33">
+        <w:t>3</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> возникает ПЕРЕПОЛНЕНИЕ и начинает свою работу алгоритм </w:t>
+    </w:r>
+    <w:r w:rsidRPr="003F6238">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>G</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:t>перераспределения последовательных таблиц. Определить состояние памяти и значения указателей</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EE0056">
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E54791">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t> j </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EE0056">
+        <w:t>]</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> и </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7461">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EE0056">
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E54791">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t> j </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00EE0056">
+        <w:t>]</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E54791">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t> j =</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D77D33">
+        <w:t xml:space="preserve">1, 2, 3, 4) непосредственно после выполненной переупаковки памяти.</w:t>
+    </w:r>
+</w:p>
+<w:p/>

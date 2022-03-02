@@ -13,7 +13,17 @@ class Laba2:
         self.var = var
         self.name = name
 
+    def test(self):
+        self.document.add_step("append/start")
+        self.document.add_step("append/step")
+        self.document.add_step("append/step_false")
+        self.document.add_step("append/step_true")
+        self.document.add_step("append/end")
+
     def run(self):
+        self.test()
+        return
+
         self.document.add_step("_title_page", var=self.var, name=self.name)
         self.document.add_step("_task")
 

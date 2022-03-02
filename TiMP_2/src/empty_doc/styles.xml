@@ -404,7 +404,7 @@
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
             <w:color w:val="00000A"/>
-            <w:sz w:val="28"/>
+            <w:sz w:val="24"/>
             <w:lang w:eastAsia="ru-RU"/>
         </w:rPr>
     </w:style>

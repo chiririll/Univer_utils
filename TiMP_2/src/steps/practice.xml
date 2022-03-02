@@ -4,16 +4,10 @@
         <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
         <w:spacing w:after="240"/>
-        <w:rPr>
-            <w:sz w:val="24"/>
-            <w:szCs w:val="24"/>
-        </w:rPr>
     </w:pPr>
     <w:r>
         <w:rPr>
             <w:b/>
-            <w:sz w:val="24"/>
-            <w:szCs w:val="24"/>
         </w:rPr>
         <w:t>Практическая часть</w:t>
     </w:r>

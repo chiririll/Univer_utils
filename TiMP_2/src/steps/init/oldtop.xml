@@ -3,17 +3,14 @@
         <w:pStyle w:val="3"/>
         <w:jc w:val="center"/>
         <w:spacing w:after="240"/>
+        <w:ind w:firstLine="0"/>
         <w:rPr>
             <w:i/>
-            <w:sz w:val="24"/>
-            <w:szCs w:val="24"/>
         </w:rPr>
     </w:pPr>
     <w:r>
         <w:rPr>
             <w:i/>
-            <w:sz w:val="24"/>
-            <w:szCs w:val="24"/>
         </w:rPr>
         <w:t xml:space="preserve">Инициализация массива </w:t>
     </w:r>

@@ -1,0 +1,47 @@
+<w:p w14:paraId="09D0698E" w14:textId="77777777" w:rsidR="009762C4" w:rsidRDefault="009762C4" w:rsidP="009762C4">
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>G</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">3. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t xml:space="preserve">[Память полна?] </w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="1B6E1B7E" w14:textId="77777777" w:rsidR="009762C4" w:rsidRPr="00854D92" w:rsidRDefault="009762C4" w:rsidP="009762C4">
+    <w:r>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>SUM</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t>&lt; 0</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">) = (%sum% &lt; 0)</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> = ЛОЖЬ</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t xml:space="preserve">, </w:t>
+    </w:r>
+    <w:r>
+        <w:t>следовательно, работу со стеками можно продолжить.</w:t>
+    </w:r>
+</w:p>

@@ -141,7 +141,7 @@
         <w:rPr>
             <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
         </w:rPr>
-        <w:t xml:space="preserve"> [%i_inc%]) = (%top_i% &gt; %base_i%) = </w:t>
+        <w:t xml:space="preserve"> [%i_inc%]) = (%top_i% &gt; %base_i_inc%) = </w:t>
     </w:r>
     <w:r w:rsidRPr="005713AF">
         <w:rPr>

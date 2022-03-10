@@ -1,0 +1,57 @@
+<w:p w14:paraId="2328276A" w14:textId="77777777" w:rsidR="00C9091A" w:rsidRDefault="00C9091A" w:rsidP="00C9091A">
+    <w:r w:rsidRPr="005713AF">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>SUM</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C74678">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C74678">
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+        </w:rPr>
+        <w:t>= %sum%</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> – </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t>суммарное количество свободного пространства в памяти</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="567CD9C9" w14:textId="77777777" w:rsidR="00C9091A" w:rsidRPr="00C74678" w:rsidRDefault="00C9091A" w:rsidP="00C9091A">
+    <w:pPr>
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00D81FDB">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>INC</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C74678">
+        <w:t xml:space="preserve"> = %inc%</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t>– суммарный рост размеров стеков с момента последнего распределения</w:t>
+    </w:r>
+</w:p>

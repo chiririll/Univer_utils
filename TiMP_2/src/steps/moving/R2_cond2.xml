@@ -1,0 +1,97 @@
+<w:p w14:paraId="47D41108" w14:textId="77777777" w:rsidR="001E5E28" w:rsidRPr="002A10EB" w:rsidRDefault="001E5E28" w:rsidP="001E5E28">
+    <w:r w:rsidRPr="002A10EB">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>NEWBASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>j</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t xml:space="preserve">] &gt; </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t xml:space="preserve"> [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>j</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t>]) = (</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>NEWBASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t xml:space="preserve"> [%j%] &gt; </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t xml:space="preserve"> [%j%]) = (%newbase_j% &gt; %base_j%) = </w:t>
+    </w:r>
+    <w:r>
+        <w:t>%result%</w:t>
+    </w:r>
+</w:p>

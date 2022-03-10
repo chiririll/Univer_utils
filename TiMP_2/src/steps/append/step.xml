@@ -111,6 +111,6 @@
         <w:rPr>
             <w:lang w:val="en-US" w:eastAsia="ru-RU"/>
         </w:rPr>
-        <w:t xml:space="preserve"> [%i%] + 1 = %i% + 1 = %i_inc%)</w:t>
+        <w:t xml:space="preserve"> [%i%] + 1 = %top_i_dec% + 1 = %top_i%)</w:t>
     </w:r>
 </w:p>

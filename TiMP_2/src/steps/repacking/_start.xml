@@ -1,0 +1,23 @@
+<w:p w14:paraId="59C8B1F0" w14:textId="77777777" w:rsidR="00174B9B" w:rsidRPr="00D77D33" w:rsidRDefault="00174B9B" w:rsidP="00174B9B">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>Переупаковка памяти</w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="035F2E84" w14:textId="77777777" w:rsidR="00174B9B" w:rsidRPr="00D77D33" w:rsidRDefault="00174B9B" w:rsidP="00174B9B">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+</w:p>

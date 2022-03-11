@@ -1,0 +1,75 @@
+<w:p w14:paraId="4F9E58EE" w14:textId="77777777" w:rsidR="00680C0D" w:rsidRPr="002A10EB" w:rsidRDefault="00680C0D" w:rsidP="00680C0D">
+    <w:pPr>
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+            <w:spacing w:val="-4"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>R</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:b/>
+            <w:spacing w:val="-4"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">3. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+        </w:rPr>
+        <w:t>Сдвиг</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006468D4">
+        <w:t>вниз</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:spacing w:val="-4"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">.]  </w:t>
+    </w:r>
+</w:p>
+<w:p>
+    <w:r>
+        <w:rPr>
+            <w:i />
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [%j%] = </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:i />
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [%j%], следовательно, не требуется никаких действий</w:t>
+    </w:r>
+</w:p>

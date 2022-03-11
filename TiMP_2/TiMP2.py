@@ -192,8 +192,8 @@ class Laba2:
         return condition
 
     def G4(self):
-        self.alpha = 0.1 * self.sum / 4
-        self.beta = 0.9 * self.sum / self.inc
+        self.alpha = round(0.1 * self.sum / 4, 4)
+        self.beta = round(0.9 * self.sum / self.inc, 4)
         self.document.add_step("repacking/G4", sum=self.sum, inc=self.inc, alpha=self.alpha, beta=self.beta)
 
     def G5(self):
@@ -202,7 +202,7 @@ class Laba2:
         self.document.add_step("repacking/G5", newbase_1=self.base[0])
 
         for j in range(1, 4):
-            self.tau = self.sigma + self.alpha + self.d[j - 1] * self.beta
+            self.tau = round(self.sigma + self.alpha + self.d[j - 1] * self.beta, 4)
             self.new_base[j] = self.new_base[j - 1] + self.top[j - 1] - self.base[j - 1] + floor(self.tau) - floor(
                 self.sigma)
             params = {
@@ -210,7 +210,7 @@ class Laba2:
                 'j_dec': j,
                 'alpha': self.alpha,
                 'beta': self.beta,
-                'sigma': 0,
+                'sigma': self.sigma,
                 'tau': self.tau,
                 'd_j_dec': self.d[j - 1],
                 'sigma_plus_alpha': self.sigma + self.alpha,
@@ -299,16 +299,19 @@ class Laba2:
             'base_j_add2': self.base[self.j] + 2,
             'l': ', '.join(list(map(str, range(self.base[self.j] + 1, self.top[self.j] + 1))))
         }
-        self.document.add_step('moving/R3', **params)
 
-        for l in range(self.base[self.j], self.top[self.j]):
-            params['l'] = l + 1
-            params['l_subtract_delta'] = l - self.delta + 1
+        if self.base[self.j] == self.top[self.j]:
+            self.document.add_step('moving/R3', **params)
+            for l in range(self.base[self.j], self.top[self.j]):
+                params['l'] = l + 1
+                params['l_subtract_delta'] = l - self.delta + 1
 
-            self.document.add_step('moving/R3_step', **params)
-            self.memory[l - self.delta + 1] = self.memory[l + 1]
-            self.memory[l + 1] = 0
-            self.memory_table(refresh_memory=False)
+                self.document.add_step('moving/R3_step', **params)
+                self.memory[l - self.delta + 1] = self.memory[l + 1]
+                self.memory[l + 1] = 0
+                self.memory_table(refresh_memory=False)
+        else:
+            self.document.add_step('moving/R3_empty', **params)
 
         self.base[self.j] = self.new_base[self.j]
         self.top[self.j] -= self.delta
@@ -354,16 +357,19 @@ class Laba2:
             'top_t_dec': self.top[t] - 1,
             'l_range': ', '.join(list(map(str, range(self.top[t], self.base[t], -1))))
         }
-        self.document.add_step('moving/R5', **params)
 
-        for l in range(self.top[t], self.base[t], -1):
-            params['l'] = l
-            params['l_plus_delta'] = l + self.delta
+        if self.base[t] == self.top[t]:
+            self.document.add_step('moving/R5_empty', **params)
+        else:
+            self.document.add_step('moving/R5', **params)
+            for l in range(self.top[t], self.base[t], -1):
+                params['l'] = l
+                params['l_plus_delta'] = l + self.delta
 
-            self.document.add_step('moving/R5_step', **params)
-            self.memory[l + self.delta] = self.memory[l]
-            self.memory[l] = 0
-            self.memory_table(refresh_memory=False)
+                self.document.add_step('moving/R5_step', **params)
+                self.memory[l + self.delta] = self.memory[l]
+                self.memory[l] = 0
+                self.memory_table(refresh_memory=False)
 
         self.base[t] = self.new_base[t]
         self.top[t] += self.delta

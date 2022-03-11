@@ -1,0 +1,21 @@
+<w:p w14:paraId="3A9AA6AC" w14:textId="77777777" w:rsidR="001A2A24" w:rsidRDefault="001A2A24" w:rsidP="001A2A24">
+    <w:pPr>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00894FEC">
+        <w:rPr>
+            <w:b/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>Ответ</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>:</w:t>
+    </w:r>
+</w:p>

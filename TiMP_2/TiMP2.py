@@ -46,6 +46,7 @@ class Laba2:
 
         self.alpha = 0.0
         self.beta = 0.0
+        self.delta = 0
         self.sigma = 0
         self.tau = 0.0
 
@@ -59,9 +60,10 @@ class Laba2:
 
         self.init()
 
-        # Magic
+        self.document.add_step('_answer')
+        self.memory_table()
 
-        # self.document.add_step("_conclusion")
+        self.document.add_step("_conclusion")
 
     def init(self):
         self.document.add_step("init/memory", **self.get_args())
@@ -235,6 +237,7 @@ class Laba2:
         self.R1()
         while not self.R2():
             pass
+        self.RG6()
 
     def R1(self):
         self.j = 0
@@ -256,7 +259,7 @@ class Laba2:
             'base_j': self.base[self.j],
             'cond_1': self.new_base[self.j] < self.base[self.j],
             'cond_2': self.new_base[self.j] > self.base[self.j],
-            'cond_3': self.j > 4,
+            'cond_3': self.j > 3,
         }
 
         self.document.add_step("moving/R2", **params)
@@ -276,10 +279,10 @@ class Laba2:
         return params['cond_3']
 
     def R3(self):
-        self.sigma = self.base[self.j] - self.new_base[self.j]
+        self.delta = self.base[self.j] - self.new_base[self.j]
         params = {
             'j': self.j + 1,
-            'sigma': self.sigma,
+            'delta': self.delta,
             'base_j': self.base[self.j],
             'newbase_j': self.new_base[self.j],
             'top_j': self.top[self.j],
@@ -291,13 +294,13 @@ class Laba2:
 
         for l in range(self.base[self.j], self.top[self.j]):
             params['l'] = l + 1
-            params['l_subtract_sigma'] = l - self.sigma + 1
+            params['l_subtract_delta'] = l - self.delta + 1
 
             self.document.add_step('moving/R3_step', **params)
             self.memory_table()     # TODO: custom content (actually move)
 
         self.base[self.j] = self.new_base[self.j]
-        self.top[self.j] -= self.sigma
+        self.top[self.j] -= self.delta
 
         params['top_j_new'] = self.top[self.j]
         self.document.add_step('moving/R3_end', **params)
@@ -322,10 +325,48 @@ class Laba2:
             params['result'] = self.document.get_step_xml('moving/R4_' + ('true' if condition else 'false'), **params)
             self.document.add_step('moving/R4_step', **params)
             if condition:
-                return self.R5()
+                for t in range(self.k, self.j - 1, -1):
+                    self.R5(t)
+                return False
             else:
                 self.k += 1
 
-    def R5(self):
-        return True
+    def R5(self, t: int):
+        self.delta = self.new_base[t] - self.base[t]
+        params = {
+            't': t + 1,
+            'base_t': self.base[t],
+            'base_t_inc': self.base[t] + 1,
+            'newbase_t': self.new_base[t],
+            'delta': self.delta,
+            'top_t': self.top[t],
+            'top_t_dec': self.top[t] - 1,
+            'l_range': ', '.join(list(map(str, range(self.top[t], self.base[t], -1))))
+        }
+        self.document.add_step('moving/R5', **params)
+
+        for l in range(self.top[t], self.base[t], -1):
+            params['l'] = l
+            params['l_plus_delta'] = l + self.delta
+
+            self.document.add_step('moving/R5_step', **params)
+            self.memory_table()     # TODO!
+
+        self.base[t] = self.new_base[t]
+        self.top[t] += self.delta
+        params['top_t_new'] = self.top[t]
+        self.document.add_step('moving/R5_end', **params)
+        self.memory_table()
+
+    def RG6(self):
+        params = {
+            'i': self.i + 1,
+            'top_i_dec': self.top[self.i]
+        }
+        self.top[self.i] += 1
+        params['top_i'] = self.top[self.i]
+
+        self.document.add_step("moving/RG6", **params)
+        self.memory_table()     # TODO!
+        self.document.add_step("moving/RG6_end", **params)
     # ===================== #

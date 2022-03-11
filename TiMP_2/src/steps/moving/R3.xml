@@ -161,7 +161,7 @@
             <w:spacing w:val="-4"/>
             <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t xml:space="preserve"> [%j%] = %base_j% – %newbase_j% = %sigma%</w:t>
+        <w:t xml:space="preserve"> [%j%] = %base_j% – %newbase_j% = %delta%</w:t>
     </w:r>
 </w:p>
 <w:p w14:paraId="41286CD1" w14:textId="77777777" w:rsidR="00680C0D" w:rsidRPr="0078742A" w:rsidRDefault="00680C0D" w:rsidP="00680C0D">

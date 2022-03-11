@@ -186,7 +186,7 @@
         <w:rPr>
             <w:lang w:val="en-US"/>
         </w:rPr>
-        <w:t xml:space="preserve"> [%j%] – %sigma% =  %top_j% – %sigma% = %top_j_new%</w:t>
+        <w:t xml:space="preserve"> [%j%] – %delta% =  %top_j% – %delta% = %top_j_new%</w:t>
     </w:r>
     <w:r w:rsidRPr="00257B9D">
         <w:rPr>

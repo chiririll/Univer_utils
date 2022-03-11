@@ -64,6 +64,7 @@ class Laba2:
         self.document.add_step('_answer')
         self.memory_table(refresh_memory=False)
 
+        self.document.br()
         self.document.add_step("_conclusion")
 
     def init(self):
@@ -381,4 +382,5 @@ class Laba2:
         self.document.add_step("moving/RG6", **params)
         self.memory_table(refresh_memory=False)
         self.document.add_step("moving/RG6_end", **params)
+        self.document.br()
     # ===================== #

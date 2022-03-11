@@ -1,0 +1,68 @@
+<w:r>
+    <w:rPr>
+        <w:spacing w:val="-2"/>
+    </w:rPr>
+    <w:t>ИСТИНА, следовательно, выполним шаг</w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:t xml:space="preserve"> </w:t>
+</w:r>
+<w:r w:rsidRPr="00F12F1D">
+    <w:rPr>
+        <w:i/>
+        <w:lang w:val="en-US"/>
+    </w:rPr>
+    <w:t>R</w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:t>5 для</w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:t xml:space="preserve"> </w:t>
+</w:r>
+<w:r w:rsidRPr="00F12F1D">
+    <w:rPr>
+        <w:i/>
+        <w:lang w:val="en-US"/>
+    </w:rPr>
+    <w:t>T</w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:t xml:space="preserve"> = </w:t>
+</w:r>
+<w:r w:rsidRPr="00F12F1D">
+    <w:rPr>
+        <w:i/>
+        <w:lang w:val="en-US"/>
+    </w:rPr>
+    <w:t>k</w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:t xml:space="preserve">, </w:t>
+</w:r>
+<w:r w:rsidRPr="00F12F1D">
+    <w:rPr>
+        <w:i/>
+        <w:lang w:val="en-US"/>
+    </w:rPr>
+    <w:t>k</w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:t xml:space="preserve"> – 1, …, </w:t>
+</w:r>
+<w:r w:rsidRPr="00F12F1D">
+    <w:rPr>
+        <w:i/>
+        <w:lang w:val="en-US"/>
+    </w:rPr>
+    <w:t>j</w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:rPr>
+        <w:i/>
+    </w:rPr>
+    <w:t xml:space="preserve"> </w:t>
+</w:r>
+<w:r w:rsidRPr="002A10EB">
+    <w:t>= %k%, %k% – 1, …,  %j% = %k%, %k_dec%, …,  %j% = %t%</w:t>
+</w:r>

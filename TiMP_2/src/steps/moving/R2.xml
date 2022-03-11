@@ -30,6 +30,16 @@
         <w:t>j</w:t>
     </w:r>
     <w:r w:rsidRPr="002A10EB">
-        <w:t xml:space="preserve"> ← %j_dec% + 1 = %j%</w:t>
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F836C3">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>j</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t xml:space="preserve"> + 1 = %j_dec% + 1 = %j%</w:t>
     </w:r>
 </w:p>

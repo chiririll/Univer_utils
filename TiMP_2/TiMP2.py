@@ -25,7 +25,7 @@ class Laba2:
         self.document = Document(f"output/{filename}.doc")
 
         # Task
-        self.base = task['BASE']
+        self.base = task['BASE'] + [19]
         self.top = task['TOP']
         self.oldtop = task['TOP'].copy()
         self.sequence = self.parse_sequence(task['SEQUENCE'])
@@ -37,6 +37,7 @@ class Laba2:
 
         self.i = -1
         self.j = -1
+        self.k = -1
 
         # Repacking
         self.sum = 20
@@ -48,17 +49,9 @@ class Laba2:
         self.sigma = 0
         self.tau = 0.0
 
-        self.new_base = [-1, -1, -1, -1]
-
-    def test(self):
-        self.document.add_step("repacking/G2")
-        self.document.add_step("repacking/G2_step")
-        self.document.add_step("repacking/G2_true")
-        self.document.add_step("repacking/G2_false")
-        self.document.add_step("repacking/G2_end")
+        self.new_base = self.base.copy()
 
     def run(self):
-        # return self.test()
         self.document.add_step("_title_page", var=self.var, name=self.name)
         self.document.add_step("_task", **self.get_args({"task": self.sequence_str}))
 
@@ -68,11 +61,11 @@ class Laba2:
 
         # Magic
 
-        self.document.add_step("_conclusion")
+        # self.document.add_step("_conclusion")
 
     def init(self):
         self.document.add_step("init/memory", **self.get_args())
-        self.memory_table()
+        self.memory_table(False)
         self.document.br()
 
         self.document.add_step("init/oldtop", **self.get_args())
@@ -84,7 +77,7 @@ class Laba2:
                 self.repack()
                 self.move()
 
-    def memory_table(self):
+    def memory_table(self, add_address: bool = True):
         content = {}
         for i in range(4):
             for stack_i, cell_i in enumerate(range(self.base[i] + 1, self.top[i] + 1)):
@@ -98,6 +91,8 @@ class Laba2:
                 cells.append(self.document.get_step_xml("memory_table/cell_empty"))
 
         self.document.add_step("memory_table/base", cells="".join(cells))
+        if add_address:
+            self.document.add_step("memory_table/end", **self.get_args())
 
     def append_step(self, stack: int):
         nums = [
@@ -127,8 +122,6 @@ class Laba2:
             self.document.add_step("append/step_false", **params)
 
         self.memory_table()
-
-        self.document.add_step("append/end", **self.get_args())
 
         return overflow
 
@@ -232,7 +225,6 @@ class Laba2:
         self.document.add_step("repacking/G6", **params)
 
         self.memory_table()
-        self.document.add_step("append/end", **self.get_args())
 
     # ===================== #
 
@@ -241,10 +233,11 @@ class Laba2:
         self.document.add_step("moving/_start")
 
         self.R1()
-        self.R2()
+        while not self.R2():
+            pass
 
     def R1(self):
-        self.j = 1
+        self.j = 0
         self.document.add_step('moving/R1')
 
     def R2(self):
@@ -253,6 +246,8 @@ class Laba2:
         next_cond = "ЛОЖЬ, проверяем следующее условие"
         repeat_r2 = "ЛОЖЬ, следовательно, выполняем шаг R2 сначала"
         end_r = "ИСТИНА, следовательно, окончить алгоритм R"
+
+        self.j += 1
 
         params = {
             'j': self.j + 1,
@@ -265,34 +260,72 @@ class Laba2:
         }
 
         self.document.add_step("moving/R2", **params)
-        self.j += 1
 
         params['result'] = goto_r3 if params['cond_1'] else next_cond
         self.document.add_step('moving/R2_cond1', **params)
         if params['cond_1']:
-            self.R3()
-            return
+            return self.R3()
 
         params['result'] = goto_r4 if params['cond_2'] else next_cond
         self.document.add_step('moving/R2_cond2', **params)
         if params['cond_2']:
-            self.R4()
-            return
+            return self.R4()
 
         params['result'] = end_r if params['cond_3'] else repeat_r2
         self.document.add_step('moving/R2_cond3', **params)
-        if not params['cond_3']:
-            self.R2()
+        return params['cond_3']
 
     def R3(self):
-        pass
+        self.sigma = self.base[self.j] - self.new_base[self.j]
+        params = {
+            'j': self.j + 1,
+            'sigma': self.sigma,
+            'base_j': self.base[self.j],
+            'newbase_j': self.new_base[self.j],
+            'top_j': self.top[self.j],
+            'base_j_inc': self.base[self.j] + 1,
+            'base_j_add2': self.base[self.j] + 2,
+            'l': ', '.join(list(map(str, range(self.base[self.j] + 1, self.top[self.j] + 1))))
+        }
+        self.document.add_step('moving/R3', **params)
+
+        for l in range(self.base[self.j], self.top[self.j]):
+            params['l'] = l + 1
+            params['l_subtract_sigma'] = l - self.sigma + 1
+
+            self.document.add_step('moving/R3_step', **params)
+            self.memory_table()     # TODO: custom content (actually move)
+
+        self.base[self.j] = self.new_base[self.j]
+        self.top[self.j] -= self.sigma
+
+        params['top_j_new'] = self.top[self.j]
+        self.document.add_step('moving/R3_end', **params)
+        self.memory_table()
 
     def R4(self):
-        pass
+        self.k = self.j
+        self.document.add_step('moving/R4', j=self.j + 1)
+
+        for self.k in range(self.j, 5):
+            params = {
+                'j': self.j + 1,
+                'k': self.k + 1,
+                'k_inc': self.k + 2,
+                'k_dec': self.k,
+                'base_k_inc': self.base[self.k + 1],
+                'newbase_k_inc': self.new_base[self.k + 1],
+                'result': "",
+                't': ', '.join(list(map(str, range(self.k + 1, self.j, -1))))
+            }
+            condition = self.new_base[self.k + 1] <= self.base[self.k + 1]
+            params['result'] = self.document.get_step_xml('moving/R4_' + ('true' if condition else 'false'), **params)
+            self.document.add_step('moving/R4_step', **params)
+            if condition:
+                return self.R5()
+            else:
+                self.k += 1
 
     def R5(self):
-        pass
-
-    def R6(self):
-        pass
+        return True
     # ===================== #

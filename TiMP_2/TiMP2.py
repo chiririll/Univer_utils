@@ -30,6 +30,7 @@ class Laba2:
         self.oldtop = task['TOP'].copy()
         self.sequence = self.parse_sequence(task['SEQUENCE'])
         self.sequence_str = task['SEQUENCE']
+        self.memory = [0] * 20
 
         # Data
         self.var = var
@@ -61,7 +62,7 @@ class Laba2:
         self.init()
 
         self.document.add_step('_answer')
-        self.memory_table()
+        self.memory_table(refresh_memory=False)
 
         self.document.add_step("_conclusion")
 
@@ -79,16 +80,22 @@ class Laba2:
                 self.repack()
                 self.move()
 
-    def memory_table(self, add_address: bool = True):
-        content = {}
-        for i in range(4):
-            for stack_i, cell_i in enumerate(range(self.base[i] + 1, self.top[i] + 1)):
-                content[cell_i] = (i + 1, stack_i + 1)
+    def memory_table(self, add_address: bool = True, refresh_memory: bool = True):
+        def update_memory():
+            content = {}
+            for i in range(4):
+                for stack_i, cell_i in enumerate(range(self.base[i] + 1, self.top[i] + 1)):
+                    content[cell_i] = (i + 1, stack_i + 1)
+            for i in range(20):
+                self.memory[i] = content.get(i, 0)
+
+        if refresh_memory:
+            update_memory()
 
         cells = []
-        for i in range(20):
-            if content.get(i):
-                cells.append(self.document.get_step_xml("memory_table/cell", stack=content[i][0], cell=content[i][1]))
+        for c in self.memory:
+            if c:
+                cells.append(self.document.get_step_xml("memory_table/cell", stack=c[0], cell=c[1]))
             else:
                 cells.append(self.document.get_step_xml("memory_table/cell_empty"))
 
@@ -124,6 +131,7 @@ class Laba2:
             self.document.add_step("append/step_false", **params)
 
         self.memory_table()
+        self.document.br()
 
         return overflow
 
@@ -297,7 +305,9 @@ class Laba2:
             params['l_subtract_delta'] = l - self.delta + 1
 
             self.document.add_step('moving/R3_step', **params)
-            self.memory_table()     # TODO: custom content (actually move)
+            self.memory[l - self.delta + 1] = self.memory[l + 1]
+            self.memory[l + 1] = 0
+            self.memory_table(refresh_memory=False)
 
         self.base[self.j] = self.new_base[self.j]
         self.top[self.j] -= self.delta
@@ -350,7 +360,9 @@ class Laba2:
             params['l_plus_delta'] = l + self.delta
 
             self.document.add_step('moving/R5_step', **params)
-            self.memory_table()     # TODO!
+            self.memory[l + self.delta] = self.memory[l]
+            self.memory[l] = 0
+            self.memory_table(refresh_memory=False)
 
         self.base[t] = self.new_base[t]
         self.top[t] += self.delta
@@ -367,6 +379,6 @@ class Laba2:
         params['top_i'] = self.top[self.i]
 
         self.document.add_step("moving/RG6", **params)
-        self.memory_table()     # TODO!
+        self.memory_table(refresh_memory=False)
         self.document.add_step("moving/RG6_end", **params)
     # ===================== #

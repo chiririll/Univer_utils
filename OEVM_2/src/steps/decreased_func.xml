@@ -1,0 +1,7 @@
+{% extends "base/paragraph.xml" %}
+
+{% block paragraph %}
+
+{% include "parts/function.xml" %}
+
+{% endblock paragraph %}

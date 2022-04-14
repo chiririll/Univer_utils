@@ -7,9 +7,14 @@ from ..Document import Document
 
 class Laba(ABC):
 
-    info = {
+    laba = {
         'name': "test",
         'subject': None
+    }
+
+    subject = {
+        'title': "Test subject",
+        'teacher': "Ivanov Ivan Ivanovich"
     }
 
     def __init__(self, **params):
@@ -26,7 +31,7 @@ class Laba(ABC):
 
     def __get_path(self):
         path = ""
-        path += str(self.info.get('subject', '')) + '/'
-        path += self.info.get('name', "test")
+        path += str(self.laba.get('subject', '')) + '/'
+        path += self.laba.get('name', "test")
 
         return path

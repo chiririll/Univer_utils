@@ -1,3 +1,4 @@
+import datetime
 from io import BytesIO
 from os import PathLike
 from zipfile import ZipFile
@@ -19,8 +20,12 @@ class Document:
 
     def __init__(self, container: str | PathLike[str] | BytesIO, **params):
         def create_jinja_env() -> jinja2.Environment:
-            folders = self.SHARED_TEMPLATES
+            global_vars = {
+                'date': datetime.date.today(),
+                **params.get('jinja_globals', {})
+            }
 
+            folders = self.SHARED_TEMPLATES
             if params.get('parts_folder'):
                 folders.append(params.get('parts_folder'))
 
@@ -28,7 +33,7 @@ class Document:
                 loader=jinja2.FileSystemLoader(folders)
             )
 
-            for k, v in params.get('jinja_globals', {}):
+            for k, v in global_vars.items():
                 env.globals[k] = v
 
             return env
@@ -84,3 +89,7 @@ class Document:
             lines.append(f"<w:r><w:t>{line}</w:t></w:r>")
         lines = '\n'.join(lines)
         self.content.append(f"<w:p>{lines}</w:p>")
+
+    def add_step(self, step_name: str, **context):
+        step = self.jenv.get_template(step_name + '.xml')
+        self.content.append(step.render(**context))

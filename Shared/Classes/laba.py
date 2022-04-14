@@ -23,7 +23,17 @@ class Laba(ABC):
 
         doc_path = f"output/{self.__get_path()}_v{self.executor.variant}.doc"
         Utils.path.create_folders(doc_path)
-        self.document = Document(doc_path, **params.get('word_params', {}))
+
+        word_params = params.get('word_params', {})
+
+        word_params['jinja_globals'] = {
+            'subject': self.subject,
+            'laba': self.laba,
+            'executor': self.executor,
+            **word_params.get('jinja_globals', {})
+        }
+
+        self.document = Document(doc_path, **word_params)
 
     @abstractmethod
     def run(self):

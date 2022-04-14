@@ -19,6 +19,7 @@ class RelType(Enum):
 
 class Relation:
     def __init__(self, r_type: RelType, target: str, file: str | PathLike[str], r_id: int = 0):
+        # TODO: Render template
         self.id = r_id
         self.type, self.override = r_type.value
         self.target = target

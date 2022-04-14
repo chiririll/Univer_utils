@@ -11,9 +11,9 @@ class Laba6(Shared.Classes.Laba):
         'subject': "OIB",
         'name': "laba6"
     }
+    subject = info.OIB
 
     def __init__(self, **params):
-        self.subject = info.OIB
         params['word_params'] = {
             'style': "tstu"
         }
@@ -22,20 +22,14 @@ class Laba6(Shared.Classes.Laba):
     def run(self):
         self.title_page()
 
-        self.document.add_paragraph(f"My variant is {self.executor.variant}, I was made by {self.executor}.")
-
     def title_page(self):
         logo_rel = Relation(RelType.IMAGE, "media/tstu.wmf", "Shared/src/images/tstu.wmf")
         first_footer = Relation(RelType.FOOTER, "footer_first.xml", "Shared/src/parts/footers/first.xml")
         default_footer = Relation(RelType.FOOTER, "footer_default.xml", "Shared/src/parts/footers/default.xml")
 
         context = {
-            'subject': self.subject,
-            'laba': self.laba,
-            'executor': self.executor,
             'logo_id': self.document.add_relation(logo_rel),
             'first_footer_id': self.document.add_relation(first_footer),
             'default_footer_id': self.document.add_relation(default_footer)
         }
         self.document.add_step('title_pages/default', **context)
-

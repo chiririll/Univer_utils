@@ -3,12 +3,14 @@ import Shared
 
 class Laba6(Shared.Classes.Laba):
 
-    def _info(self):
-        self.laba['subject'] = "OIB"
-        self.laba['name'] = "laba6"
+    info = {
+        'subject': "OIB",
+        'name': "laba6"
+    }
+
+    def __init__(self, **params):
+        super().__init__(**params)
 
     def run(self):
-        print(f"My variant is {self.executor.variant}, I made by {self.executor}.")
+        self.document.add_paragraph(f"My variant is {self.executor.variant}, I was made by {self.executor}.")
 
-    def _get_info(self):
-        return "OIB", "laba6"

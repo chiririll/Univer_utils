@@ -1,0 +1,13 @@
+<w:p>
+    <w:pPr>
+        {% if first_line %}<w:ind w:firstLine="{{ first_line }}"/>{% endif %}
+        {% if align %}<w:jc w:val="{{ align }}"/>{% endif %}
+    </w:pPr>
+    <w:r>
+        <w:pict>
+            <v:shape style="width:{{ width }};height:{{ height }}">
+                <v:imagedata r:id="rId{{ rel.id }}"/>
+            </v:shape>
+        </w:pict>
+    </w:r>
+</w:p>

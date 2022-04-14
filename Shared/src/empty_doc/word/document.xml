@@ -16,7 +16,7 @@
     xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
     xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 wp14">
     <w:body>
-        %_content_%
+        {{ '\n'.join(content) }}
         <w:sectPr w:rsidR="00B06525" w:rsidRPr="0067070A">
             <w:type w:val="continuous"/>
             <w:pgSz w:w="11906" w:h="16838"/>

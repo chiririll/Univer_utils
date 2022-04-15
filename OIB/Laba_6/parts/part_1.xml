@@ -1,5 +1,5 @@
 {% import 'image.xml' as img %}
-{% import 'tables/thread_level.xml' as thread_lvl %}
+{% import 'tables/part_1.xml' as th_table %}
 
 <w:p>
     <w:pPr>
@@ -41,6 +41,6 @@
     </w:r>
 </w:p>
 
-{% for i in range(threads|length) %}
-{{ thread_lvl.table(thread_classes[i], threads[i], criticality[i]) }}
+{% for i in range(th|length) %}
+{{ th_table.table(thread_classes[i], th[i]) }}
 {% endfor %}

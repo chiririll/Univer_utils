@@ -39,7 +39,8 @@
     </w:r>
 </w:p>
 
-
+{% import 'image.xml' as img %}
+{{ img.image_p(image) }}
 
 <w:p>
     <w:pPr>

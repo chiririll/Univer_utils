@@ -28,7 +28,7 @@ class Laba6(Shared.Classes.Laba):
         self.theory()
 
     def title_page(self):
-        logo_rel = Image("Shared/src/images/tstu.wmf", "tstu.wmf")
+        logo_rel = Image("Shared/src/images/tstu.wmf", "tstu")
         first_footer = Xml(RelType.FOOTER, "footer_first.xml", "Shared/src/parts/footers/first.xml")
         default_footer = Xml(RelType.FOOTER, "footer_default.xml", "Shared/src/parts/footers/default.xml")
 
@@ -40,10 +40,21 @@ class Laba6(Shared.Classes.Laba):
         self.document.add_step('title_pages/tstu', **context)
 
     def theory(self):
+        style = {
+            'width': 266,
+            'height': 230
+        }
+        image = Image("OIB/Laba_6/src/image1.png", style=style)
+        image.id = self.document.add_relation(image)
+
         context = {
             'threads': threads,
             'thread_classes': thread_classes,
-            'criticality': self.task
+            'criticality': self.task,
+            'image': image
         }
         self.document.add_step('theory', **context)
+
+    def step_1(self):
+        pass
 

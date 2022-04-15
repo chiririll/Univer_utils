@@ -22,6 +22,7 @@ class Laba6(Shared.Classes.Laba):
         self.cth = []   # Thread type -> PC id
         self.cthr = []  # PC id
         self.r = []     # PC id
+        self.cr = 0
 
         params['word_params'] = {
             'style': "tstu",
@@ -37,6 +38,7 @@ class Laba6(Shared.Classes.Laba):
         self.part_2()
         self.part_3()
         self.part_4()
+        self.part_5()
 
     def title_page(self):
         logo_rel = Image("Shared/src/images/tstu.wmf", "tstu")
@@ -179,3 +181,27 @@ class Laba6(Shared.Classes.Laba):
         context['func'].id = self.document.add_relation(context['func'])
 
         self.document.add_step('part_4', **context)
+
+    def part_5(self):
+        def count_cr() -> int:
+            cr = 1
+            for r_i in self.r:
+                cr *= 1 - r_i / 100
+            return (1 - cr) * 100
+
+        self.cr = count_cr()
+
+        style = {
+            'width': 204,
+            'height': 60
+        }
+
+        context = {
+            'func': Image("OIB/Laba_6/src/part_5/func.wmf", "p5f", style),
+            'r': self.r,
+            'cr': self.cr
+        }
+
+        context['func'].id = self.document.add_relation(context['func'])
+
+        self.document.add_step('part_5', **context)

@@ -1,0 +1,29 @@
+{% import 'image.xml' as img %}
+{% import 'tables/part_5.xml' as cr_table %}
+
+<w:p>
+    <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+            <w:ilvl w:val="0"/>
+            <w:numId w:val="2"/>
+        </w:numPr>
+    </w:pPr>
+    <w:r>
+        <w:t>Риск по всей информационной системе CR рассчитывается по формуле:</w:t>
+    </w:r>
+</w:p>
+
+{{ img.image_p(func) }}
+
+<w:p/>
+
+{{ cr_table.table(r, cr) }}
+
+<w:p/>
+
+<w:p>
+    <w:r>
+        <w:t>Ответ: риск по угрозам конфиденциальности, целостности и доступности информации в информационной системе составляет {{ cr|round|int }} баллов.</w:t>
+    </w:r>
+</w:p>

@@ -1,2 +1,3 @@
+from . import rels
+
 from .document import *
-from .relation import *

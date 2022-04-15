@@ -27,3 +27,14 @@ def walk(folder: str | os.PathLike[str], base_path: str = ''):
         else:
             files.append(base_path + f)
     return files
+
+
+def get_filename_and_extension(file: str | os.PathLike[str]):
+    filename = file.replace('\\', '/').split('/')[-1]
+    parts = filename.split('.')
+
+    if len(parts) < 2:
+        return filename, ""
+
+    return '.'.join(parts[:-1]), parts[-1]
+

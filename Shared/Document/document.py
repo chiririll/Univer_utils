@@ -5,7 +5,7 @@ from zipfile import ZipFile
 
 import jinja2
 
-from .relation import Relation, RelType
+from Shared.Document.rels import Relation, RelType, Xml
 from .. import Utils
 
 
@@ -48,10 +48,12 @@ class Document:
 
         # Adding style
         self.add_relation(
-            Relation(RelType.STYLE, "styles.xml", self.STYLES_FOLDER + params.get('style', 'default') + ".xml")
+            Xml(RelType.STYLE, "styles.xml", self.STYLES_FOLDER + params.get('style', 'default') + ".xml")
         )
 
     def __del__(self):
+        if not self.__saved:
+            self.save()
         try:
             if not self.__saved:
                 self.save()
@@ -76,7 +78,11 @@ class Document:
 
         # Adding relations
         for rel in self.rels:
-            self.zip.write(rel.file, 'word/' + rel.target)
+            if rel.is_text:
+                template = self.jenv.from_string(rel.content)
+                self.zip.writestr('word/' + rel.target, template.render(rel.context))
+            else:
+                self.zip.write(rel.file, 'word/' + rel.target)
 
         self.zip.close()
 

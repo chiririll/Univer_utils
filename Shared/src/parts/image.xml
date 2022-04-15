@@ -1,11 +1,11 @@
 <w:p>
     <w:pPr>
-        {% if first_line %}<w:ind w:firstLine="{{ first_line }}"/>{% endif %}
-        {% if align %}<w:jc w:val="{{ align }}"/>{% endif %}
+        <w:ind w:firstLine="{{ image.get(first_line)|default(0) }}"/>
+        <w:jc w:val="{{ image.get(align)|default('center') }}"/>
     </w:pPr>
     <w:r>
         <w:pict>
-            <v:shape style="width:{{ width }};height:{{ height }}">
+            <v:shape {% if 'style' in image.keys() %}style="width:{{ imagewidth }};height:{{ height }}">
                 <v:imagedata r:id="rId{{ rel.id }}"/>
             </v:shape>
         </w:pict>

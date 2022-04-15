@@ -1,23 +1,31 @@
 import random
 
-from word_parser import Document
-from drawer import draw_cards, draw_scheme
+import Shared
+
+from . import drawer
 
 
-class Laba1:
+class Laba1(Shared.Classes.Laba):
 
-    def __init__(self, task: list, filename="out", var=0, name="Ivanov I.I."):
-        # Document
-        self.document = Document(f"output/{filename}.doc")
+    laba = {
+        'number': "1",
+        'title': "ЛИНЕЙНЫЕ ИНФОРМАЦИОННЫЕ СТРУКТУРЫ",
+        'subject': "TiMP",
+        'name': "laba1"
+    }
 
+    def __init__(self, task: list, **params):
         # Task  [TOP, ..., BOTTOM]
         # Cards [BOTTOM, ..., TOP]
         # Card  [TAG, SUIT, RANK]
         self.cards = self.prepare_task(task)
 
+        params['word_params'] = {
+            'parts_folder': "TiMP/TiMP_1/steps"
+        }
+
         # Data
-        self.var = var
-        self.name = name
+        super().__init__(**params)
 
     @staticmethod
     def prepare_task(task) -> list:
@@ -41,26 +49,26 @@ class Laba1:
         return string[:-2]
 
     def run(self):
-        self.document.add_step('_title_page', var=self.var, name=self.name)
+        self.document.add_step('title_pages/TiMP')
         self.task()
 
-        self.program()
-        self.result()
-        self.protocol()
+        # self.program()
+        # self.result()
+        # self.protocol()
 
-        self.document.add_step('_conclusion')
+        # self.document.add_step('_conclusion')
 
     def task(self):
         positions = ["первая", "вторая", "третья", "четвертая", "пятая", "шестая", "седьмая", "восьмая", "девятая"]
-        cards_xml = []
+        cards = []
         for i, c in enumerate(reversed(self.cards)):
             card = "- "
             card += "верхняя карта" if i == 0 else f"{positions[i]} сверху"
             card += " (нижняя)" if i >= len(self.cards) - 1 else ""
             card += f": " + self.card_to_string(c, 'ADDR') + ", "
 
-            cards_xml.append(f"<w:p><w:r><w:t>{card}</w:t></w:r></w:p>")
-        self.document.add_step('_task', cards="\n".join(cards_xml))
+            cards.append(f"<w:p><w:r><w:t>{card}</w:t></w:r></w:p>")
+        self.document.add_step('_task', cards=cards)
 
     def program(self):
         print("Generating program")
@@ -111,8 +119,8 @@ class Laba1:
             params = {
                 'cards': "",
                 'top_addr': top['ADDR'],
-                'image_1': draw_cards(self.cards[:i+1]),
-                'image_2': draw_scheme(f"prog_{i}", self.cards[:i+1])
+                'image_1': drawer.draw_cards(self.cards[:i+1]),
+                'image_2': drawer.draw_scheme(f"prog_{i}", self.cards[:i+1])
             }
             for j in range(i + 1):
                 next_card = "Λ" if j <= 0 else self.cards[j - 1]['ADDR']
@@ -123,9 +131,9 @@ class Laba1:
         print("Counting cards")
         self.document.add_step('PROTOCOL/counting/start')
 
-        self.document.add_step('PROTOCOL/counting/B1', **self.cards[-1], image=draw_scheme(f"count_{0}", self.cards, 0))
+        self.document.add_step('PROTOCOL/counting/B1', **self.cards[-1], image=drawer.draw_scheme(f"count_{0}", self.cards, 0))
         for i in range(1, len(self.cards) + 1):
-            img = draw_scheme(f"count_{i}", self.cards, min(i, len(self.cards) - 1), i < len(self.cards))
+            img = drawer.draw_scheme(f"count_{i}", self.cards, min(i, len(self.cards) - 1), i < len(self.cards))
             addr = "NULL" if i >= len(self.cards) else self.cards[-i-1]['ADDR']
             self.document.add_step('PROTOCOL/counting/B2', **self.cards[-i], is_null=False)
             self.document.add_step('PROTOCOL/counting/B3', n=i-1, n_1=i, ADDR=addr, image=img)

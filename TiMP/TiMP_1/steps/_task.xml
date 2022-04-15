@@ -30,7 +30,9 @@
         <w:t xml:space="preserve"> линейной информационной структуры типа стек, которая представляет стопку карт:</w:t>
     </w:r>
 </w:p>
-%cards%
+{% for card in cards %}
+{{ card }}
+{% endfor %}
 <w:p w:rsidR="002C42CB" w:rsidRDefault="002C42CB" w:rsidP="002C42CB">
     <w:pPr>
         <w:ind w:firstLine="0"/>

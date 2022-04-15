@@ -135,7 +135,7 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>1</w:t>
+        <w:t>{{ laba.number }}</w:t>
     </w:r>
     <w:r>
         <w:rPr>
@@ -167,7 +167,7 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>ЛИНЕЙНЫЕ ИНФОРМАЦИОННЫЕ СТРУКТУРЫ</w:t>
+        <w:t>{{ laba.title }}</w:t>
     </w:r>
     <w:r>
         <w:rPr>
@@ -201,7 +201,7 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>Вариант №%var%</w:t>
+        <w:t>Вариант №{{ executor.variant }}</w:t>
     </w:r>
 </w:p>
 <w:p/>
@@ -251,7 +251,7 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>%name%</w:t>
+        <w:t>{{ executor }}</w:t>
     </w:r>
 </w:p>
 <w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
@@ -267,14 +267,7 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>_________ «___»________20</w:t>
-    </w:r>
-    <w:r>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-        <w:t>21</w:t>
+        <w:t>_________ «___»________{{ date.strftime('%Y') }}</w:t>
     </w:r>
     <w:r w:rsidRPr="001074A1">
         <w:rPr>
@@ -339,14 +332,7 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>_________ «___»________20</w:t>
-    </w:r>
-    <w:r>
-        <w:rPr>
-            <w:sz w:val="28"/>
-            <w:szCs w:val="28"/>
-        </w:rPr>
-        <w:t>21</w:t>
+        <w:t>_________ «___»________{{ date.strftime('%Y') }}</w:t>
     </w:r>
     <w:r w:rsidRPr="001074A1">
         <w:rPr>
@@ -414,7 +400,7 @@
             <w:sz w:val="28"/>
             <w:szCs w:val="28"/>
         </w:rPr>
-        <w:t>Тамбов 2021</w:t>
+        <w:t>Тамбов {{ date.strftime('%Y') }}</w:t>
     </w:r>
     <w:r>
         <w:rPr>

@@ -1,49 +1,23 @@
 import OIB
+from TiMP import TiMP_1
 
 
-def main():
-    threads = {
-        'privacy': [
-            # ПЭМИ
-            # наводки на соседние линии
-            # наводки на цепи заземления
-            # наводки на цепи питания
-            [18, 37, 14, 8],    # Server
-            [38, 27, 4, 6],     # PC-1
-            [32, 17, 5, 7],     # PC-2
-            [13, 32, 5, 5],     # PC-3
-        ],
-        'integrity': [
-            # ошибки персонала
-            # сбой оборудования
-            # отказ ПО
-            [5, 1, 3],          # Server
-            [15, 9, 3],         # PC-1
-            [11, 7, 4],         # PC-2
-            [10, 8, 2],         # PC-3
-        ],
-        'availability': [
-            # ошибки персонала
-            # сбой оборудования
-            # отказ ПО
-            [15, 10, 3],        # Server
-            [12, 6, 3],         # PC-1
-            [11, 5, 3],         # PC-2
-            [9, 5, 2],          # PC-3
-        ]
-    }
-
+def OIS():
     # Criticality
-    var11 = {
+    var11 = [
         # Server, PC-1, PC-2, PC-3
-        'privacy': [69, 4, 14, 14],
-        'integrity': [74, 16, 21, 12],
-        'availability': [53, 12, 15, 12]
-    }
+        [69, 4, 14, 14],    # Privacy
+        [74, 16, 21, 12],   # Integrity
+        [53, 12, 15, 12]    # Availability
+    ]
 
-    laba = OIB.Laba6()
+    laba = OIB.Laba6(var11)
     laba.run()
 
 
+def TiMP1():
+    TiMP_1.main()
+
+
 if __name__ == "__main__":
-    main()
+    OIS()

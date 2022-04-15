@@ -1,6 +1,6 @@
 import random
 
-from TiMP1 import Laba1
+from .TiMP1 import Laba1
 
 
 def generate_rand(count: int):
@@ -14,7 +14,7 @@ def main():
         [1, 1, 10]  # BOTTOM
     ]
 
-    laba = Laba1(generate_rand(9), filename="test")
+    laba = Laba1(generate_rand(9))
     laba.run()
 
 

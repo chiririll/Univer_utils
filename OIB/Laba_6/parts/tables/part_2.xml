@@ -70,7 +70,7 @@
                     <w:jc w:val="center"/>
                 </w:pPr>
                 <w:r>
-                    <w:t>{{ "%.4f"|format(cth) }}</w:t>
+                    <w:t>{{ cth|round(4) }}</w:t>
                 </w:r>
             </w:p>
         </w:tc>

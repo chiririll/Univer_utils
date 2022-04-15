@@ -19,8 +19,8 @@ class Laba6(Shared.Classes.Laba):
         self.task = task
 
         self.th = []    # Thread type -> PC id -> Thread item
-        self.cth = []   # Thread type ->
-        self.cthr = []  # Thread type ->
+        self.cth = []   # Thread type -> PC id
+        self.cthr = []  # PC id
 
         params['word_params'] = {
             'style': "tstu",
@@ -124,7 +124,6 @@ class Laba6(Shared.Classes.Laba):
             'func_2': Image("OIB/Laba_6/src/part_2/func_2.wmf", "p2f2", style),
             'func_3': Image("OIB/Laba_6/src/part_2/func_3.wmf", "p2f3", style),
 
-            'threads': threads,
             'thread_classes': thread_classes,
             'cth': self.cth
         }
@@ -137,8 +136,11 @@ class Laba6(Shared.Classes.Laba):
 
     def part_3(self):
         def count_cthr() -> list:
-            cthr = []
-            return cthr
+            cthr = [1] * len(threads[0])
+            for thread_type in self.cth:
+                for i, pc in enumerate(thread_type):
+                    cthr[i] *= 1 - pc
+            return list(map(lambda x: 1 - x, cthr))
 
         self.cthr = count_cthr()
 
@@ -149,15 +151,10 @@ class Laba6(Shared.Classes.Laba):
 
         context = {
             'func': Image("OIB/Laba_6/src/part_3/func.wmf", "p3f", style),
-
-            'threads': threads,
-            'thread_classes': thread_classes,
-            'cth': self.cth
+            'cthr': self.cthr
         }
 
-        context['func_1'].id = self.document.add_relation(context['func_1'])
-        context['func_2'].id = self.document.add_relation(context['func_2'])
-        context['func_3'].id = self.document.add_relation(context['func_3'])
+        context['func'].id = self.document.add_relation(context['func'])
 
-        self.document.add_step('part_2', **context)
+        self.document.add_step('part_3', **context)
 

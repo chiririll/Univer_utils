@@ -1,11 +1,11 @@
-{% macro table(thread_class, th_i) %}
+{% macro table(cthr) %}
 <w:p>
     <w:pPr>
         <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
     </w:pPr>
     <w:r>
-        <w:t>Th {{ thread_class['ltr'] }}</w:t>
+        <w:t>CThR</w:t>
     </w:r>
 </w:p>
 <w:tbl>
@@ -21,7 +21,6 @@
         <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
     </w:tblPr>
     <w:tblGrid>
-        <w:gridCol w:w="1984"/>
         <w:gridCol w:w="1134"/>
         <w:gridCol w:w="1134"/>
         <w:gridCol w:w="1134"/>
@@ -31,20 +30,7 @@
         <w:trPr>
             <w:jc w:val="center"/>
         </w:trPr>
-        <w:tc>
-            <w:tcPr>
-                <w:tcW w:w="1984" w:type="dxa"/>
-                <w:vAlign w:val="center"/>
-            </w:tcPr>
-            <w:p>
-                <w:pPr>
-                    <w:spacing w:before="120" w:after="120" w:line="240" w:lineRule="auto"/>
-                    <w:ind w:firstLine="0"/>
-                    <w:jc w:val="left"/>
-                </w:pPr>
-            </w:p>
-        </w:tc>
-        {% for i in range(th_i|length) %}
+        {% for i in range(cthr|length) %}
         <w:tc>
             <w:tcPr>
                 <w:tcW w:w="1134" w:type="dxa"/>
@@ -67,31 +53,11 @@
         </w:tc>
         {% endfor %}
     </w:tr>
-    {% for item in range(thread_class['items']|length) %}
     <w:tr>
         <w:trPr>
             <w:jc w:val="center"/>
         </w:trPr>
-        <w:tc>
-            <w:tcPr>
-                <w:tcW w:w="1984" w:type="dxa"/>
-                <w:vAlign w:val="center"/>
-            </w:tcPr>
-            <w:p>
-                <w:pPr>
-                    <w:spacing w:before="120" w:after="120" w:line="240" w:lineRule="auto"/>
-                    <w:ind w:firstLine="0"/>
-                    <w:jc w:val="left"/>
-                </w:pPr>
-                <w:r>
-                    <w:rPr>
-                        <w:szCs w:val="{{ font_size }}"/>
-                    </w:rPr>
-                    <w:t>{{ thread_class['items'][item] }}</w:t>
-                </w:r>
-            </w:p>
-        </w:tc>
-        {% for pc in range(th_i|length) %}
+        {% for pc in cthr %}
         <w:tc>
             <w:tcPr>
                 <w:tcW w:w="1134" w:type="dxa"/>
@@ -104,13 +70,12 @@
                     <w:jc w:val="center"/>
                 </w:pPr>
                 <w:r>
-                    <w:t>{{ th_i[pc][item]|round(4) }}</w:t>
+                    <w:t>{{ pc|round(4) }}</w:t>
                 </w:r>
             </w:p>
         </w:tc>
         {% endfor %}
     </w:tr>
-    {% endfor %}
 </w:tbl>
 <w:p/>
 {% endmacro %}

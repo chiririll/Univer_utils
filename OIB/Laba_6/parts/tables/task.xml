@@ -217,7 +217,7 @@
                         {% if loop.index0 == 0 %}
                         <w:t>С</w:t>
                         {% else %}
-                        <w:t>PC-{{loop.index0}}</w:t>
+                        <w:t>PC-{{ loop.index0 }}</w:t>
                         {% endif %}
                     </w:r>
                 </w:p>

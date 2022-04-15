@@ -27,6 +27,8 @@ class Laba6(Shared.Classes.Laba):
         self.title_page()
         self.theory()
 
+        self.part_1()
+
     def title_page(self):
         logo_rel = Image("Shared/src/images/tstu.wmf", "tstu")
         first_footer = Xml(RelType.FOOTER, "footer_first.xml", "Shared/src/parts/footers/first.xml")
@@ -44,7 +46,7 @@ class Laba6(Shared.Classes.Laba):
             'width': 266,
             'height': 230
         }
-        image = Image("OIB/Laba_6/src/image1.png", style=style)
+        image = Image("OIB/Laba_6/src/image1.emf", style=style)
         image.id = self.document.add_relation(image)
 
         context = {
@@ -55,6 +57,25 @@ class Laba6(Shared.Classes.Laba):
         }
         self.document.add_step('theory', **context)
 
-    def step_1(self):
-        pass
+    def part_1(self):
+        style = {
+            'width': 141,
+            'height': 48
+        }
+
+        context = {
+            'func_1': Image("OIB/Laba_6/src/part_1/func_1.wmf", style=style),
+            'func_2': Image("OIB/Laba_6/src/part_1/func_2.wmf", style=style),
+            'func_3': Image("OIB/Laba_6/src/part_1/func_3.wmf", style=style),
+
+            'threads': threads,
+            'thread_classes': thread_classes,
+            'criticality': self.task
+        }
+
+        context['func_1'].id = self.document.add_relation(context['func_1'])
+        context['func_2'].id = self.document.add_relation(context['func_2'])
+        context['func_3'].id = self.document.add_relation(context['func_3'])
+
+        self.document.add_step('part_1', **context)
 

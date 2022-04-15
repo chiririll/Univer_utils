@@ -1,3 +1,5 @@
+{% import 'image.xml' as img %}
+
 <w:p>
     <w:pPr>
         <w:rPr>
@@ -39,7 +41,6 @@
     </w:r>
 </w:p>
 
-{% import 'image.xml' as img %}
 {{ img.image_p(image) }}
 
 <w:p>
@@ -140,5 +141,5 @@
         <w:t>Критичности угроз по ресурсам указаны в таблице:</w:t>
     </w:r>
 </w:p>
-{% include "task.xml" %}
+{% include "tables/task.xml" %}
 <w:p/>

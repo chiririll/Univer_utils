@@ -2,7 +2,7 @@ import Shared
 from Shared.Document.rels import RelType, Image, Xml
 from .. import info
 
-from .threads import thread_classes, threads
+from . import threads
 
 
 class Laba6(Shared.Classes.Laba):
@@ -21,6 +21,7 @@ class Laba6(Shared.Classes.Laba):
         self.th = []    # Thread type -> PC id -> Thread item
         self.cth = []   # Thread type -> PC id
         self.cthr = []  # PC id
+        self.r = []     # PC id
 
         params['word_params'] = {
             'style': "tstu",
@@ -35,6 +36,7 @@ class Laba6(Shared.Classes.Laba):
         self.part_1()
         self.part_2()
         self.part_3()
+        self.part_4()
 
     def title_page(self):
         logo_rel = Image("Shared/src/images/tstu.wmf", "tstu")
@@ -58,7 +60,7 @@ class Laba6(Shared.Classes.Laba):
 
         context = {
             'threads': threads,
-            'thread_classes': thread_classes,
+            'thread_classes': threads.thread_classes,
             'criticality': self.task,
             'image': image
         }
@@ -67,11 +69,11 @@ class Laba6(Shared.Classes.Laba):
     def part_1(self):
         def count_th() -> list:
             th = []
-            for thread_type in range(len(threads)):
+            for thread_type in range(len(threads.threads)):
                 thread_type_list = []
-                for pc in range(len(threads[thread_type])):
+                for pc in range(len(threads.threads[thread_type])):
                     pc_list = []
-                    for item_val in threads[thread_type][pc]:
+                    for item_val in threads.threads[thread_type][pc]:
                         pc_list.append((item_val / 100) * (self.task[thread_type][pc] / 100))
                     thread_type_list.append(pc_list)
                 th.append(thread_type_list)
@@ -89,7 +91,7 @@ class Laba6(Shared.Classes.Laba):
             'func_2': Image("OIB/Laba_6/src/part_1/func_2.wmf", "p1f2", style),
             'func_3': Image("OIB/Laba_6/src/part_1/func_3.wmf", "p1f3", style),
 
-            'thread_classes': thread_classes,
+            'thread_classes': threads.thread_classes,
             'th': self.th
         }
 
@@ -124,7 +126,7 @@ class Laba6(Shared.Classes.Laba):
             'func_2': Image("OIB/Laba_6/src/part_2/func_2.wmf", "p2f2", style),
             'func_3': Image("OIB/Laba_6/src/part_2/func_3.wmf", "p2f3", style),
 
-            'thread_classes': thread_classes,
+            'thread_classes': threads.thread_classes,
             'cth': self.cth
         }
 
@@ -136,7 +138,7 @@ class Laba6(Shared.Classes.Laba):
 
     def part_3(self):
         def count_cthr() -> list:
-            cthr = [1] * len(threads[0])
+            cthr = [1] * len(threads.threads[0])
             for thread_type in self.cth:
                 for i, pc in enumerate(thread_type):
                     cthr[i] *= 1 - pc
@@ -158,3 +160,22 @@ class Laba6(Shared.Classes.Laba):
 
         self.document.add_step('part_3', **context)
 
+    def part_4(self):
+        def count_r() -> list:
+            return [cthr * threads.d[i] for i, cthr in enumerate(self.cthr)]
+
+        self.r = count_r()
+
+        style = {
+            'width': 103,
+            'height': 20
+        }
+
+        context = {
+            'func': Image("OIB/Laba_6/src/part_4/func.wmf", "p4f", style),
+            'r': self.r
+        }
+
+        context['func'].id = self.document.add_relation(context['func'])
+
+        self.document.add_step('part_4', **context)

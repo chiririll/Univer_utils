@@ -61,7 +61,7 @@ class Laba6(Shared.Classes.Laba):
         image.id = self.document.add_relation(image)
 
         context = {
-            'threads': threads,
+            'threads': threads.threads,
             'thread_classes': threads.thread_classes,
             'criticality': self.task,
             'image': image

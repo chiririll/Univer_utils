@@ -38,7 +38,7 @@
             </w:tcPr>
             <w:p>
                 <w:pPr>
-                    <w:spacing w:before="120" w:after="120" w:line="240" w:lineRule="auto"/>
+                    <w:spacing  w:line="240" w:lineRule="auto"/>
                     <w:ind w:firstLine="0"/>
                     <w:jc w:val="left"/>
                 </w:pPr>
@@ -52,7 +52,7 @@
             </w:tcPr>
             <w:p>
                 <w:pPr>
-                    <w:spacing w:before="120" w:after="120" w:line="240" w:lineRule="auto"/>
+                    <w:spacing  w:line="240" w:lineRule="auto"/>
                     <w:ind w:firstLine="0"/>
                     <w:jc w:val="center"/>
                 </w:pPr>
@@ -79,7 +79,7 @@
             </w:tcPr>
             <w:p>
                 <w:pPr>
-                    <w:spacing w:before="120" w:after="120" w:line="240" w:lineRule="auto"/>
+                    <w:spacing  w:line="240" w:lineRule="auto"/>
                     <w:ind w:firstLine="0"/>
                     <w:jc w:val="left"/>
                 </w:pPr>

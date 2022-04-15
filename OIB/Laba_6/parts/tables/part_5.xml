@@ -24,7 +24,7 @@
         </w:trPr>
         <w:tc>
             <w:tcPr>
-                <w:tcW w:w="5668" w:type="dxa"/>
+                <w:tcW w:w="{{ 1417 * r|length }}" w:type="dxa"/>
                 <w:gridSpan w:val="4"/>
                 <w:vAlign w:val="center"/>
             </w:tcPr>

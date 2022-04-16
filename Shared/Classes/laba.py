@@ -19,7 +19,7 @@ class Laba(ABC):
 
     def __init__(self, **params):
 
-        self.executor = Executor(**params)
+        self.executor = params.get('executor', Executor(**params))
 
         doc_path = f"output/{self.__get_path()}_v{self.executor.variant}.doc"
         Utils.path.create_folders(doc_path)

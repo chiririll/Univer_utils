@@ -4,10 +4,12 @@
 <w:p>
     <w:pPr>
         <w:pStyle w:val="a"/>
+        <w:keepNext/>
         <w:numPr>
             <w:ilvl w:val="0"/>
             <w:numId w:val="2"/>
         </w:numPr>
+        <w:ind w:left="0" w:firstLine="709"/>
     </w:pPr>
     <w:r>
         <w:t>Риск по ресурсу R рассчитывается следующим образом:</w:t>
@@ -19,6 +21,9 @@
 
 <w:p/>
 <w:p>
+    <w:pPr>
+        <w:keepNext/>
+    </w:pPr>
     <w:r>
         <w:t>Таким образом, получим значение риска по ресурсу в уровнях.</w:t>
     </w:r>

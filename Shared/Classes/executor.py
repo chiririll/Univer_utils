@@ -43,15 +43,15 @@ class Pattern:
 
 class Executor:
 
-    def __init__(self, **params):
-        self.variant = params.get('var', 0)
+    def __init__(self, name: str = "Ivanov Ivan Ivanovich", var: int = 0, pattern: Pattern | str = 'SNP', **params):
+        self.variant = var
 
-        if 'full_name' in params.keys():
-            self.__pattern = Pattern(params.get("name_pattern"))
+        if type(pattern) is str:
+            self.__pattern = Pattern(pattern)
         else:
-            self.__pattern = Pattern('SNP')
+            self.__pattern = pattern
 
-        self.surname, self.name, self.patronymic = self.__pattern.parse_str(params.get('full_name', "Ivanov Ivan Ivanovich"))
+        self.surname, self.name, self.patronymic = self.__pattern.parse_str(name)
 
     def __str__(self):
         return self.__pattern.get_str(self.surname, self.name, self.patronymic)

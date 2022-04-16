@@ -104,7 +104,7 @@
             {% endif %}
 
             {% for item in thread_class['items'] %}
-                <w:t>{{ item }} ({{ thread[loop.index0] }})</w:t>
+                <w:t>{{ item }} ({{ thread[loop.index0] }}{{ thread_class.get('unit', '') }})</w:t>
                 {% if loop.index != thread|length %}
                 <w:t xml:space="preserve">, </w:t>
                 {% endif %}

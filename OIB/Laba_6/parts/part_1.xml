@@ -4,6 +4,7 @@
 <w:p>
     <w:pPr>
         <w:pStyle w:val="a"/>
+        <w:keepNext/>
         <w:numPr>
             <w:ilvl w:val="0"/>
             <w:numId w:val="2"/>
@@ -23,6 +24,7 @@
 
 <w:p>
     <w:pPr>
+        <w:keepNext/>
     </w:pPr>
     <w:r>
         <w:t>Получаем значения уровня каждой угрозы по каждой уязвимости для каждого ресурса в интервале от 0 до 1.</w:t>

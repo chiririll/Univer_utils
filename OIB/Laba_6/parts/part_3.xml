@@ -18,6 +18,8 @@
 
 {{ img.image_p(func) }}
 
+<w:p/>
+
 <w:p>
     <w:pPr>
         <w:keepNext/>

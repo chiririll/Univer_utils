@@ -1,8 +1,0 @@
-<w:p>
-    <w:pPr>
-        {% block pPref %}
-        {% endblock pPref %}
-    </w:pPr>
-    {% block paragraph %}
-    {% endblock paragraph %}
-</w:p>

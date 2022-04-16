@@ -1,8 +1,0 @@
-{% extends "base/paragraph.xml" %}
-
-{% block paragraph %}
-<w:r>
-    <w:t xml:space="preserve">СКНФ: </w:t>
-</w:r>
-{% include "parts/function.xml" %}
-{% endblock paragraph %}

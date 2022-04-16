@@ -3,6 +3,7 @@
     <w:pPr>
         <w:ind w:firstLine="0"/>
         <w:jc w:val="center"/>
+        <w:keepNext/>
     </w:pPr>
     <w:r>
         <w:t>R</w:t>

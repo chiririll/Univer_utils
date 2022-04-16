@@ -1,0 +1,17 @@
+<w:p w:rsidR="004F128C" w:rsidRPr="00EE08F8" w:rsidRDefault="004F128C" w:rsidP="004F128C">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+            <w:rFonts w:ascii="Courier New" w:hAnsi="Courier New"/>
+            <w:lang w:val="en-US" w:eastAsia="x-none"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00EE08F8">
+        <w:rPr>
+            <w:rFonts w:ascii="Courier New" w:hAnsi="Courier New"/>
+            <w:lang w:val="en-US" w:eastAsia="x-none"/>
+        </w:rPr>
+        <w:t>NEWCARD=%card_addr%</w:t>
+    </w:r>
+</w:p>

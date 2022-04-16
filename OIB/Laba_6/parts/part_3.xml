@@ -1,0 +1,32 @@
+{% import 'image.xml' as img %}
+{% import 'tables/part_3.xml' as cthr_table %}
+
+<w:p>
+    <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:keepNext/>
+        <w:numPr>
+            <w:ilvl w:val="0"/>
+            <w:numId w:val="2"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="709"/>
+    </w:pPr>
+    <w:r>
+        <w:t>Аналогично рассчитываем общий уровень угроз по ресурсу CThR (учитывая все угрозы (конфиденциальность, целостность, доступность), действующие на ресурс):</w:t>
+    </w:r>
+</w:p>
+
+{{ img.image_p(func) }}
+
+<w:p/>
+
+<w:p>
+    <w:pPr>
+        <w:keepNext/>
+    </w:pPr>
+    <w:r>
+        <w:t>Значение общего уровня угрозы получим в интервале от 0 до 1.</w:t>
+    </w:r>
+</w:p>
+
+{{ cthr_table.table(cthr) }}

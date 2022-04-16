@@ -1,0 +1,36 @@
+{% import 'image.xml' as img %}
+{% import 'tables/part_1.xml' as th_table %}
+
+<w:p>
+    <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:keepNext/>
+        <w:numPr>
+            <w:ilvl w:val="0"/>
+            <w:numId w:val="2"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="709"/>
+    </w:pPr>
+    <w:r>
+        <w:t>На первом этапе рассчитываем уровень угрозы по уязвимости Th на основе критичности и вероятности реализации угрозы через данную уязвимость. Уровень угрозы показывает, насколько критичным является воздействие данной угрозы на ресурс с учетом вероятности ее реализации.</w:t>
+    </w:r>
+</w:p>
+
+{{ img.image_p(func_1) }}
+
+{{ img.image_p(func_2) }}
+
+{{ img.image_p(func_3) }}
+
+<w:p>
+    <w:pPr>
+        <w:keepNext/>
+    </w:pPr>
+    <w:r>
+        <w:t>Получаем значения уровня каждой угрозы по каждой уязвимости для каждого ресурса в интервале от 0 до 1.</w:t>
+    </w:r>
+</w:p>
+
+{% for i in range(th|length) %}
+{{ th_table.table(thread_classes[i], th[i]) }}
+{% endfor %}

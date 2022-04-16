@@ -1,0 +1,45 @@
+<w:p w14:paraId="7DECBFD6" w14:textId="77777777" w:rsidR="00E13A29" w:rsidRPr="002A10EB" w:rsidRDefault="00E13A29" w:rsidP="00E13A29">
+    <w:pPr>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>R</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:b/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">5. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:t>[Сдвиг вверх.] </w:t>
+    </w:r>
+</w:p>
+<w:p>
+    <w:r>
+        <w:rPr>
+            <w:i />
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [%t%] = </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:i />
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [%t%], следовательно, не требуется никаких действий</w:t>
+    </w:r>
+</w:p>

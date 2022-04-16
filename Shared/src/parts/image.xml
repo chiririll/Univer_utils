@@ -1,0 +1,15 @@
+{% macro image_p(image, first_line, align) %}
+<w:p>
+    <w:pPr>
+        <w:ind w:firstLine="{{ first_line|default(0) }}"/>
+        <w:jc w:val="{{ align|default('center') }}"/>
+    </w:pPr>
+    <w:r>
+        <w:pict>
+            <v:shape style="{{ image.get_style() }}">
+                <v:imagedata r:id="rId{{ image.id }}"/>
+            </v:shape>
+        </w:pict>
+    </w:r>
+</w:p>
+{% endmacro %}

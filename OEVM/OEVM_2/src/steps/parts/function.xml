@@ -1,0 +1,237 @@
+<m:oMathPara>
+    <m:oMath>
+        {% if not func_index %}
+        <m:r>
+            <w:rPr>
+                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+            </w:rPr>
+            <m:t>f</m:t>
+        </m:r>
+        {% else %}
+        <m:sSub>
+            <m:sSubPr>
+                <m:ctrlPr>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                        <w:i/>
+                    </w:rPr>
+                </m:ctrlPr>
+            </m:sSubPr>
+            <m:e>
+                <m:r>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                    </w:rPr>
+                    <m:t>f</m:t>
+                </m:r>
+            </m:e>
+            <m:sub>
+                <m:r>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                    </w:rPr>
+                    <m:t>{{ func_index }}</m:t>
+                </m:r>
+            </m:sub>
+        </m:sSub>
+        {% endif %}
+        <m:d>
+            <m:dPr>
+                <m:ctrlPr>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                        <w:i/>
+                    </w:rPr>
+                </m:ctrlPr>
+            </m:dPr>
+            <m:e>
+                <m:sSub>
+                    <m:sSubPr>
+                        <m:ctrlPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                <w:i/>
+                            </w:rPr>
+                        </m:ctrlPr>
+                    </m:sSubPr>
+                    <m:e>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>x</m:t>
+                        </m:r>
+                    </m:e>
+                    <m:sub>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>1</m:t>
+                        </m:r>
+                    </m:sub>
+                </m:sSub>
+                <m:r>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                    </w:rPr>
+                    <m:t>,</m:t>
+                </m:r>
+                <m:sSub>
+                    <m:sSubPr>
+                        <m:ctrlPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                <w:i/>
+                            </w:rPr>
+                        </m:ctrlPr>
+                    </m:sSubPr>
+                    <m:e>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>x</m:t>
+                        </m:r>
+                    </m:e>
+                    <m:sub>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>2</m:t>
+                        </m:r>
+                    </m:sub>
+                </m:sSub>
+                <m:r>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                    </w:rPr>
+                    <m:t>,</m:t>
+                </m:r>
+                <m:sSub>
+                    <m:sSubPr>
+                        <m:ctrlPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                <w:i/>
+                            </w:rPr>
+                        </m:ctrlPr>
+                    </m:sSubPr>
+                    <m:e>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>x</m:t>
+                        </m:r>
+                    </m:e>
+                    <m:sub>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>3</m:t>
+                        </m:r>
+                    </m:sub>
+                </m:sSub>
+                <m:r>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                    </w:rPr>
+                    <m:t>,</m:t>
+                </m:r>
+                <m:sSub>
+                    <m:sSubPr>
+                        <m:ctrlPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                <w:i/>
+                            </w:rPr>
+                        </m:ctrlPr>
+                    </m:sSubPr>
+                    <m:e>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>x</m:t>
+                        </m:r>
+                    </m:e>
+                    <m:sub>
+                        <m:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                            </w:rPr>
+                            <m:t>4</m:t>
+                        </m:r>
+                    </m:sub>
+                </m:sSub>
+            </m:e>
+        </m:d>
+        <m:r>
+            <w:rPr>
+                <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+            </w:rPr>
+            <m:t>=</m:t>
+        </m:r>
+
+        {% for con in function %}
+            {% for var in con %}
+                {% if var != '-' %}
+                    {% if var == '0' %}
+                    <m:bar>
+                        <m:barPr>
+                            <m:pos m:val="top"/>
+                            <m:ctrlPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                    <w:i/>
+                                </w:rPr>
+                            </m:ctrlPr>
+                        </m:barPr>
+                        <m:e>
+                    {% endif %}
+                    <m:sSub>
+                        <m:sSubPr>
+                            <m:ctrlPr>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                    <w:i/>
+                                </w:rPr>
+                            </m:ctrlPr>
+                        </m:sSubPr>
+                        <m:e>
+                            <m:r>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                </w:rPr>
+                                <m:t>x</m:t>
+                            </m:r>
+                        </m:e>
+                        <m:sub>
+                            <m:r>
+                                <w:rPr>
+                                    <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                                </w:rPr>
+                                <m:t>{{ loop.index }}</m:t>
+                            </m:r>
+                        </m:sub>
+                    </m:sSub>
+                    {% if var == '0' %}
+                        </m:e>
+                    </m:bar>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% if loop.index != function|length %}
+            <m:r>
+                <w:rPr>
+                    <w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>
+                </w:rPr>
+                <m:t>∨</m:t>
+            </m:r>
+            {% endif %}
+        {% endfor %}
+    </m:oMath>
+</m:oMathPara>

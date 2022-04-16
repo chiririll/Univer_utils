@@ -1,0 +1,82 @@
+{% macro table(thread_class, cth_i) %}
+<w:p>
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:keepNext/>
+    </w:pPr>
+    <w:r>
+        <w:t>CTh {{ thread_class['ltr'] }}</w:t>
+    </w:r>
+</w:p>
+<w:tbl>
+    <w:tblPr>
+        <w:tblStyle w:val="af5"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:jc w:val="center"/>
+        <w:tblBorders>
+            <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+        </w:tblBorders>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+        <w:gridCol w:w="1134"/>
+        <w:gridCol w:w="1134"/>
+        <w:gridCol w:w="1134"/>
+        <w:gridCol w:w="1134"/>
+    </w:tblGrid>
+    <w:tr>
+        <w:trPr>
+            <w:jc w:val="center"/>
+        </w:trPr>
+        {% for i in range(cth_i|length) %}
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1134" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:spacing  w:line="240" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                </w:pPr>
+                <w:r>
+                    {% if i == 0 %}
+                    <w:t>С</w:t>
+                    {% else %}
+                    <w:t>PC-{{ i }}</w:t>
+                    {% endif %}
+                </w:r>
+            </w:p>
+        </w:tc>
+        {% endfor %}
+    </w:tr>
+    <w:tr>
+        <w:trPr>
+            <w:jc w:val="center"/>
+        </w:trPr>
+        {% for cth in cth_i %}
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1134" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:spacing w:line="240" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                </w:pPr>
+                <w:r>
+                    <w:t>{{ cth|round(4) }}</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        {% endfor %}
+    </w:tr>
+</w:tbl>
+<w:p/>
+{% endmacro %}

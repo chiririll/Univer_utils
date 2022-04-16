@@ -1,0 +1,124 @@
+<w:p w:rsidR="00D559DF" w:rsidRPr="00D559DF" w:rsidRDefault="00D559DF" w:rsidP="00D559DF">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COEF</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D559DF">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D559DF">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">) ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COEF</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D559DF">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D559DF">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">) + </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COEF</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D559DF">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00D559DF">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>) = %coef_q% + %coef_p% = %coef_q_new%</w:t>
+    </w:r>
+</w:p>
+%img_1%
+<w:p w:rsidR="005231F7" w:rsidRPr="00F70A14" w:rsidRDefault="005231F7" w:rsidP="005231F7">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="00F70A14">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008438A0">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>COEF</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F70A14">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008438A0">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F70A14">
+        <w:t xml:space="preserve">) = 0) = (%coef_q_new% = 0) = </w:t>
+    </w:r>
+    <w:r>
+        <w:t>%coef_q_eq_0%</w:t>
+    </w:r>
+</w:p>

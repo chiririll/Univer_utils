@@ -1,0 +1,297 @@
+<w:tbl>
+    <w:tblPr>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblBorders>
+            <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+        </w:tblBorders>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+        <w:gridCol w:w="1206"/>
+        <w:gridCol w:w="661"/>
+        <w:gridCol w:w="686"/>
+        <w:gridCol w:w="686"/>
+        <w:gridCol w:w="686"/>
+        <w:gridCol w:w="658"/>
+        <w:gridCol w:w="684"/>
+        <w:gridCol w:w="684"/>
+        <w:gridCol w:w="684"/>
+        <w:gridCol w:w="658"/>
+        <w:gridCol w:w="684"/>
+        <w:gridCol w:w="684"/>
+        <w:gridCol w:w="684"/>
+    </w:tblGrid>
+    <w:tr>
+        <w:trPr>
+            <w:trHeight w:val="135"/>
+        </w:trPr>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1206" w:type="dxa"/>
+                <w:vMerge w:val="restart"/>
+            </w:tcPr>
+            <w:p w14:paraId="0F5D6F5A" w14:textId="77777777" w:rsidR="00161585" w:rsidRPr="00161585" w:rsidRDefault="00161585" w:rsidP="00161585">
+                <w:pPr>
+                    <w:widowControl w:val="0"/>
+                    <w:autoSpaceDE w:val="0"/>
+                    <w:autoSpaceDN w:val="0"/>
+                    <w:adjustRightInd w:val="0"/>
+                    <w:spacing w:before="120"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00161585">
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                    <w:t>Номер</w:t>
+                </w:r>
+            </w:p>
+            <w:p w14:paraId="0E8576BC" w14:textId="77777777" w:rsidR="00161585" w:rsidRPr="00161585" w:rsidRDefault="00161585" w:rsidP="00161585">
+                <w:pPr>
+                    <w:widowControl w:val="0"/>
+                    <w:autoSpaceDE w:val="0"/>
+                    <w:autoSpaceDN w:val="0"/>
+                    <w:adjustRightInd w:val="0"/>
+                    <w:spacing w:before="120"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00161585">
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                    <w:t>варианта</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        {% for thread_class in thread_classes %}
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="2719" w:type="dxa"/>
+                <w:gridSpan w:val="4"/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:widowControl w:val="0"/>
+                    <w:autoSpaceDE w:val="0"/>
+                    <w:autoSpaceDN w:val="0"/>
+                    <w:adjustRightInd w:val="0"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                    <w:t>Критичности угроз</w:t>
+                </w:r>
+            </w:p>
+            <w:p>
+                <w:pPr>
+                    <w:widowControl w:val="0"/>
+                    <w:autoSpaceDE w:val="0"/>
+                    <w:autoSpaceDN w:val="0"/>
+                    <w:adjustRightInd w:val="0"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                    <w:t>{{ thread_class['title'] }}</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        {% endfor %}
+    </w:tr>
+    <w:tr>
+        <w:trPr>
+            <w:trHeight w:val="135"/>
+        </w:trPr>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1206" w:type="dxa"/>
+                <w:vMerge/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:widowControl w:val="0"/>
+                    <w:autoSpaceDE w:val="0"/>
+                    <w:autoSpaceDN w:val="0"/>
+                    <w:adjustRightInd w:val="0"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                </w:pPr>
+            </w:p>
+        </w:tc>
+
+        {% for crit in criticality %}
+            {% for item in crit %}
+            <w:tc>
+                <w:tcPr>
+                    <w:tcW w:w="670" w:type="dxa"/>
+                </w:tcPr>
+                <w:p>
+                    <w:pPr>
+                        <w:widowControl w:val="0"/>
+                        <w:autoSpaceDE w:val="0"/>
+                        <w:autoSpaceDN w:val="0"/>
+                        <w:adjustRightInd w:val="0"/>
+                        <w:spacing w:before="120"/>
+                        <w:ind w:firstLine="0"/>
+                        <w:jc w:val="center"/>
+                        <w:rPr>
+                            <w:rFonts w:eastAsia="Tahoma"/>
+                            <w:color w:val="000000"/>
+                            <w:kern w:val="2"/>
+                            <w:sz w:val="22"/>
+                            <w:lang w:eastAsia="ko-KR"/>
+                        </w:rPr>
+                    </w:pPr>
+                    <w:r w:rsidRPr="00161585">
+                        <w:rPr>
+                            <w:rFonts w:eastAsia="Tahoma"/>
+                            <w:color w:val="000000"/>
+                            <w:kern w:val="2"/>
+                            <w:sz w:val="22"/>
+                            <w:lang w:eastAsia="ko-KR"/>
+                        </w:rPr>
+                        {% if loop.index0 == 0 %}
+                        <w:t>С</w:t>
+                        {% else %}
+                        <w:t>PC-{{ loop.index0 }}</w:t>
+                        {% endif %}
+                    </w:r>
+                </w:p>
+            </w:tc>
+            {% endfor %}
+        {% endfor %}
+    </w:tr>
+    <w:tr w:rsidR="00161585" w:rsidRPr="00161585" w14:paraId="5F9A133F" w14:textId="77777777" w:rsidTr="00922A59">
+        <w:trPr>
+            <w:trHeight w:val="135"/>
+        </w:trPr>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1206" w:type="dxa"/>
+            </w:tcPr>
+            <w:p w14:paraId="59A8A62B" w14:textId="77777777" w:rsidR="00161585" w:rsidRPr="00161585" w:rsidRDefault="00161585" w:rsidP="00161585">
+                <w:pPr>
+                    <w:widowControl w:val="0"/>
+                    <w:autoSpaceDE w:val="0"/>
+                    <w:autoSpaceDN w:val="0"/>
+                    <w:adjustRightInd w:val="0"/>
+                    <w:spacing w:before="120"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00161585">
+                    <w:rPr>
+                        <w:rFonts w:eastAsia="Tahoma"/>
+                        <w:color w:val="000000"/>
+                        <w:kern w:val="2"/>
+                        <w:sz w:val="22"/>
+                        <w:lang w:eastAsia="ko-KR"/>
+                    </w:rPr>
+                    <w:t>{{ executor.variant }}</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        {% for crit in criticality %}
+            {% for item in crit %}
+            <w:tc>
+                <w:tcPr>
+                    <w:tcW w:w="661" w:type="dxa"/>
+                </w:tcPr>
+                <w:p w14:paraId="35FBA886" w14:textId="77777777" w:rsidR="00161585" w:rsidRPr="00161585" w:rsidRDefault="00161585" w:rsidP="00161585">
+                    <w:pPr>
+                        <w:spacing w:before="120" w:line="259" w:lineRule="auto"/>
+                        <w:ind w:firstLine="0"/>
+                        <w:jc w:val="center"/>
+                        <w:rPr>
+                            <w:rFonts w:eastAsiaTheme="minorHAnsi"/>
+                            <w:color w:val="auto"/>
+                            <w:sz w:val="22"/>
+                            <w:lang w:eastAsia="en-US"/>
+                        </w:rPr>
+                    </w:pPr>
+                    <w:r w:rsidRPr="00161585">
+                        <w:rPr>
+                            <w:rFonts w:eastAsiaTheme="minorHAnsi"/>
+                            <w:color w:val="auto"/>
+                            <w:sz w:val="22"/>
+                            <w:lang w:eastAsia="en-US"/>
+                        </w:rPr>
+                        <w:t>{{ item }}</w:t>
+                    </w:r>
+                </w:p>
+            </w:tc>
+            {% endfor %}
+        {% endfor %}
+    </w:tr>
+</w:tbl>

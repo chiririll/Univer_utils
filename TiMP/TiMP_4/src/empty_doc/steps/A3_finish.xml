@@ -1,0 +1,10 @@
+<w:p w:rsidR="004A132C" w:rsidRPr="00925900" w:rsidRDefault="004A132C" w:rsidP="004A132C">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">Конец алгоритма. </w:t>
+    </w:r>
+</w:p>

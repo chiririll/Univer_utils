@@ -1,0 +1,119 @@
+<w:tbl>
+    <w:tblPr>
+        <w:tblStyle w:val="ab"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblInd w:w="709" w:type="dxa"/>
+        <w:tblBorders>
+            <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:left w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:right w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+            <w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+        <w:gridCol w:w="4416"/>
+        <w:gridCol w:w="4446"/>
+    </w:tblGrid>
+    <w:tr w:rsidR="00231139" w:rsidTr="00231139">
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="4785" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p w:rsidR="00231139" w:rsidRPr="00231139" w:rsidRDefault="00231139" w:rsidP="00231139">
+                <w:pPr>
+                    <w:spacing w:after="240" w:line="240" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:i/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="0004774C">
+                    <w:rPr>
+                        <w:i/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                    <w:t>Фактические карты</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="4786" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p w:rsidR="00231139" w:rsidRDefault="00231139" w:rsidP="00231139">
+                <w:pPr>
+                    <w:spacing w:line="240" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                </w:pPr>
+                <w:r>
+                    <w:rPr>
+                        <w:i/>
+                        <w:szCs w:val="24"/>
+                    </w:rPr>
+                    <w:t>Машинное представление</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+    </w:tr>
+    <w:tr w:rsidR="00231139" w:rsidTr="00231139">
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="4785" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            %image_1%
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="4786" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p w:rsidR="00231139" w:rsidRDefault="00231139" w:rsidP="00231139">
+                <w:pPr>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="left"/>
+                    <w:rPr>
+                        <w:i/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="0009312D">
+                    <w:rPr>
+                        <w:i/>
+                    </w:rPr>
+                    <w:t>TOP = %top_addr%</w:t>
+                </w:r>
+            </w:p>
+            %cards%
+        </w:tc>
+    </w:tr>
+</w:tbl>
+<w:p />
+<w:p w:rsidR="007C0B95" w:rsidRPr="00E90A44" w:rsidRDefault="007C0B95" w:rsidP="007C0B95">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00E90A44">
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Графическое представление связанного списка</w:t>
+    </w:r>
+</w:p>
+%image_2%
+<w:p/>

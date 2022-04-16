@@ -1,0 +1,43 @@
+<w:p w:rsidR="00414A39" w:rsidRPr="007A67EA" w:rsidRDefault="00414A39" w:rsidP="00414A39">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="007A67EA">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="0080113F">
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="007A67EA">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>NEXT</w:t>
+    </w:r>
+    <w:r w:rsidRPr="0080113F">
+        <w:t>(</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="007A67EA">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="0080113F">
+        <w:t>)</w:t>
+    </w:r>
+    <w:r>
+        <w:t>.</w:t>
+    </w:r>
+</w:p>
+%image%

@@ -1,0 +1,145 @@
+{% import 'image.xml' as img %}
+
+<w:p>
+    <w:pPr>
+        <w:rPr>
+            <w:color w:val="auto"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Цель работы: привитие умения решать практические задачи расчётов оценки рисков информационной безопасности в информационных системах с использованием современных информационных технологий.</w:t>
+    </w:r>
+</w:p>
+<w:p>
+    <w:pPr>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Исполнение: в соответствии с методикой «Digital Security» найти значение риска информационной безопасности по угрозам конфиденциальности, целостности и доступности информации в сетевой информационной системе, заданной преподавателем. Интерпретация результатов решения – получение количественной оценки риска информационной безопасности по базовым угрозам в сетевой информационной системе.</w:t>
+    </w:r>
+</w:p>
+<w:p>
+    <w:pPr>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Задание: найти риск по угрозам конфиденциальности, целостности и доступности информации в информационной системе, структурная схема которой изображена на рис.1 при условии, что она имеет следующие уязвимости, вероятности реализации угроз через которые указаны в скобках: </w:t>
+    </w:r>
+</w:p>
+
+{{ img.image_p(image) }}
+
+<w:p>
+    <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Рисунок 1</w:t>
+    </w:r>
+</w:p>
+
+{% for thread_class in thread_classes %}
+    <w:p>
+        <w:pPr>
+            <w:rPr>
+                <w:szCs w:val="28"/>
+            </w:rPr>
+        </w:pPr>
+        <w:r>
+            <w:rPr>
+                <w:szCs w:val="28"/>
+            </w:rPr>
+            {% if loop.index0 == 0 %}
+            <w:t>Для угроз</w:t>
+            {% else %}
+            <w:t>Угрозы</w:t>
+            {% endif %}
+            <w:t xml:space="preserve"> {{ thread_class['title'] }}:</w:t>
+        </w:r>
+    </w:p>
+
+    {% for thread in threads[loop.index0] %}
+    <w:p>
+        <w:pPr>
+            <w:rPr>
+                <w:szCs w:val="28"/>
+            </w:rPr>
+        </w:pPr>
+        <w:r>
+            <w:rPr>
+                <w:szCs w:val="28"/>
+            </w:rPr>
+            <w:t>-</w:t>
+        </w:r>
+        <w:r>
+            <w:rPr>
+                <w:szCs w:val="28"/>
+            </w:rPr>
+            <w:t xml:space="preserve">  </w:t>
+            
+            {% if loop.index0 == 0 %}
+            <w:t xml:space="preserve">сервер: </w:t>
+            {% else %}
+            <w:t xml:space="preserve">PC № {{ loop.index0 }}: </w:t>
+            {% endif %}
+
+            {% for item in thread_class['items'] %}
+                <w:t>{{ item }} ({{ thread[loop.index0] }}{{ thread_class.get('unit', '') }})</w:t>
+                {% if loop.index != thread|length %}
+                <w:t xml:space="preserve">, </w:t>
+                {% endif %}
+            {% endfor %}
+            <w:t>;</w:t>
+        </w:r>
+    </w:p>
+    {% endfor %}
+{% endfor %}
+
+<w:p>
+    <w:pPr>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Остальными угрозами конфиденциальности, целостности и доступности информации можно пренебречь, т.к. их критичности и вероятности реализации незначительны.</w:t>
+    </w:r>
+</w:p>
+<w:p>
+    <w:pPr>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Критичности угроз по ресурсам указаны в таблице:</w:t>
+    </w:r>
+</w:p>
+{% include "tables/task.xml" %}
+<w:p/>

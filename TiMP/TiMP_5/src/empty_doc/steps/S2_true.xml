@@ -1,0 +1,54 @@
+<w:p w:rsidR="00600255" w:rsidRDefault="00600255" w:rsidP="00600255">
+    <w:r w:rsidRPr="00600255">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>S</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00600255">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>2.</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [Обработка осевой строки.]</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00600255" w:rsidRDefault="00600255" w:rsidP="00600255">
+    <w:r>
+        <w:t>P0 ← LEFT(P0),</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="00600255" w:rsidRDefault="00600255" w:rsidP="00600255">
+    <w:r>
+        <w:t xml:space="preserve">J ← COL(P0) = %P0_col%</w:t>
+    </w:r>
+    <w:r>
+        <w:t>.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00600255" w:rsidRDefault="00600255" w:rsidP="00600255">
+    <w:r>
+        <w:t xml:space="preserve">(J </w:t>
+    </w:r>
+    <w:proofErr w:type="gramStart"/>
+    <w:r>
+        <w:t>&lt; 0</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r>
+        <w:t>) = (</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%j%</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> &lt; 0) = ИСТИНА, следовательно перейти к шагу S3 (осевая строка пройдена до конца).</w:t>
+    </w:r>
+</w:p>

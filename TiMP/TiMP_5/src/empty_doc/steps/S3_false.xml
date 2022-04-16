@@ -1,0 +1,54 @@
+<w:p w:rsidR="00602114" w:rsidRDefault="00165294" w:rsidP="00165294">
+    <w:r w:rsidRPr="00602114">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>S</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00602114">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>3.</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [Поиск новой строки.]</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00165294" w:rsidRDefault="00165294" w:rsidP="00165294">
+    <w:r>
+        <w:t>Q0 ← UP(Q0),</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="00165294" w:rsidRDefault="00165294" w:rsidP="00165294">
+    <w:r>
+        <w:t>I ← ROW(Q0) = %Q0_row%</w:t>
+    </w:r>
+    <w:r>
+        <w:t>.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00165294" w:rsidRDefault="00165294" w:rsidP="00165294">
+    <w:r>
+        <w:t xml:space="preserve">(I &lt; 0) = (%i% &lt; 0) = ЛОЖЬ.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00165294" w:rsidRDefault="00916D68" w:rsidP="00165294">
+    <w:r>
+        <w:t>(I = I0) = (%i% = %i0%) = ЛОЖЬ, следовательно</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00165294" w:rsidRDefault="00165294" w:rsidP="00165294">
+    <w:r>
+        <w:t>(P ← LOC(BASEROW[I])) = (P ← LOC(BASEROW[%i%])),</w:t>
+    </w:r>
+</w:p>
+%image_2%
+<w:p w:rsidR="00000000" w:rsidRDefault="00165294" w:rsidP="00165294">
+    <w:r>
+        <w:t>P1 ← LEFT(P).</w:t>
+    </w:r>
+</w:p>
+%image_3%

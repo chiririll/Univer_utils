@@ -1,0 +1,31 @@
+<w:p />
+<w:p w:rsidR="00BE582F" w:rsidRDefault="00BE582F" w:rsidP="00BE582F">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="0004036B">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Заключение</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00BE582F" w:rsidRDefault="00BE582F" w:rsidP="00BE582F">
+    <w:pPr>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="0004036B">
+        <w:t xml:space="preserve">В ходе выполнения лабораторной работы я познакомился </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CF2139">
+        <w:t>с понятием связанного распределения памяти при хранении циклических списков и алгоритмом сложения многочленов, представленных циклическими списками</w:t>
+    </w:r>
+    <w:r w:rsidRPr="0004036B">
+        <w:t>.</w:t>
+    </w:r>
+</w:p>

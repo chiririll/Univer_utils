@@ -1,0 +1,553 @@
+<w:p w:rsidR="00B0659B" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>A</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>4</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>[</w:t>
+    </w:r>
+    <w:r w:rsidRPr="003B523B">
+        <w:t>Исключение</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> нулевого члена.] </w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00C9230D" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00240783">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:vertAlign w:val="subscript"/>
+        </w:rPr>
+        <w:t>2</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00240783">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00240783">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>,</w:t>
+    </w:r>
+</w:p>
+%img_1%
+<w:p w:rsidR="00B0659B" w:rsidRPr="00CE0DFA" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Двойное присваивание </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:vertAlign w:val="subscript"/>
+        </w:rPr>
+        <w:t>1</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">) ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">) </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>равносильно последовательному</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">выполнению присваиваний </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>)</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:vertAlign w:val="subscript"/>
+        </w:rPr>
+        <w:t>1</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">) ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>:</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00B0659B" w:rsidRPr="005143FF" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="005143FF">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>)</w:t>
+    </w:r>
+</w:p>
+%img_2%
+<w:p w:rsidR="00B0659B" w:rsidRPr="00CE0DFA" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:proofErr w:type="gramStart"/>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:vertAlign w:val="subscript"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>1</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">) ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+</w:p>
+%img_3%
+<w:p w:rsidR="00B0659B" w:rsidRPr="008438A0" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>AVAIL</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008438A0">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:sym w:font="Symbol" w:char="F0DC"/>
+    </w:r>
+    <w:r w:rsidRPr="008438A0">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00CE0DFA">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008438A0">
+        <w:rPr>
+            <w:vertAlign w:val="subscript"/>
+        </w:rPr>
+        <w:t>2</w:t>
+    </w:r>
+    <w:r w:rsidRPr="008438A0">
+        <w:t xml:space="preserve">. </w:t>
+    </w:r>
+</w:p>
+%img_4%
+<w:p w:rsidR="00B0659B" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">Нулевой член, образовавшийся на шаге </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>A</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">3, исключён из многочлена </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r>
+        <w:t>.</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00B0659B" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>LINK</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">) </w:t>
+    </w:r>
+</w:p>
+%img_5%
+<w:p w:rsidR="00B0659B" w:rsidRPr="001B6196" w:rsidRDefault="00B0659B" w:rsidP="00B0659B">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r>
+        <w:t>В</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">ернуться к шагу </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>A</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>2.</w:t>
+    </w:r>
+</w:p>

@@ -1,0 +1,8 @@
+<w:p>
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+    </w:pPr>
+    <w:r>
+        <w:t>B2: (X==NULL) = (%ADDR%==NULL) = %is_null%</w:t>
+    </w:r>
+</w:p>

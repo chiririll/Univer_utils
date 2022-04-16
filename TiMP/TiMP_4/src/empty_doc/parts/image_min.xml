@@ -1,0 +1,14 @@
+<w:p w:rsidR="00724D47" w:rsidRPr="00EB0ED9" w:rsidRDefault="00724D47" w:rsidP="00724D47">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+    </w:pPr>
+    <w:r>
+        <w:pict>
+            <v:shape id="_x0000_i1025" type="#_x0000_t75" style="width:%width%;height:%height%">
+                <v:imagedata r:id="rId%rId%" o:title="1"/>
+            </v:shape>
+        </w:pict>
+    </w:r>
+</w:p>

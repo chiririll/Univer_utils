@@ -1,0 +1,51 @@
+<w:p w:rsidR="001814C6" w:rsidRDefault="001814C6" w:rsidP="001814C6">
+    <w:r w:rsidRPr="001814C6">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>S</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001814C6">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>7.</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [Осевая операция.]</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="001814C6" w:rsidRDefault="001814C6" w:rsidP="001814C6">
+    <w:r>
+        <w:t>VAL(P1) ← VAL(P1) – VAL(Q0) ∙ VAL(P0) = %P1_val% – %Q0_val% ∙ %P0_val% = %res%.</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="001814C6" w:rsidRDefault="001814C6" w:rsidP="001814C6">
+    <w:r>
+        <w:t>(VAL(P1) = 0) = (%res% = 0) = ЛОЖЬ, следовательно</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="001814C6" w:rsidRDefault="001814C6" w:rsidP="001814C6">
+    <w:r>
+        <w:t>(PTR[J] ← P1) = (PTR[%j%] ← P1),</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="001814C6" w:rsidRDefault="001814C6" w:rsidP="001814C6">
+    <w:r>
+        <w:t>P ← P1,</w:t>
+    </w:r>
+</w:p>
+%image_2%
+<w:p w:rsidR="001814C6" w:rsidRDefault="001814C6" w:rsidP="001814C6">
+    <w:r>
+        <w:t>P1 ← LEFT(P)</w:t>
+    </w:r>
+</w:p>
+%image_3%
+<w:p w:rsidR="00000000" w:rsidRDefault="001814C6" w:rsidP="001814C6">
+    <w:r>
+        <w:t>и вернуться к S4.</w:t>
+    </w:r>
+</w:p>

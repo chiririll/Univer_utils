@@ -1,0 +1,339 @@
+<w:p w:rsidR="00727000" w:rsidRDefault="005A580D" w:rsidP="005A580D">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>ABC</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve">) = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>ABC</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve">)) = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>A</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve">) = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>A</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve">) </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>B</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve">) = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>B</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve">) </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>C</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve">) = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>C</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>Q</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006E2525">
+        <w:t xml:space="preserve">)) = </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:t>(%a_p%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:t>%a_q%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:t>%b_p%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:t>%b_q%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:t>%c_p%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:t>%c_q%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>)</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidR="00727000" w:rsidRPr="00727000">
+        <w:t>%a_eq%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000" w:rsidRPr="00727000">
+        <w:t>%b_eq%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000" w:rsidRPr="00727000">
+        <w:t>%c_eq%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>)</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%a_eq_and_b_eq%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>и</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%c_eq%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00E92C17">
+        <w:t>)</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:r w:rsidR="00727000">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%abc_p_eq%</w:t>
+    </w:r>
+</w:p>

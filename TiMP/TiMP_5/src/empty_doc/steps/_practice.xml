@@ -1,0 +1,55 @@
+<w:p w:rsidR="00EB42A0" w:rsidRPr="00EB42A0" w:rsidRDefault="00EB42A0" w:rsidP="00EB42A0">
+    <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00EB42A0">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>Практическая часть</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00EB42A0" w:rsidRPr="00EB42A0" w:rsidRDefault="00EB42A0" w:rsidP="00EB42A0">
+    <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00EB42A0">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>Представление разреженной матрицы</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00EB42A0" w:rsidRPr="00EB42A0" w:rsidRDefault="00EB42A0" w:rsidP="00EB42A0">
+    <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00EB42A0">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>связанными ортогональными списками</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="00EB42A0" w:rsidRDefault="00EB42A0" w:rsidP="00EB42A0">
+    <w:r>
+        <w:t>Для эффективного выполнения операций включения и исключения узлов вводится таблица указателей PTR[j],</w:t>
+        <w:t xml:space="preserve"> </w:t>
+        <w:t>по одному указателю на каждый столбец матрицы. Благодаря этим переменным обеспечивается возможность</w:t>
+        <w:t xml:space="preserve"> </w:t>
+        <w:t>изменения связей узлов как в горизонтальном, так и в вертикальном измерениях.</w:t>
+        <w:t xml:space="preserve"> </w:t>
+        <w:t>Алгоритм обрабатывает строки матрицы последовательно снизу вверх, а переменная PIVOT указывает на осевой элемент.</w:t>
+    </w:r>
+</w:p>
+%image_2%

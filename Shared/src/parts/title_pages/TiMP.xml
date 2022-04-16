@@ -1,0 +1,412 @@
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Министерство науки и высшего образования Российской Федерации</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>ФГБОУ ВО «Тамбовский государственный технический университет»</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="00445FC5" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Институт автоматики и информационных технологий</w:t>
+    </w:r>
+</w:p>
+<w:p />
+<w:p />
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:jc w:val="left"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Кафедра «Информационные системы и защита информации»</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:i/>
+            <w:b/>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>О Т Ч Е Т</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">о </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">лабораторной работе № </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00BB4636">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>{{ laba.number }}</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> на тему</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>«</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:caps/>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>{{ laba.title }}</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>»</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Вариант №{{ executor.variant }}</w:t>
+    </w:r>
+</w:p>
+<w:p/>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Выполнил: студент гр. </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>СИБ201</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>{{ executor }}</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>_________ «___»________{{ date.strftime('%Y') }}</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> г.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="00FC1320" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+    </w:pPr>
+    <w:r w:rsidRPr="00FC1320">
+        <w:t>(Подпись)</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Проверил: доцент Кулаков Ю.В.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>_________ «___»________{{ date.strftime('%Y') }}</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> г.</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="00FC1320" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:left="4820" w:firstLine="0"/>
+    </w:pPr>
+    <w:r w:rsidRPr="00FC1320">
+        <w:t>(Подпись)</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:ind w:firstLine="0"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="001074A1" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:pStyle w:val="1"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="005042EC" w:rsidRPr="00E57CE5" w:rsidRDefault="00437914" w:rsidP="00437914">
+    <w:pPr>
+        <w:pStyle w:val="1"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001074A1">
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>Тамбов {{ date.strftime('%Y') }}</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:sz w:val="28"/>
+            <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:br w:type="page"/>
+    </w:r>
+</w:p>

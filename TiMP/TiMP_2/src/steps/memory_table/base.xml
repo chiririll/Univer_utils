@@ -1,0 +1,702 @@
+<w:tbl>
+    <w:tblPr>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblBorders>
+            <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+        <w:gridCol w:w="467"/>
+    </w:tblGrid>
+    <w:tr w:rsidR="0077598B" w:rsidRPr="006A1E00" w:rsidTr="00946365">
+        %cells%
+    </w:tr>
+    <w:tr w:rsidR="0077598B" w:rsidRPr="00F16AEA" w:rsidTr="00946365">
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>0</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>1</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>2</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>3</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>4</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>5</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>6</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>7</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>8</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>9</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>10</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>11</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>12</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>13</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>14</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>15</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>16</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>17</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>18</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="467" w:type="dxa"/>
+                <w:tcBorders>
+                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                    <w:left w:val="nil"/>
+                    <w:bottom w:val="nil"/>
+                    <w:right w:val="nil"/>
+                </w:tcBorders>
+                <w:hideMark/>
+            </w:tcPr>
+            <w:p w:rsidR="0077598B" w:rsidRPr="00BB4787" w:rsidRDefault="0077598B" w:rsidP="00946365">
+                <w:pPr>
+                    <w:pStyle w:val="a9"/>
+                    <w:jc w:val="center"/>
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                </w:pPr>
+                <w:r w:rsidRPr="00BB4787">
+                    <w:rPr>
+                        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Courier New"/>
+                        <w:sz w:val="22"/>
+                        <w:szCs w:val="22"/>
+                        <w:lang w:val="ru-RU" w:eastAsia="ru-RU"/>
+                    </w:rPr>
+                    <w:t>19</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+    </w:tr>
+</w:tbl>

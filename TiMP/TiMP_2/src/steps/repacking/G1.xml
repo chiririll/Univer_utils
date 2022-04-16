@@ -1,0 +1,78 @@
+<w:p w14:paraId="758827C3" w14:textId="77777777" w:rsidR="00174B9B" w:rsidRPr="002A10EB" w:rsidRDefault="00174B9B" w:rsidP="00174B9B">
+    <w:pPr>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>G</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">1. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t xml:space="preserve">[Начальная установка.] </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>SUM</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t xml:space="preserve"> ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>L</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:vertAlign w:val="subscript"/>
+        </w:rPr>
+        <w:t>∞</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t xml:space="preserve"> – </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>L</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:vertAlign w:val="subscript"/>
+        </w:rPr>
+        <w:t>0</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> = 19 – (–1) = 19 + 1 = 20.</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>INC</w:t>
+    </w:r>
+    <w:r w:rsidRPr="002A10EB">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> ← 0.</w:t>
+    </w:r>
+</w:p>

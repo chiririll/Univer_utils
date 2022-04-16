@@ -1,0 +1,67 @@
+<w:p w:rsidR="00EC57D9" w:rsidRDefault="00EC57D9" w:rsidP="00EC57D9">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>T</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t xml:space="preserve">6. </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">[Стирание отношения.] </w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00EC57D9" w:rsidRPr="001D7863" w:rsidRDefault="00EC57D9" w:rsidP="00EC57D9">
+    <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:firstLine="709"/>
+        <w:jc w:val="both"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001D7863">
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="007A67EA">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>P</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7863">
+        <w:t xml:space="preserve"> = </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>Λ</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001D7863">
+        <w:t xml:space="preserve">) = </w:t>
+    </w:r>
+    <w:r>
+        <w:t>ИСТИНА</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t xml:space="preserve">, перейти к шагу </w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:rPr>
+            <w:i/>
+        </w:rPr>
+        <w:t>Т</w:t>
+    </w:r>
+    <w:r w:rsidRPr="001B6196">
+        <w:t>7</w:t>
+    </w:r>
+    <w:r>
+        <w:t>.</w:t>
+    </w:r>
+</w:p>

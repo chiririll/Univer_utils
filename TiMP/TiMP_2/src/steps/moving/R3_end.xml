@@ -1,0 +1,197 @@
+<w:p w14:paraId="236852F3" w14:textId="77777777" w:rsidR="00680C0D" w:rsidRPr="00F16338" w:rsidRDefault="00680C0D" w:rsidP="00680C0D">
+    <w:pPr>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [ </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>j </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>NEWBASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [ </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>j </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>]) = (</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>BASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [%j%] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>NEWBASE</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [%j%] = %newbase_j%) </w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="7442F9CF" w14:textId="77777777" w:rsidR="00680C0D" w:rsidRPr="00257B9D" w:rsidRDefault="00680C0D" w:rsidP="00680C0D">
+    <w:pPr>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>(</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [ </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>j </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [ </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>j </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">] – </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:t>δ</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>) = (</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [%j%] ← </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:i/>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>TOP</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00F16338">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> [%j%] – %delta% =  %top_j% – %delta% = %top_j_new%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00257B9D">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t xml:space="preserve">) </w:t>
+    </w:r>
+</w:p>

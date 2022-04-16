@@ -1,0 +1,99 @@
+{% macro table(r, cr) %}
+<w:tbl>
+    <w:tblPr>
+        <w:tblStyle w:val="af5"/>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:jc w:val="center"/>
+        <w:tblBorders>
+            <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            <w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+        </w:tblBorders>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+    </w:tblPr>
+    <w:tblGrid>
+        <w:gridCol w:w="1417"/>
+        <w:gridCol w:w="1417"/>
+        <w:gridCol w:w="1417"/>
+        <w:gridCol w:w="1417"/>
+        <w:gridCol w:w="1417"/>
+    </w:tblGrid>
+    <w:tr>
+        <w:trPr>
+            <w:jc w:val="center"/>
+        </w:trPr>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="{{ 1417 * r|length }}" w:type="dxa"/>
+                <w:gridSpan w:val="4"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:spacing w:line="259" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                </w:pPr>
+                <w:r>
+                    <w:t>1 - (R / 100)</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1417" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:spacing w:line="259" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                </w:pPr>
+                <w:r>
+                    <w:t>CR</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+    </w:tr>
+    <w:tr>
+        <w:trPr>
+            <w:jc w:val="center"/>
+        </w:trPr>
+        {% for pc in r %}
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1417" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:spacing w:line="259" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                </w:pPr>
+                <w:r>
+                    <w:t>{{ (1 - pc/100)|round(4) }}</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+        {% endfor %}
+        <w:tc>
+            <w:tcPr>
+                <w:tcW w:w="1417" w:type="dxa"/>
+                <w:vAlign w:val="center"/>
+            </w:tcPr>
+            <w:p>
+                <w:pPr>
+                    <w:spacing w:line="259" w:lineRule="auto"/>
+                    <w:ind w:firstLine="0"/>
+                    <w:jc w:val="center"/>
+                </w:pPr>
+                <w:r>
+                    <w:t>{{ cr|round(4) }}</w:t>
+                </w:r>
+            </w:p>
+        </w:tc>
+    </w:tr>
+</w:tbl>
+{% endmacro %}

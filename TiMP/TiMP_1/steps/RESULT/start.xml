@@ -1,0 +1,21 @@
+<w:p w:rsidR="00DD2980" w:rsidRDefault="00DD2980" w:rsidP="00DD2980">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:spacing w:after="120"/>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:i/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Результаты работы программы</w:t>
+    </w:r>
+</w:p>

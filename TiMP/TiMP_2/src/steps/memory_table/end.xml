@@ -1,0 +1,142 @@
+
+<w:p w:rsidR="00D95BEB" w:rsidRPr="006A1E00" w:rsidRDefault="00D95BEB" w:rsidP="00D95BEB">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+        <w:spacing w:before="120" w:line="360" w:lineRule="auto"/>
+    </w:pPr>
+    <w:r>
+        <w:t>BASE [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>1</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %base_1%; BASE [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>2</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] =</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%base_2%</w:t>
+    </w:r>
+    <w:r>
+        <w:t>; BASE [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>3</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] =</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%base_3%</w:t>
+    </w:r>
+    <w:r>
+        <w:t>; BASE [</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>4</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] =</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%base_4%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00D95BEB" w:rsidRPr="006A1E00" w:rsidRDefault="00D95BEB" w:rsidP="00D95BEB">
+    <w:pPr>
+        <w:pStyle w:val="a9"/>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+    </w:pPr>
+    <w:r>
+        <w:t xml:space="preserve">TOP </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[1</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] =</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%top_1%</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">; TOP </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[2</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] =</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="ru-RU"/>
+        </w:rPr>
+        <w:t>%top_2%</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">; TOP </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[3</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] =</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>%top_3%</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve">; TOP </w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t>[4</w:t>
+    </w:r>
+    <w:r>
+        <w:t>] = %top_4%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006A1E00">
+        <w:t xml:space="preserve"> </w:t>
+    </w:r>
+</w:p>

@@ -1,0 +1,36 @@
+{% import 'image.xml' as img %}
+{% import 'tables/part_2.xml' as cth_table %}
+
+<w:p>
+    <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:keepNext/>
+        <w:numPr>
+            <w:ilvl w:val="0"/>
+            <w:numId w:val="2"/>
+        </w:numPr>
+        <w:ind w:left="0" w:firstLine="709"/>
+    </w:pPr>
+    <w:r>
+        <w:t>Чтобы рассчитать уровень угрозы по всем уязвимостям CTh, через которые возможна реализация данной угрозы на ресурсе, просуммируем полученные уровни угроз через конкретные уязвимости по следующим формулам:</w:t>
+    </w:r>
+</w:p>
+
+{{ img.image_p(func_1) }}
+
+{{ img.image_p(func_2) }}
+
+{{ img.image_p(func_3) }}
+
+<w:p>
+    <w:pPr>
+        <w:keepNext/>
+    </w:pPr>
+    <w:r>
+        <w:t>Значения уровня каждой угрозы по всем уязвимостям для каждого ресурса получим в интервале от 0 до 1.</w:t>
+    </w:r>
+</w:p>
+
+{% for i in range(cth|length) %}
+{{ cth_table.table(thread_classes[i], cth[i]) }}
+{% endfor %}

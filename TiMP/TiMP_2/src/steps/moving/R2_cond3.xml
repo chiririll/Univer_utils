@@ -1,0 +1,51 @@
+<w:p w14:paraId="2D9E2F08" w14:textId="77777777" w:rsidR="001E5E28" w:rsidRPr="00F836C3" w:rsidRDefault="001E5E28" w:rsidP="001E5E28">
+    <w:proofErr w:type="gramStart"/>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>( </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>j</w:t>
+    </w:r>
+    <w:proofErr w:type="gramEnd"/>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> &gt; </w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:i/>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>n</w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>) = (%j%</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00854D92">
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> &gt; </w:t>
+    </w:r>
+    <w:r>
+        <w:rPr>
+            <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve">4) = </w:t>
+    </w:r>
+    <w:r>
+        <w:t>%result%</w:t>
+    </w:r>
+</w:p>

@@ -1,0 +1,50 @@
+<w:p w:rsidR="000430D4" w:rsidRPr="000F3C7B" w:rsidRDefault="000430D4" w:rsidP="000430D4">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+            <w:b/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r>
+        <w:rPr>
+            <w:b/>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Заключение</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="000430D4" w:rsidRDefault="000430D4" w:rsidP="000430D4">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:ind w:firstLine="0"/>
+        <w:jc w:val="center"/>
+    </w:pPr>
+</w:p>
+<w:p w:rsidR="000430D4" w:rsidRPr="00C93A23" w:rsidRDefault="000430D4" w:rsidP="000430D4">
+    <w:pPr>
+        <w:pStyle w:val="3"/>
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="008E1323">
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>В ходе выполнения лабораторной работы я познакомился с понятием линейных</w:t>
+    </w:r>
+    <w:r w:rsidRPr="00C93A23">
+        <w:rPr>
+            <w:sz w:val="24"/>
+            <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> информационных структур и программированием простейших алгоритмов их создания и обработки.</w:t>
+    </w:r>
+</w:p>

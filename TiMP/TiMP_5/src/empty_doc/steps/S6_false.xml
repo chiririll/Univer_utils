@@ -1,0 +1,87 @@
+<w:p w:rsidR="006837F4" w:rsidRDefault="006837F4" w:rsidP="006837F4">
+    <w:r w:rsidRPr="006837F4">
+        <w:rPr>
+            <w:b/>
+            <w:i/>
+        </w:rPr>
+        <w:t>S</w:t>
+    </w:r>
+    <w:r w:rsidRPr="006837F4">
+        <w:rPr>
+            <w:b/>
+        </w:rPr>
+        <w:t>6.</w:t>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> [Включение элемента I, J.]</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="006837F4" w:rsidRDefault="006837F4" w:rsidP="006837F4">
+    <w:r>
+        <w:t>(ROW(UP(PTR[J])) &gt; I) = (ROW(UP(PTR[%j%])) &gt; %i%) = (%ptr_j_up_row% &gt; %i%) = ЛОЖЬ, следовательно</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t xml:space="preserve">X </w:t>
+    </w:r>
+    <w:r>
+        <w:sym w:font="Symbol" w:char="F0DC"/>
+    </w:r>
+    <w:r>
+        <w:t xml:space="preserve"> AVAIL,</w:t>
+    </w:r>
+</w:p>
+%image_1%
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>VAL(X) ← 0,</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>ROW(X) ← I = %i%,</w:t>
+    </w:r>
+</w:p>
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>COL(X) ← J = %j%,</w:t>
+    </w:r>
+</w:p>
+%image_2%
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>LEFT(X) ← P1,</w:t>
+    </w:r>
+</w:p>
+%image_3%
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>UP(X) ← UP(PTR[J]) = UP(PTR[%j%]),</w:t>
+    </w:r>
+</w:p>
+%image_4%
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>LEFT(P) ← X,</w:t>
+    </w:r>
+</w:p>
+%image_5%
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>(UP(PTR[J]) ← X) = (UP(PTR[%j%]) ← X),</w:t>
+    </w:r>
+</w:p>
+%image_6%
+<w:p w:rsidR="00EA10AD" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>P1 ← X,</w:t>
+    </w:r>
+</w:p>
+%image_7%
+<w:p w:rsidR="00000000" w:rsidRDefault="00EA10AD" w:rsidP="00EA10AD">
+    <w:r>
+        <w:t>(PTR[J] ← X) = (PTR[%j%] ← X).</w:t>
+    </w:r>
+</w:p>
+%image_8%

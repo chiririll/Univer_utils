@@ -6,6 +6,7 @@ from ..Document import Document
 
 
 class Laba(ABC):
+    """ Base class for all labs  """
 
     laba = {
         'name': "test",
@@ -18,7 +19,6 @@ class Laba(ABC):
     }
 
     def __init__(self, **params):
-
         self.executor = params.get('executor', Executor(**params))
 
         doc_path = f"output/{self.__get_path()}_v{self.executor.variant}.doc"
@@ -39,7 +39,11 @@ class Laba(ABC):
     def run(self):
         pass
 
-    def __get_path(self):
+    def __get_path(self) -> str:
+        """
+        Function for getting path for laba
+        @return: Path like subject/laba
+        """
         path = ""
         path += str(self.laba.get('subject', '')) + '/'
         path += self.laba.get('name', "test")

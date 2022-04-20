@@ -5,6 +5,13 @@ from .relation import Relation, RelType
 
 class Xml(Relation):
     def __init__(self, r_type: RelType, target: str, file: str | PathLike[str], **context):
+        """
+        Simple xml relation
+        @param r_type: Relation type
+        @param target: Target file in document
+        @param file: Path to file
+        @param context: Params for jinja
+        """
         super().__init__(
             r_type=r_type,
             target=target,

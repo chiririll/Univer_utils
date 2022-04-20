@@ -1,7 +1,11 @@
 import os
 
 
-def create_folders(path_str: str | os.PathLike[str]):
+def create_folders(path_str: str | os.PathLike[str]) -> None:
+    """
+    Function for creating all folders for path
+    @param path_str: Path
+    """
     folders = path_str.split('/')[:-1]
 
     for i in range(len(folders)):
@@ -10,7 +14,13 @@ def create_folders(path_str: str | os.PathLike[str]):
             os.mkdir(part)
 
 
-def walk(folder: str | os.PathLike[str], base_path: str = ''):
+def walk(folder: str | os.PathLike[str], base_path: str = '') -> list[str]:
+    """
+    Function for getting list of all files in folder and subfolders
+    @param folder: Folder path str
+    @param base_path: Prefix for path (for recursion)
+    @return: list of files in folder and subfolders
+    """
     def check_path(path):
         if len(path) > 0 and path[-1] != '/':
             path += '/'
@@ -29,7 +39,12 @@ def walk(folder: str | os.PathLike[str], base_path: str = ''):
     return files
 
 
-def get_filename_and_extension(file: str | os.PathLike[str]):
+def get_filename_and_extension(file: str | os.PathLike[str]) -> tuple[str, str]:
+    """
+    Parse filename
+    @param file: Path to file
+    @return: tuple (filename, extension)
+    """
     filename = file.replace('\\', '/').split('/')[-1]
     parts = filename.split('.')
 

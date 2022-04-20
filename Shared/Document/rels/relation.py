@@ -3,6 +3,7 @@ from os import PathLike
 
 
 class RelType(Enum):
+    """ Relation types (type link, overridable format) """
     STYLE = (
         "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
         "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"
@@ -18,6 +19,7 @@ class RelType(Enum):
 
 
 class Relation:
+    """ Base class for relation """
     def __init__(self,
                  r_type: RelType,
                  target: str,

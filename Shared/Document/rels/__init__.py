@@ -1,3 +1,3 @@
-from .relation import *
-from .image import *
-from .xml import *
+from .relation import RelType, Relation
+from .image import Image
+from .xml import Xml

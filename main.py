@@ -2,6 +2,7 @@ import json
 
 from Shared.Classes import Executor
 import OIB
+import MIS
 from TiMP import TiMP_1
 
 
@@ -19,7 +20,7 @@ def make_all(laba_class, tasks: list[str] | str):
         laba = laba_class(tasks[str(var)], executor=Executor(student, var))
         laba.run()
 
-def OIS():
+def make_OIB():
     # Criticality
     test_var = {
         'executor': Executor(),
@@ -34,9 +35,14 @@ def OIS():
     make_all(OIB.Laba6, "OIB/Laba_6/variants.json")
 
 
+def make_MIS():
+    laba = MIS.Laba2()
+    laba.run()
+
+
 def TiMP1():
     TiMP_1.main()
 
 
 if __name__ == "__main__":
-    OIS()
+    make_MIS()

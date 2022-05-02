@@ -1,1 +1,1 @@
-from .Laba_6 import *
+from .Laba_6 import Laba6

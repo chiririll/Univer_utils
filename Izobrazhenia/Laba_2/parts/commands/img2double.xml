@@ -1,0 +1,5 @@
+<w:p w14:paraId="661CB53B" w14:textId="77777777" w:rsidR="001934FE" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:r>
+        <w:t>&gt;&gt; {{ var_name }}=im2double({{ arg }});</w:t>
+    </w:r>
+</w:p>

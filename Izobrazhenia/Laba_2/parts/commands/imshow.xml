@@ -1,0 +1,13 @@
+<w:p w14:paraId="6376D53D" w14:textId="11C30E19" w:rsidR="00E06F8B" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:pPr>
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+    </w:pPr>
+    <w:r w:rsidRPr="001934FE">
+        <w:rPr>
+            <w:lang w:val="en-US"/>
+        </w:rPr>
+        <w:t>&gt;&gt; imshow(f2), figure, imshow(fneg)</w:t>
+    </w:r>
+</w:p>

@@ -1,9 +1,10 @@
 import json
 
+import Izobrazhenia
 from Shared.Classes import Executor
+
 import OIB
 import MIS
-from TiMP import TiMP_1
 
 
 def make_all(laba_class, tasks: list[str] | str):
@@ -19,6 +20,7 @@ def make_all(laba_class, tasks: list[str] | str):
         print(f"Generating {laba_class.laba['subject']}/{laba_class.laba['name']} for variant {var}...")
         laba = laba_class(tasks[str(var)], executor=Executor(student, var))
         laba.run()
+
 
 def make_OIB():
     # Criticality
@@ -40,9 +42,10 @@ def make_MIS():
     laba.run()
 
 
-def TiMP1():
-    TiMP_1.main()
+def make_Izobr():
+    laba = Izobrazhenia.Laba2(None)
+    laba.run()
 
 
 if __name__ == "__main__":
-    make_MIS()
+    make_Izobr()

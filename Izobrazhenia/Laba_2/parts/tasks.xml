@@ -1,0 +1,19 @@
+<w:p w14:paraId="33DACBD4" w14:textId="77777777" w:rsidR="002001CD" w:rsidRDefault="002001CD" w:rsidP="002001CD">
+    <w:pPr>
+        <w:spacing w:before="240"/>
+        <w:jc w:val="center"/>
+    </w:pPr>
+    <w:r>
+        <w:t>Задание для самостоятельной подготовки</w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="4E907FF2" w14:textId="4837E3F9" w:rsidR="002001CD" w:rsidRDefault="002001CD" w:rsidP="002001CD">
+    <w:r>
+        <w:t>1). Изучить представление графических файлов в системе MATLAB и состав основных функций их ввода-вывода.</w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="40F1BEB2" w14:textId="112EAE9F" w:rsidR="002001CD" w:rsidRDefault="002001CD" w:rsidP="002001CD">
+    <w:r>
+        <w:t>2). Изучить содержание и порядок выполнения лабораторной работы.</w:t>
+    </w:r>
+</w:p>

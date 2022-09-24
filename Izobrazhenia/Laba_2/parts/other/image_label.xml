@@ -1,0 +1,8 @@
+<w:p w14:paraId="2A685E22" w14:textId="38D65CF5" w:rsidR="001934FE" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:pPr>
+        <w:jc w:val="center"/>
+    </w:pPr>
+    <w:r w:rsidRPr="001934FE">
+        <w:t xml:space="preserve">Рис. {{ i }} – {{ label }}</w:t>
+    </w:r>
+</w:p>

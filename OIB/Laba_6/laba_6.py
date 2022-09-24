@@ -1,4 +1,4 @@
-import Shared
+import Shared.Classes
 from Shared.Document.rels import RelType, Image, Xml
 from .. import info
 

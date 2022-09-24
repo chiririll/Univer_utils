@@ -1,0 +1,25 @@
+<w:p w14:paraId="2476DDD0" w14:textId="77777777" w:rsidR="001934FE" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:r>
+        <w:t>10. Получим негатив полутонового изображения</w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="7F284D20" w14:textId="77777777" w:rsidR="001934FE" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:r>
+        <w:t>&gt;&gt; [M,N]=size(f2); %Определение размерности матрицы f2</w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="4823B94A" w14:textId="77777777" w:rsidR="001934FE" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:r>
+        <w:t>&gt;&gt; k=reshape(f2,1,M*N); %Преобразование матрицы в вектор</w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="1D881EAE" w14:textId="77777777" w:rsidR="001934FE" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:r>
+        <w:t>&gt;&gt; maxI=max(k); %Нахождение максимального уровня серого</w:t>
+    </w:r>
+</w:p>
+<w:p w14:paraId="0A0DC80A" w14:textId="77777777" w:rsidR="001934FE" w:rsidRDefault="001934FE" w:rsidP="001934FE">
+    <w:r>
+        <w:t>&gt;&gt; fneg=maxI-f2; %Получение негатива изображения</w:t>
+    </w:r>
+</w:p>

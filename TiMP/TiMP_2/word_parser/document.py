@@ -61,7 +61,7 @@ class Document:
 
         self.container.writestr("word/document.xml", document)
         self.container.writestr("word/_rels/document.xml.rels", rels)
-        self.container.write("src/empty_doc/default.xml", "word/default.xml")
+        self.container.write("src/empty_doc/styles.xml", "word/styles.xml")
         self.container.close()
 
         self.__saved = True

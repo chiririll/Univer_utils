@@ -1,8 +1,0 @@
-.idea/
-env/
-output/
-
-*.pyc
-*/__pycache__
-
-students.json
